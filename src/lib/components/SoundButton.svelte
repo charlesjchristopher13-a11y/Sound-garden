@@ -47,7 +47,8 @@
 
 <style>
 	/* Rings ripple out from the button while its sound plays. */
-	.playing {
+	/* Round buttons style their own ripple; this one is for pill buttons. */
+	.btn.playing {
 		animation: ripple 1.1s ease-out infinite;
 	}
 	@keyframes ripple {

@@ -59,6 +59,8 @@
 		el?.focus();
 	}
 	let searchEl: HTMLInputElement | null = $state(null);
+	// Open when arriving with a search; then it stays as the grown-up left it.
+	let searchOpen = $state(untrack(() => !!q));
 
 	const scope = $derived([set.label, activeFamily ? familyLabel(activeFamily) : null].filter(Boolean).join(' › '));
 </script>
@@ -100,7 +102,9 @@
 		</nav>
 	{/if}
 
-	<div class="tools">
+	<details class="tools" bind:open={searchOpen}>
+		<summary><span aria-hidden="true">🔎</span> Find a sound</summary>
+		<div class="trow">
 		<div class="search">
 			<label for="q">Search in {scope}</label>
 			<div class="field">
@@ -124,6 +128,7 @@
 			{shown.length === 1 ? 'card' : 'cards'}{q ? ` matching “${q}”` : ''}
 		</p>
 	</div>
+	</details>
 
 	{#if shown.length}
 		<ul class="grid" aria-label="{scope} cards">
@@ -161,12 +166,30 @@
 		margin-top: 8px;
 	}
 	.tools {
+		margin: 12px 0 16px;
+	}
+	.tools summary {
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+		min-height: var(--tap);
+		padding: 0 16px;
+		border-radius: 999px;
+		background: var(--surface-2);
+		font-weight: 700;
+		cursor: pointer;
+		list-style: none;
+	}
+	.tools summary::-webkit-details-marker {
+		display: none;
+	}
+	.trow {
 		display: flex;
 		align-items: flex-end;
 		justify-content: space-between;
 		gap: 12px 24px;
 		flex-wrap: wrap;
-		margin: 16px 0;
+		margin-top: 12px;
 	}
 	.search label {
 		display: block;
@@ -208,8 +231,8 @@
 		padding: 0;
 		margin: 0;
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(min(168px, 44vw), 1fr));
-		gap: 12px;
+		grid-template-columns: repeat(auto-fill, minmax(min(180px, 44vw), 1fr));
+		gap: 16px;
 	}
 	.grid li {
 		display: grid;

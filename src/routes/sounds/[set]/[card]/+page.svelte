@@ -78,7 +78,7 @@
 		void card;
 		const rel = lastMove.refocus;
 		lastMove.refocus = null;
-		if (rel) document.querySelector<HTMLElement>(`.pager a[rel='${rel}']`)?.focus();
+		if (rel) document.querySelector<HTMLElement>(`.stage a[rel='${rel}']`)?.focus();
 	});
 
 	const tried = $derived(progress.triedToday(card.id));
@@ -95,6 +95,18 @@
 		else if (e.key === 'ArrowLeft') go('prev');
 	}
 
+	// A friendly word for the child instead of the technical description.
+	const kindLabel = $derived(
+		card.blend ? 'Blend' : card.category === 'digraph' ? 'Two letters, one sound' : card.category === 'vowel' ? 'Vowel' : 'Sound'
+	);
+
+	// "Mouth": show how to make the sound, and play it.
+	let showMouth = $state(false);
+	function mouth() {
+		showMouth = !showMouth;
+		if (showMouth) listen();
+	}
+
 	const kidPrompt = $derived(
 		card.blend
 			? card.phonemes.length === 2
@@ -109,135 +121,149 @@
 
 <div class="wrap">
 	<div class="topline">
-		<a class="btn ghost" href={backHref}><span aria-hidden="true">←</span> {set.label}</a>
-		<span class="where muted">
-			{#if pos >= 0}{pos + 1} of {list.length}{/if}
-			{#if family}· {familyLabel(family)}{/if}
-		</span>
+		<a class="btn" href={backHref}><span aria-hidden="true">🌼</span> Pick a picture</a>
+		{#if pos >= 0}<span class="where">{pos + 1} of {list.length}</span>{/if}
 	</div>
 
-	{#key card.id}
-	<article
-		class="card panel cat-{card.category}"
-		class:enter-next={enterDir === 'next'}
-		class:enter-prev={enterDir === 'prev'}
-		aria-labelledby="card-h"
-		use:swipe={{ onnext: next ? () => go('next') : undefined, onprev: prev ? () => go('prev') : undefined }}
-	>
-		<div class="feature">
-			<span class="pill" class:challenge={card.blend?.advanced}>
-				{describeCard(card)}{card.blend?.advanced ? ' · Extra challenge' : ''}
-			</span>
-			<div class="orb-wrap">
-				<span class="pic" role="img" aria-label={card.picture.word}>{card.picture.emoji}</span>
-				<!-- The logo's sound waves; they ripple while a sound plays. -->
-				<svg class="waves" class:on={player.status.playing} viewBox="0 0 60 60" aria-hidden="true">
-					<path d="M8 22a14 14 0 0 1 14 14" />
-					<path d="M8 10a26 26 0 0 1 26 26" />
-					<path d="M8 -2a38 38 0 0 1 38 38" />
-				</svg>
-			</div>
-			<h1 id="card-h" tabindex="-1">
-				<span class="letters">{bigLabel(card)}</span>
-				<span class="sr-only">, as in</span>
-				<span class="word">{card.picture.word}</span>
-			</h1>
-			{#if card.blend?.position === 'end'}
-				<p class="muted hint">Listen for it at the end of the word.</p>
-			{/if}
-
-			{#if card.blend}
-				<div class="parts" role="group" aria-label="Sounds in this blend">
-					{#each card.phonemes as p, i (i)}
-						<SoundButton
-							class="btn part"
-							label="Hear /{p}/"
-							onplay={() => player.play(partAudio(p), `/${p}/`)}
-						>
-							/{p}/ <span aria-hidden="true">🔊</span>
-						</SoundButton>
-						{#if i < card.phonemes.length - 1}<span class="plus" aria-hidden="true">+</span>{/if}
-					{/each}
-				</div>
-			{/if}
-
-			<div class="actions">
-				<SoundButton class="btn primary big listen" onplay={listen} playing={player.status.playing}>
-					<span aria-hidden="true">🔊</span>
-					{card.blend ? 'Hear blend' : 'Listen'}
-				</SoundButton>
-				{#if card.audio.slow}
-					<SoundButton class="btn" onplay={slow}><span aria-hidden="true">🐢</span> One at a time</SoundButton>
-				{/if}
-				<SoundButton class="btn" onplay={three}><span aria-hidden="true">🔁</span> 3 times</SoundButton>
-			</div>
-			<p class="status" aria-hidden="true">{player.status.message || ' '}</p>
-		</div>
-
-		<div class="turn">
-			<h2><span aria-hidden="true">🗣️</span> Your turn!</h2>
-			<p>{kidPrompt}</p>
-			<button
-				type="button"
-				class="btn big tried"
-				aria-pressed={tried}
-				onclick={() => progress.markTried(card.id)}
+	<div class="stage">
+		{#if prev}
+			<a
+				class="arrow prev"
+				href={hrefFor(prev.id)}
+				rel="prev"
+				onclick={() => ((lastMove.dir = 'prev'), (lastMove.refocus = 'prev'))}
 			>
-				<span aria-hidden="true">{tried ? '★' : '☆'}</span>
-				{tried ? 'Tried today!' : 'I tried it!'}
-			</button>
-		</div>
+				<span aria-hidden="true">◀</span><span class="sr-only">Back: {prev.picture.word}</span>
+			</a>
+		{/if}
 
-		<nav class="pager" aria-label="Cards">
-			{#if prev}<a class="btn" href={hrefFor(prev.id)} rel="prev" onclick={() => ((lastMove.dir = 'prev'), (lastMove.refocus = 'prev'))}><span aria-hidden="true">←</span> Back<span class="sr-only">: {prev.picture.word}</span></a>{/if}
-			<a class="btn ghost" href={backHref}>Pick a picture</a>
-			{#if next}<a class="btn primary" href={hrefFor(next.id)} rel="next" onclick={() => ((lastMove.dir = 'next'), (lastMove.refocus = 'next'))}>Next<span class="sr-only">: {next.picture.word}</span> <span aria-hidden="true">→</span></a>{/if}
-		</nav>
-
-		{#if next || prev}<p class="swipe-hint" aria-hidden="true">← Swipe the card to change sounds →</p>{/if}
-
-		<details class="grownup">
-			<summary>For grown-ups: how is it going, word examples &amp; tips</summary>
-			<div class="gbody">
-				<fieldset class="rating">
-					<legend>How secure is this sound?</legend>
-					<div class="rbtns">
-						<button type="button" class="btn" aria-pressed={rating === 'practice'} onclick={() => rate('practice')}>
-							🌱 Needs practice
-						</button>
-						<button type="button" class="btn" aria-pressed={rating === 'secure'} onclick={() => rate('secure')}>
-							🌻 Secure
-						</button>
-					</div>
-					<p class="muted small">
-						Stars show the child tried. Your rating records how it sounded. Secure cards leave Today's practice.
-					</p>
-				</fieldset>
-
-				<div class="words">
-					{#each [['Beginning', card.examples.beginning], ['Middle', card.examples.middle], ['End', card.examples.end]] as [h, ws] (h)}
-						<section>
-							<h3>{h}</h3>
-							<p>{(ws as string[]).length ? (ws as string[]).join(' · ') : '—'}</p>
-						</section>
-					{/each}
+		{#key card.id}
+			<article
+				class="card panel cat-{card.category}"
+				class:enter-next={enterDir === 'next'}
+				class:enter-prev={enterDir === 'prev'}
+				aria-labelledby="card-h"
+				use:swipe={{ onnext: next ? () => go('next') : undefined, onprev: prev ? () => go('prev') : undefined }}
+			>
+				<span class="kind">{kindLabel}</span>
+				<div class="orb-wrap">
+					<span class="pic" role="img" aria-label={card.picture.word}>{card.picture.emoji}</span>
+					<!-- The logo's sound waves; they ripple while a sound plays. -->
+					<svg class="waves" class:on={player.status.playing} viewBox="0 0 60 60" aria-hidden="true">
+						<path d="M8 22a14 14 0 0 1 14 14" />
+						<path d="M8 10a26 26 0 0 1 26 26" />
+						<path d="M8 -2a38 38 0 0 1 38 38" />
+					</svg>
 				</div>
-				<p>{card.adultTip}</p>
-				<p class="muted small">
-					{card.blend
-						? 'The blend audio joins short single-sound clips as a practice model. Help your child slide the sounds into natural connected speech.'
-						: 'The audio plays only the featured sound, not the picture word.'}
-				</p>
-				{#if card.blend?.advanced}
-					<p class="muted small">
-						Extra challenge: save this for later if your child is still learning single sounds. R-ending clusters use
-						American /r/.
-					</p>
+				<h1 id="card-h" tabindex="-1">
+					<span class="letters">{bigLabel(card)}</span>
+					<span class="sr-only">, as in</span>
+					<span class="word">{card.picture.word}</span>
+				</h1>
+				{#if card.blend?.position === 'end'}
+					<p class="hint">Listen at the end of the word.</p>
 				{/if}
+
+				{#if card.blend}
+					<div class="parts" role="group" aria-label="Sounds in this blend">
+						{#each card.phonemes as p, i (i)}
+							<SoundButton class="bubble" label="Hear /{p}/" onplay={() => player.play(partAudio(p), `/${p}/`)}>
+								/{p}/
+							</SoundButton>
+							{#if i < card.phonemes.length - 1}<span class="plus" aria-hidden="true">+</span>{/if}
+						{/each}
+					</div>
+				{/if}
+
+				<!-- Hear · Slow · Mouth · Again: big round buttons with a caption. -->
+				<div class="trio">
+					<SoundButton class="circle hear" onplay={listen} playing={player.status.playing}>
+						<span class="dot" aria-hidden="true">🔊</span><span class="cap">Hear</span>
+					</SoundButton>
+					{#if card.audio.slow}
+						<SoundButton class="circle slow" onplay={slow}>
+							<span class="dot" aria-hidden="true">🐢</span><span class="cap">Slow</span>
+						</SoundButton>
+					{/if}
+					<button type="button" class="circle mouth" aria-expanded={showMouth} onclick={mouth}>
+						<span class="dot" aria-hidden="true">👄</span><span class="cap">Mouth</span>
+					</button>
+					<SoundButton class="circle again" onplay={three}>
+						<span class="dot" aria-hidden="true">🔁</span><span class="cap">Again</span>
+					</SoundButton>
+				</div>
+				<p class="status" aria-hidden="true">{player.status.message || ' '}</p>
+
+				{#if showMouth}
+					<p class="mouth-tip"><span aria-hidden="true">👄</span> {kidPrompt}</p>
+				{/if}
+
+				<button type="button" class="btn big tried" aria-pressed={tried} onclick={() => progress.markTried(card.id)}>
+					<span class="star" aria-hidden="true">{tried ? '★' : '☆'}</span>
+					{tried ? 'Tried today!' : 'I tried it!'}
+				</button>
+			</article>
+		{/key}
+
+		{#if next}
+			<a
+				class="arrow next"
+				href={hrefFor(next.id)}
+				rel="next"
+				onclick={() => ((lastMove.dir = 'next'), (lastMove.refocus = 'next'))}
+			>
+				<span class="sr-only">Next: {next.picture.word}</span><span aria-hidden="true">▶</span>
+			</a>
+		{/if}
+	</div>
+
+	{#if next || prev}<p class="swipe-hint" aria-hidden="true">Swipe the card to change sounds</p>{/if}
+
+	<details class="grownup panel">
+		<summary>For grown-ups: how is it going, word examples &amp; tips</summary>
+		<div class="gbody">
+			<p class="about">
+				<strong>{describeCard(card)}</strong>{card.blend?.advanced ? ' · Extra challenge' : ''}{family
+					? ` · showing ${familyLabel(family)}`
+					: ''}
+			</p>
+			<fieldset class="rating">
+				<legend>How secure is this sound?</legend>
+				<div class="rbtns">
+					<button type="button" class="btn" aria-pressed={rating === 'practice'} onclick={() => rate('practice')}>
+						🌱 Needs practice
+					</button>
+					<button type="button" class="btn" aria-pressed={rating === 'secure'} onclick={() => rate('secure')}>
+						🌻 Secure
+					</button>
+				</div>
+				<p class="muted small">
+					Stars show the child tried. Your rating records how it sounded. Secure cards leave Today's practice.
+				</p>
+			</fieldset>
+
+			<div class="words">
+				{#each [['Beginning', card.examples.beginning], ['Middle', card.examples.middle], ['End', card.examples.end]] as [h, ws] (h)}
+					<section>
+						<h2>{h}</h2>
+						<p>{(ws as string[]).length ? (ws as string[]).join(' · ') : '—'}</p>
+					</section>
+				{/each}
 			</div>
-		</details>
-	</article>
-	{/key}
+			<p>{card.adultTip}</p>
+			<p class="muted small">
+				{card.blend
+					? 'The blend audio joins short single-sound clips as a practice model. Help your child slide the sounds into natural connected speech.'
+					: 'The audio plays only the featured sound, not the picture word.'}
+			</p>
+			{#if card.blend?.advanced}
+				<p class="muted small">
+					Extra challenge: save this for later if your child is still learning single sounds. R-ending clusters use
+					American /r/.
+				</p>
+			{/if}
+		</div>
+	</details>
 </div>
 
 <style>
@@ -246,16 +272,63 @@
 		align-items: center;
 		justify-content: space-between;
 		gap: 12px;
-		margin-bottom: 12px;
+		max-width: 920px;
+		margin: 0 auto 14px;
+	}
+	.where {
+		font-weight: 700;
+		color: var(--ink-soft);
+		padding: 6px 14px;
+		border-radius: 999px;
+		background: var(--surface-2);
+	}
+
+	/* Card in the middle, big arrows either side. */
+	.stage {
+		display: grid;
+		grid-template-columns: 88px minmax(0, 720px) 88px;
+		grid-template-areas: 'prev card next';
+		justify-content: center;
+		align-items: center;
+		gap: 16px;
 	}
 	.card {
-		max-width: 780px;
-		margin-inline: auto;
-		padding-top: 24px;
+		grid-area: card;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding-top: 22px;
 		user-select: none;
 		-webkit-user-select: none;
 		will-change: transform;
 	}
+	.arrow {
+		display: grid;
+		place-items: center;
+		width: 84px;
+		height: 84px;
+		border-radius: 50%;
+		font-size: 2rem;
+		text-decoration: none;
+		color: var(--on-leaf);
+		background: var(--leaf-grad);
+		box-shadow:
+			0 6px 0 var(--edge-leaf),
+			0 14px 24px -12px rgb(0 0 0 / 0.4);
+		transition: transform 0.1s;
+	}
+	.arrow:active {
+		transform: translateY(5px);
+		box-shadow: 0 1px 0 var(--edge-leaf);
+	}
+	.arrow.prev {
+		grid-area: prev;
+	}
+	.arrow.next {
+		grid-area: next;
+	}
+
 	/* The next card slides in from the side the child swiped towards. */
 	.enter-next {
 		animation: in-right 0.38s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -275,64 +348,18 @@
 			opacity: 0;
 		}
 	}
-	.swipe-hint {
-		display: none;
-		margin: 10px 0 0;
-		text-align: center;
-		font-size: 0.95rem;
-		color: var(--muted);
-	}
-	@media (pointer: coarse) {
-		.swipe-hint {
-			display: block;
-		}
+
+	.kind {
+		padding: 6px 16px;
+		border-radius: 999px;
+		background: color-mix(in srgb, var(--cat) 30%, transparent);
+		font-weight: 700;
+		font-size: 1.05rem;
 	}
 	.orb-wrap {
 		position: relative;
 	}
-	.waves {
-		position: absolute;
-		top: 4px;
-		right: -38px;
-		width: 58px;
-		height: 58px;
-		fill: none;
-		stroke: var(--ink-soft);
-		stroke-width: 5;
-		stroke-linecap: round;
-		opacity: 0.55;
-	}
-	.waves path {
-		transition: opacity 0.3s;
-	}
-	.waves.on path {
-		animation: wave 1.1s ease-in-out infinite;
-	}
-	.waves.on path:nth-child(2) {
-		animation-delay: 0.15s;
-	}
-	.waves.on path:nth-child(3) {
-		animation-delay: 0.3s;
-	}
-	@keyframes wave {
-		0%,
-		100% {
-			opacity: 0.25;
-		}
-		40% {
-			opacity: 1;
-		}
-	}
-	.waves.on {
-		opacity: 1;
-	}
-	.feature {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-	}
-	/* The picture floats on a glowing glass orb. */
+	/* The picture floats on a glowing orb in its sound's colour. */
 	.pic {
 		display: grid;
 		place-items: center;
@@ -357,6 +384,40 @@
 			transform: translateY(-6px);
 		}
 	}
+	.waves {
+		position: absolute;
+		top: 4px;
+		right: -38px;
+		width: 58px;
+		height: 58px;
+		fill: none;
+		stroke: var(--ink-soft);
+		stroke-width: 5;
+		stroke-linecap: round;
+		opacity: 0.55;
+	}
+	.waves.on {
+		opacity: 1;
+	}
+	.waves.on path {
+		animation: wave 1.1s ease-in-out infinite;
+	}
+	.waves.on path:nth-child(2) {
+		animation-delay: 0.15s;
+	}
+	.waves.on path:nth-child(3) {
+		animation-delay: 0.3s;
+	}
+	@keyframes wave {
+		0%,
+		100% {
+			opacity: 0.25;
+		}
+		40% {
+			opacity: 1;
+		}
+	}
+
 	h1 {
 		display: flex;
 		flex-direction: column;
@@ -365,84 +426,173 @@
 	}
 	.letters {
 		font-family: var(--font);
-		font-size: clamp(3rem, 12vw, 4.6rem);
+		font-size: clamp(3.4rem, 14vw, 5.2rem);
 		line-height: 1;
 	}
 	.word {
-		font-size: 1.4rem;
+		font-family: var(--font);
+		font-size: 1.5rem;
 		font-weight: 400;
 		color: var(--ink-soft);
 		margin-top: 6px;
 	}
 	.hint {
-		margin: 4px 0 0;
+		margin: 6px 0 0;
+		font-weight: 700;
+		color: var(--ink-soft);
 	}
+
+	/* Blend parts: big tappable bubbles. */
 	.parts {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		gap: 8px;
+		gap: 10px;
 		margin-top: 18px;
 	}
-	.parts :global(.part) {
-		min-height: var(--tap-kid);
-		min-width: 92px;
-		font-size: 1.35rem;
-		background: color-mix(in srgb, var(--sun-soft) 80%, transparent);
-		border-radius: 18px;
+	.parts :global(.bubble) {
+		min-width: 96px;
+		min-height: 72px;
+		padding: 0 18px;
+		border: 0;
+		border-radius: 24px 24px 24px 8px;
+		background: color-mix(in srgb, var(--cat) 38%, var(--surface-opaque));
+		color: var(--ink);
+		font-size: 1.7rem;
+		font-weight: 700;
+		box-shadow: 0 5px 0 color-mix(in srgb, var(--cat) 60%, #000 20%);
+		transition: transform 0.1s;
+	}
+	.parts :global(.bubble:active) {
+		transform: translateY(4px);
+		box-shadow: 0 1px 0 color-mix(in srgb, var(--cat) 60%, #000 20%);
 	}
 	.plus {
-		font-size: 1.6rem;
+		font-size: 1.8rem;
 		font-weight: 700;
 		color: var(--muted);
 	}
-	.actions {
+
+	/* Hear · Slow · Mouth · Again */
+	.trio {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: 10px;
-		margin-top: 20px;
+		gap: clamp(10px, 3vw, 22px);
+		margin-top: 22px;
 	}
-	.actions :global(.listen) {
-		min-width: 220px;
+	.trio :global(.circle) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 8px;
+		padding: 0;
+		border: 0;
+		background: none;
+		color: var(--ink);
+		font-weight: 700;
+		font-size: 1.1rem;
 	}
+	.trio :global(.dot) {
+		display: grid;
+		place-items: center;
+		width: 76px;
+		height: 76px;
+		border-radius: 50%;
+		font-size: 2rem;
+		background: var(--c);
+		box-shadow:
+			0 6px 0 var(--e),
+			inset 0 2px 0 rgb(255 255 255 / 0.35);
+		transition: transform 0.1s;
+	}
+	.trio :global(.circle:active .dot) {
+		transform: translateY(5px);
+		box-shadow: 0 1px 0 var(--e);
+	}
+	.trio :global(.hear .dot) {
+		width: 96px;
+		height: 96px;
+		font-size: 2.6rem;
+	}
+	.trio :global(.hear) {
+		--c: var(--cat-blend);
+		--e: var(--edge-leaf);
+	}
+	.trio :global(.slow) {
+		--c: var(--cat-consonant);
+		--e: color-mix(in srgb, var(--cat-consonant) 60%, #000 30%);
+	}
+	.trio :global(.mouth) {
+		--c: var(--cat-digraph);
+		--e: color-mix(in srgb, var(--cat-digraph) 60%, #000 30%);
+	}
+	.trio :global(.again) {
+		--c: var(--cat-vowel);
+		--e: color-mix(in srgb, var(--cat-vowel) 60%, #000 30%);
+	}
+	.trio :global(.mouth[aria-expanded='true'] .dot) {
+		outline: 4px solid var(--ink);
+		outline-offset: 3px;
+	}
+	.trio :global(.playing .dot) {
+		animation: ripple 1.1s ease-out infinite;
+	}
+	@keyframes ripple {
+		0% {
+			box-shadow:
+				0 6px 0 var(--e),
+				0 0 0 0 color-mix(in srgb, var(--c) 70%, transparent);
+		}
+		100% {
+			box-shadow:
+				0 6px 0 var(--e),
+				0 0 0 20px transparent;
+		}
+	}
+
 	.status {
 		min-height: 1.6em;
 		margin: 12px 0 0;
 		font-weight: 700;
 		color: var(--leaf);
 	}
-	.turn {
-		margin-top: 20px;
-		padding: 18px;
-		border-radius: var(--radius);
-		background: color-mix(in srgb, var(--leaf-soft) 80%, transparent);
-		border: 1px solid var(--glass-border);
-		text-align: center;
-	}
-	.turn h2 {
-		margin-bottom: 4px;
+	.mouth-tip {
+		max-width: 30ch;
+		margin: 4px 0 6px;
+		padding: 14px 20px;
+		border-radius: 24px 24px 24px 8px;
+		background: color-mix(in srgb, var(--cat-digraph) 28%, var(--surface-opaque));
+		font-size: 1.3rem;
+		font-weight: 700;
 	}
 	.tried {
-		margin-top: 4px;
-		background: var(--surface);
+		margin-top: 12px;
+		min-width: 240px;
+		font-size: 1.4rem;
 	}
-	.pager {
-		display: flex;
-		justify-content: space-between;
-		gap: 8px;
-		margin-top: 20px;
-		flex-wrap: wrap;
+	.tried .star {
+		font-size: 1.6rem;
+		color: var(--sun);
 	}
-	.pager .btn {
-		flex: 1 1 0;
-		min-width: 120px;
+
+	.swipe-hint {
+		display: none;
+		margin: 12px 0 0;
+		text-align: center;
+		color: var(--muted);
 	}
+	@media (pointer: coarse) {
+		.swipe-hint {
+			display: block;
+		}
+	}
+
 	.grownup {
-		margin-top: 20px;
-		border-top: 1px solid var(--line);
-		padding-top: 12px;
+		max-width: 720px;
+		margin: 20px auto 0;
+		padding-block: 8px;
 	}
 	summary {
 		cursor: pointer;
@@ -453,6 +603,9 @@
 	}
 	.gbody {
 		padding-top: 8px;
+	}
+	.about {
+		margin-bottom: 14px;
 	}
 	.rating {
 		border: 0;
@@ -474,7 +627,8 @@
 		gap: 12px;
 		margin-bottom: 12px;
 	}
-	.words h3 {
+	.words h2 {
+		font-family: var(--font);
 		font-size: 0.95rem;
 		text-transform: uppercase;
 		letter-spacing: 0.06em;
@@ -484,12 +638,23 @@
 	.small {
 		font-size: 0.95rem;
 	}
-	@media (max-width: 520px) {
+
+	/* Phones: arrows sit under the card, either side of the star. */
+	@media (max-width: 760px) {
+		.stage {
+			grid-template-columns: 1fr 1fr;
+			grid-template-areas:
+				'card card'
+				'prev next';
+			gap: 14px;
+		}
+		.arrow {
+			width: 100%;
+			height: 72px;
+			border-radius: 24px;
+		}
 		.words {
 			grid-template-columns: 1fr;
-		}
-		.actions :global(.listen) {
-			width: 100%;
 		}
 	}
 </style>

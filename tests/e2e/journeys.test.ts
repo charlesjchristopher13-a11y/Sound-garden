@@ -9,8 +9,12 @@ test("a beginner reaches today's practice in one tap and can save a star", async
 	await expect(page).toHaveURL(/\/sounds\/today\/s\/$/);
 	await expect(page.getByRole('heading', { level: 1 })).toContainText('sun');
 
-	await page.getByRole('button', { name: /Listen/ }).click();
+	await page.getByRole('button', { name: 'Hear', exact: true }).click();
 	await expect(page.locator('.status')).toHaveText(/Your turn!/, { timeout: 5000 });
+
+	// Mouth shows how to make the sound.
+	await page.getByRole('button', { name: 'Mouth' }).click();
+	await expect(page.getByText('Teeth close. Hiss like a snake!')).toBeVisible();
 
 	await page.getByRole('button', { name: /I tried it!/ }).click();
 	await expect(page.getByRole('button', { name: /Tried today!/ })).toHaveAttribute('aria-pressed', 'true');
@@ -45,6 +49,7 @@ test('blend card plays parts and walks the filtered set', async ({ page }) => {
 
 test('search explains its scope and offers a wider search', async ({ page }) => {
 	await page.goto('./sounds/blends?family=r-blends');
+	await page.getByText('Find a sound').click();
 	const box = page.getByLabel(/Search in All blends › R blends/);
 	await box.fill('block');
 	await expect(page.getByText('No cards match “block” in All blends › R blends.')).toBeVisible();

@@ -7,11 +7,12 @@
 	const todays = $derived(progress.today.map((id) => cardById.get(id)!));
 	const first = $derived(todays[0]);
 
-	const explore: { id: SetId; note: string }[] = [
-		{ id: 'start', note: 'Best first stop' },
-		{ id: 'consonants', note: '19 sounds' },
-		{ id: 'vowels', note: '20 sounds' },
-		{ id: 'two-sound', note: '73 blends' }
+	// Big colour blocks, one per place a child can go.
+	const blocks: { id: SetId; label: string; cat: string }[] = [
+		{ id: 'start', label: 'Start here', cat: 'cat-start' },
+		{ id: 'consonants', label: 'Sounds', cat: 'cat-consonant' },
+		{ id: 'vowels', label: 'Vowels', cat: 'cat-vowel' },
+		{ id: 'two-sound', label: 'Blends', cat: 'cat-blend' }
 	];
 </script>
 
@@ -22,9 +23,11 @@
 		<div class="intro">
 			<p class="hi">Hi, {progress.learner.name}! 👋</p>
 			<h1 id="today-h" tabindex="-1">Today's practice</h1>
-			<p class="muted">Five sounds to listen to, say out loud and try. Tap a picture to start.</p>
+			<p class="muted">Listen, say it, try it!</p>
 			{#if first}
-				<a class="btn primary big" href={to(`/sounds/today/${first.id}`)}>▶ Start practice</a>
+				<a class="btn primary big go" href={to(`/sounds/today/${first.id}`)}>
+					<span aria-hidden="true">▶</span> Start practice
+				</a>
 			{/if}
 		</div>
 		<ol class="today" aria-label="Today's cards">
@@ -42,29 +45,21 @@
 		</ol>
 	</section>
 
+	<nav class="blocks" aria-label="Places to go">
+		{#each blocks as k (k.id)}
+			{@const set = setById.get(k.id)!}
+			<a class="block {k.cat}" href={to(`/sounds/${k.id}`)}>
+				<span class="be" aria-hidden="true">{set.emoji}</span>
+				<span class="bl">{k.label}</span>
+			</a>
+		{/each}
+		<a class="block play" href={to(`/play`)}>
+			<span class="be" aria-hidden="true">🎯</span>
+			<span class="bl">Play</span>
+		</a>
+	</nav>
+
 	<section class="grid2">
-		<div class="panel">
-			<h2>Explore sounds</h2>
-			<ul class="explore">
-				{#each explore as e (e.id)}
-					{@const s = setById.get(e.id)!}
-					<li>
-						<a href={to(`/sounds/${s.id}`)}>
-							<span class="ei" aria-hidden="true">{s.emoji}</span>
-							<span><strong>{s.label}</strong><span class="muted">{e.note}</span></span>
-						</a>
-					</li>
-				{/each}
-			</ul>
-			<a class="btn ghost" href={to(`/sounds`)}>See every set, including extra challenges <span aria-hidden="true">→</span></a>
-		</div>
-
-		<div class="panel play">
-			<h2>Sound Hunt</h2>
-			<p>Hear a sound, then find the picture. Five quick rounds.</p>
-			<a class="btn accent big" href={to(`/play`)}>🎯 Let's play</a>
-		</div>
-
 		<div class="panel">
 			<h2>Today's flower</h2>
 			<Flower cards={todays} done={(id) => progress.triedToday(id)} />
@@ -76,6 +71,13 @@
 			</dl>
 			<p class="muted small">{progress.practiced.size} of {cards.length} cards tried so far.</p>
 			<a href={to(`/progress`)}>Progress, learners &amp; backup</a>
+		</div>
+
+		<div class="panel">
+			<h2>For grown-ups</h2>
+			<p>All {cards.length} cards, including digraphs, longer blends and extra challenges.</p>
+			<a class="btn" href={to(`/sounds`)}>Every set of sounds</a>
+			<p class="small"><a href={to(`/guide`)}>How to use Sound Garden</a></p>
 		</div>
 	</section>
 </div>
@@ -163,47 +165,75 @@
 		color: var(--leaf);
 	}
 
-	.grid2 {
-		display: grid;
-		grid-template-columns: 1.3fr 1fr 1fr;
-		align-items: start;
-		gap: 16px;
-		margin-top: 16px;
+	.go {
+		min-height: 76px;
+		padding-inline: 2em;
+		font-size: 1.55rem;
+		border-radius: 26px;
 	}
-	.explore {
-		list-style: none;
-		padding: 0;
-		margin: 0 0 12px;
+
+	/* Big colour blocks, like a toy box. */
+	.blocks {
 		display: grid;
-		gap: 8px;
+		grid-template-columns: repeat(5, minmax(0, 1fr));
+		gap: 14px;
+		margin-top: 18px;
 	}
-	.explore a {
+	.block {
+		--c: var(--cat);
 		display: flex;
+		flex-direction: column;
 		align-items: center;
-		gap: 12px;
-		min-height: 60px;
-		padding: 8px 14px;
-		border-radius: 16px;
-		background: var(--surface-2);
-		border: 1px solid var(--glass-border);
+		justify-content: center;
+		gap: 8px;
+		min-height: 150px;
+		padding: 16px 8px;
+		border-radius: 30px 30px 30px 10px;
+		background:
+			radial-gradient(circle at 30% 20%, rgb(255 255 255 / 0.35), transparent 50%),
+			color-mix(in srgb, var(--c) 55%, var(--surface-opaque));
+		box-shadow:
+			0 7px 0 color-mix(in srgb, var(--c) 55%, #000 35%),
+			0 18px 30px -18px rgb(0 0 0 / 0.45);
 		color: var(--ink);
 		text-decoration: none;
-		transition: transform 0.2s var(--ease);
+		transition: transform 0.12s;
 	}
-	.explore a:hover {
-		transform: translateX(4px);
+	.block:hover {
+		transform: translateY(-3px);
 	}
-	.explore strong {
-		display: block;
+	.block:active {
+		transform: translateY(6px);
+		box-shadow: 0 1px 0 color-mix(in srgb, var(--c) 55%, #000 35%);
 	}
-	.explore .muted {
-		font-size: 0.95rem;
+	.block .be {
+		font-size: 3.2rem;
+		line-height: 1;
+		filter: drop-shadow(0 4px 6px rgb(0 0 0 / 0.18));
 	}
-	.ei {
-		font-size: 1.7rem;
+	.block .bl {
+		font-family: var(--font-display);
+		font-variation-settings: 'SOFT' 100;
+		font-size: 1.45rem;
+		font-weight: 700;
 	}
-	.play {
-		background: linear-gradient(160deg, color-mix(in srgb, var(--sun-soft) 75%, transparent), var(--surface) 70%);
+	.cat-start {
+		--cat: #9fbb7c;
+	}
+	.block.play {
+		--c: var(--sun);
+		color: var(--on-sun);
+		background:
+			radial-gradient(circle at 30% 20%, rgb(255 255 255 / 0.25), transparent 50%),
+			var(--sun-grad);
+	}
+
+	.grid2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: start;
+		gap: 16px;
+		margin-top: 22px;
 	}
 	.stats {
 		display: flex;
@@ -233,6 +263,13 @@
 		}
 		.grid2 {
 			grid-template-columns: 1fr;
+		}
+		.blocks {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+		.block.play {
+			grid-column: 1 / -1;
+			min-height: 110px;
 		}
 	}
 	@media (max-width: 560px) {

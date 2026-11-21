@@ -24,12 +24,8 @@
 	<span class="pic" aria-hidden="true">{card.picture.emoji}</span>
 	{#if showLetters}<span class="spell">{card.spelling}</span>{/if}
 	<span class="word">{card.picture.word}</span>
-	{#if card.blend}
-		<span class="meta"
-			>{card.phonemes.length} sounds · {card.blend.position === 'end' ? 'ending' : 'beginning'}</span
-		>
-	{/if}
-	{#if card.blend?.advanced}<span class="meta challenge">Extra challenge</span>{/if}
+	{#if card.blend?.position === 'end'}<span class="meta">at the end</span>{/if}
+	{#if card.blend?.advanced}<span class="meta challenge">★ Challenge</span>{/if}
 	{#if statusText[status]}<span class="sr-only">, {statusText[status]}</span>{/if}
 </a>
 
@@ -38,7 +34,8 @@
 		position: relative;
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
+		text-align: center;
 		gap: 2px;
 		min-height: 168px;
 		padding: 16px;
@@ -47,7 +44,9 @@
 			linear-gradient(140deg, var(--glass-hi), transparent 45%),
 			var(--surface);
 		border: 1px solid var(--glass-border);
-		box-shadow: var(--shadow);
+		box-shadow:
+			0 6px 0 color-mix(in srgb, var(--cat) 45%, transparent),
+			var(--shadow);
 		-webkit-backdrop-filter: var(--blur);
 		backdrop-filter: var(--blur);
 		color: var(--ink);
@@ -64,24 +63,25 @@
 		transform: scale(1.08) rotate(-3deg);
 	}
 	.tile:active {
-		transform: scale(0.97);
+		transform: translateY(5px);
+		box-shadow: 0 1px 0 color-mix(in srgb, var(--cat) 45%, transparent);
 	}
 	/* The picture sits on a petal in its sound's colour. */
 	.pic {
 		display: grid;
 		place-items: center;
-		width: 68px;
-		height: 68px;
+		width: 84px;
+		height: 84px;
 		margin-bottom: 8px;
 		border-radius: 50% 50% 50% 14%;
-		font-size: 2.5rem;
+		font-size: 3rem;
 		line-height: 1;
 		background: color-mix(in srgb, var(--cat) 32%, transparent);
 		box-shadow: inset 0 1px 0 var(--glass-hi);
 		transition: transform 0.3s var(--ease);
 	}
 	.spell {
-		font-size: 1.7rem;
+		font-size: 2rem;
 		font-weight: 700;
 		line-height: 1.1;
 	}
@@ -90,7 +90,7 @@
 		color: var(--ink-soft);
 	}
 	.meta {
-		margin-top: auto;
+		margin-top: 2px;
 		font-size: 0.9rem;
 		color: var(--muted);
 	}
