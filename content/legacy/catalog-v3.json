@@ -1,0 +1,3891 @@
+{
+ "cards": [
+  {
+   "id": 0,
+   "sound": "b",
+   "emoji": "🎈",
+   "word": "balloon",
+   "tip": "Press your lips together, then open with a tiny voiced puff. Keep it short; avoid adding “uh”.",
+   "positions": [
+    [
+     "ball",
+     "bat"
+    ],
+    [
+     "rabbit",
+     "cabin"
+    ],
+    [
+     "web",
+     "tub"
+    ]
+   ],
+   "file": "b",
+   "group": "Consonants"
+  },
+  {
+   "id": 1,
+   "sound": "p",
+   "emoji": "🍿",
+   "word": "popcorn",
+   "tip": "Press your lips together, then release a small puff of air. Voice stays off.",
+   "positions": [
+    [
+     "pig",
+     "pan"
+    ],
+    [
+     "apple",
+     "puppy"
+    ],
+    [
+     "cup",
+     "top"
+    ]
+   ],
+   "file": "p",
+   "group": "Consonants"
+  },
+  {
+   "id": 2,
+   "sound": "m",
+   "emoji": "🌙",
+   "word": "moon",
+   "tip": "Close your lips and hum. Feel the buzz with your fingers on your throat.",
+   "positions": [
+    [
+     "moon",
+     "map"
+    ],
+    [
+     "lemon",
+     "summer"
+    ],
+    [
+     "jam",
+     "home"
+    ]
+   ],
+   "file": "m",
+   "group": "Consonants"
+  },
+  {
+   "id": 3,
+   "sound": "t",
+   "emoji": "🐢",
+   "word": "turtle",
+   "tip": "Tap your tongue just behind your top teeth, then release. Keep it short.",
+   "positions": [
+    [
+     "top",
+     "toy"
+    ],
+    [
+     "cactus",
+     "hotel"
+    ],
+    [
+     "cat",
+     "hat"
+    ]
+   ],
+   "file": "t",
+   "group": "Consonants"
+  },
+  {
+   "id": 4,
+   "sound": "d",
+   "emoji": "🐶",
+   "word": "dog",
+   "tip": "Tap your tongue just behind your top teeth. Turn your voice on.",
+   "positions": [
+    [
+     "dog",
+     "day"
+    ],
+    [
+     "ladder",
+     "candy"
+    ],
+    [
+     "bed",
+     "red"
+    ]
+   ],
+   "file": "d",
+   "group": "Consonants"
+  },
+  {
+   "id": 5,
+   "sound": "n",
+   "emoji": "🪺",
+   "word": "nest",
+   "tip": "Put your tongue behind your top teeth and hum through your nose.",
+   "positions": [
+    [
+     "nest",
+     "nose"
+    ],
+    [
+     "bunny",
+     "dinner"
+    ],
+    [
+     "sun",
+     "ten"
+    ]
+   ],
+   "file": "n",
+   "group": "Consonants"
+  },
+  {
+   "id": 6,
+   "sound": "k",
+   "emoji": "🐱",
+   "word": "cat",
+   "tip": "Lift the back of your tongue, then release a little puff. Voice stays off.",
+   "positions": [
+    [
+     "cat",
+     "kite"
+    ],
+    [
+     "bucket",
+     "chicken"
+    ],
+    [
+     "duck",
+     "book"
+    ]
+   ],
+   "file": "k",
+   "group": "Consonants"
+  },
+  {
+   "id": 7,
+   "sound": "g",
+   "emoji": "🐐",
+   "word": "goat",
+   "tip": "Lift the back of your tongue, then release. Turn your voice on.",
+   "positions": [
+    [
+     "goat",
+     "gate"
+    ],
+    [
+     "wagon",
+     "tiger"
+    ],
+    [
+     "bag",
+     "dog"
+    ]
+   ],
+   "file": "g",
+   "group": "Consonants"
+  },
+  {
+   "id": 8,
+   "sound": "f",
+   "emoji": "🐟",
+   "word": "fish",
+   "tip": "Rest your top teeth gently on your bottom lip. Blow softly.",
+   "positions": [
+    [
+     "fish",
+     "fan"
+    ],
+    [
+     "muffin",
+     "waffle"
+    ],
+    [
+     "leaf",
+     "roof"
+    ]
+   ],
+   "file": "f",
+   "group": "Consonants"
+  },
+  {
+   "id": 9,
+   "sound": "v",
+   "emoji": "🚐",
+   "word": "van",
+   "tip": "Rest your top teeth on your bottom lip and blow with your voice on.",
+   "positions": [
+    [
+     "van",
+     "vest"
+    ],
+    [
+     "seven",
+     "river"
+    ],
+    [
+     "five",
+     "save"
+    ]
+   ],
+   "file": "v",
+   "group": "Consonants"
+  },
+  {
+   "id": 10,
+   "sound": "s",
+   "emoji": "☀️",
+   "word": "sun",
+   "tip": "Keep your teeth close and send air out in a smooth hiss.",
+   "positions": [
+    [
+     "sun",
+     "sock"
+    ],
+    [
+     "bicycle",
+     "pencil"
+    ],
+    [
+     "bus",
+     "ice"
+    ]
+   ],
+   "file": "s",
+   "group": "Consonants"
+  },
+  {
+   "id": 11,
+   "sound": "z",
+   "emoji": "🦓",
+   "word": "zebra",
+   "tip": "Make a smooth buzzing sound with teeth close and voice on.",
+   "positions": [
+    [
+     "zebra",
+     "zoo"
+    ],
+    [
+     "lizard",
+     "puzzle"
+    ],
+    [
+     "nose",
+     "buzz"
+    ]
+   ],
+   "file": "z",
+   "group": "Consonants"
+  },
+  {
+   "id": 12,
+   "sound": "h",
+   "emoji": "🏠",
+   "word": "house",
+   "tip": "Open your mouth and gently breathe out.",
+   "positions": [
+    [
+     "hat",
+     "house"
+    ],
+    [
+     "behind",
+     "ahead"
+    ],
+    []
+   ],
+   "file": "h",
+   "group": "Consonants"
+  },
+  {
+   "id": 13,
+   "sound": "w",
+   "emoji": "🍉",
+   "word": "watermelon",
+   "tip": "Round your lips, turn your voice on, then open your lips.",
+   "positions": [
+    [
+     "web",
+     "water"
+    ],
+    [
+     "away",
+     "awake"
+    ],
+    []
+   ],
+   "file": "w",
+   "group": "Consonants"
+  },
+  {
+   "id": 14,
+   "sound": "y",
+   "emoji": "🪀",
+   "word": "yo-yo",
+   "tip": "Lift the middle of your tongue toward the roof of your mouth, then glide away.",
+   "positions": [
+    [
+     "yes",
+     "yellow"
+    ],
+    [
+     "canyon",
+     "onion"
+    ],
+    []
+   ],
+   "file": "y",
+   "group": "Consonants"
+  },
+  {
+   "id": 15,
+   "sound": "r",
+   "emoji": "🌈",
+   "word": "rainbow",
+   "tip": "Lift and pull your tongue back without touching the roof. Keep your voice on.",
+   "positions": [
+    [
+     "red",
+     "rain"
+    ],
+    [
+     "carrot",
+     "parrot"
+    ],
+    [
+     "car",
+     "star"
+    ]
+   ],
+   "file": "r",
+   "group": "Consonants"
+  },
+  {
+   "id": 16,
+   "sound": "l",
+   "emoji": "🍋",
+   "word": "lemon",
+   "tip": "Touch your tongue just behind your top teeth and use your voice.",
+   "positions": [
+    [
+     "leaf",
+     "lemon"
+    ],
+    [
+     "yellow",
+     "pillow"
+    ],
+    [
+     "ball",
+     "bell"
+    ]
+   ],
+   "file": "l",
+   "group": "Consonants"
+  },
+  {
+   "id": 17,
+   "sound": "sh",
+   "emoji": "🚢",
+   "word": "ship",
+   "tip": "Round your lips a little and blow a quiet “shhh”.",
+   "positions": [
+    [
+     "ship",
+     "shell"
+    ],
+    [
+     "fishing",
+     "washing"
+    ],
+    [
+     "fish",
+     "brush"
+    ]
+   ],
+   "file": "sh",
+   "group": "Digraphs"
+  },
+  {
+   "id": 18,
+   "sound": "ch",
+   "emoji": "🧀",
+   "word": "cheese",
+   "tip": "Start with your tongue up, then release a quick puff with rounded lips.",
+   "positions": [
+    [
+     "cheese",
+     "chair"
+    ],
+    [
+     "teacher",
+     "kitchen"
+    ],
+    [
+     "peach",
+     "watch"
+    ]
+   ],
+   "file": "ch",
+   "group": "Digraphs"
+  },
+  {
+   "id": 19,
+   "sound": "j",
+   "emoji": "🧃",
+   "word": "juice",
+   "tip": "Make the quick mouth motion for ch, but add your voice.",
+   "positions": [
+    [
+     "jam",
+     "juice"
+    ],
+    [
+     "magic",
+     "pigeon"
+    ],
+    [
+     "cage",
+     "bridge"
+    ]
+   ],
+   "file": "j",
+   "group": "Consonants"
+  },
+  {
+   "id": 20,
+   "sound": "th · quiet",
+   "emoji": "👍",
+   "word": "thumb",
+   "tip": "Put the tip of your tongue gently between your teeth and blow. No voice.",
+   "positions": [
+    [
+     "thumb",
+     "thin"
+    ],
+    [
+     "bathtub",
+     "toothbrush"
+    ],
+    [
+     "bath",
+     "teeth"
+    ]
+   ],
+   "file": "th",
+   "group": "Digraphs"
+  },
+  {
+   "id": 21,
+   "sound": "th · voiced",
+   "emoji": "👉",
+   "word": "this",
+   "tip": "Put the tip of your tongue gently between your teeth. Blow with your voice on.",
+   "positions": [
+    [
+     "this",
+     "that"
+    ],
+    [
+     "mother",
+     "feather"
+    ],
+    [
+     "bathe",
+     "breathe"
+    ]
+   ],
+   "file": "th-voiced",
+   "group": "Digraphs"
+  },
+  {
+   "id": 22,
+   "sound": "ng",
+   "emoji": "💍",
+   "word": "ring",
+   "tip": "Lift the back of your tongue and hum through your nose. No extra g sound.",
+   "positions": [
+    [],
+    [
+     "finger",
+     "hungry"
+    ],
+    [
+     "ring",
+     "sing"
+    ]
+   ],
+   "file": "ng",
+   "group": "Digraphs"
+  },
+  {
+   "id": 23,
+   "sound": "zh",
+   "emoji": "💎",
+   "word": "treasure",
+   "tip": "Make the mouth shape for sh and add a gentle buzz with your voice.",
+   "positions": [
+    [],
+    [
+     "treasure",
+     "measure"
+    ],
+    [
+     "beige",
+     "rouge"
+    ]
+   ],
+   "file": "zh",
+   "group": "Consonants"
+  },
+  {
+   "id": 24,
+   "sound": "ă",
+   "emoji": "🍎",
+   "word": "apple",
+   "tip": "Open your mouth wide, with your tongue low toward the front.",
+   "positions": [
+    [
+     "apple",
+     "ant"
+    ],
+    [
+     "cat",
+     "bag"
+    ],
+    []
+   ],
+   "file": "a",
+   "group": "Vowels"
+  },
+  {
+   "id": 25,
+   "sound": "ĕ",
+   "emoji": "🥚",
+   "word": "egg",
+   "tip": "Open your mouth a little with your tongue relaxed toward the front.",
+   "positions": [
+    [
+     "egg",
+     "elephant"
+    ],
+    [
+     "bed",
+     "hen"
+    ],
+    []
+   ],
+   "file": "e",
+   "group": "Vowels"
+  },
+  {
+   "id": 26,
+   "sound": "ĭ",
+   "emoji": "🪲",
+   "word": "insect",
+   "tip": "Keep your mouth relaxed and slightly open. Keep the vowel short.",
+   "positions": [
+    [
+     "insect",
+     "itch"
+    ],
+    [
+     "pig",
+     "sit"
+    ],
+    []
+   ],
+   "file": "i",
+   "group": "Vowels"
+  },
+  {
+   "id": 27,
+   "sound": "ŏ",
+   "emoji": "🐙",
+   "word": "octopus",
+   "tip": "Open your mouth with your jaw down and your tongue low. Accent may change this vowel.",
+   "positions": [
+    [
+     "octopus",
+     "otter"
+    ],
+    [
+     "hot",
+     "sock"
+    ],
+    []
+   ],
+   "file": "o",
+   "group": "Vowels"
+  },
+  {
+   "id": 28,
+   "sound": "ŭ",
+   "emoji": "☂️",
+   "word": "umbrella",
+   "tip": "Relax your lips and open your mouth a little. Make a short central vowel.",
+   "positions": [
+    [
+     "up",
+     "umbrella"
+    ],
+    [
+     "sun",
+     "cup"
+    ],
+    []
+   ],
+   "file": "u",
+   "group": "Vowels"
+  },
+  {
+   "id": 29,
+   "sound": "ā",
+   "emoji": "🎂",
+   "word": "cake",
+   "tip": "Start with your mouth partly open, then glide toward a smile.",
+   "positions": [
+    [
+     "ape",
+     "acorn"
+    ],
+    [
+     "cake",
+     "rain"
+    ],
+    [
+     "day",
+     "play"
+    ]
+   ],
+   "file": "ai",
+   "group": "Vowels"
+  },
+  {
+   "id": 30,
+   "sound": "ē",
+   "emoji": "🐝",
+   "word": "bee",
+   "tip": "Smile gently and lift your tongue toward the front of your mouth.",
+   "positions": [
+    [
+     "eat",
+     "eagle"
+    ],
+    [
+     "feet",
+     "seed"
+    ],
+    [
+     "bee",
+     "tree"
+    ]
+   ],
+   "file": "ee",
+   "group": "Vowels"
+  },
+  {
+   "id": 31,
+   "sound": "ī",
+   "emoji": "🧊",
+   "word": "ice",
+   "tip": "Open your mouth, then glide toward a smile.",
+   "positions": [
+    [
+     "ice",
+     "eye"
+    ],
+    [
+     "kite",
+     "bike"
+    ],
+    [
+     "my",
+     "sky"
+    ]
+   ],
+   "file": "igh",
+   "group": "Vowels"
+  },
+  {
+   "id": 32,
+   "sound": "ō",
+   "emoji": "⛵",
+   "word": "boat",
+   "tip": "Start with your mouth open, then round your lips as you glide.",
+   "positions": [
+    [
+     "oat",
+     "open"
+    ],
+    [
+     "boat",
+     "soap"
+    ],
+    [
+     "go",
+     "snow"
+    ]
+   ],
+   "file": "oa",
+   "group": "Vowels"
+  },
+  {
+   "id": 33,
+   "sound": "ū",
+   "emoji": "🦄",
+   "word": "unicorn",
+   "tip": "Start with a y glide, then round your lips for oo. Often taught as long u; it combines sounds.",
+   "positions": [
+    [
+     "unicorn",
+     "use"
+    ],
+    [
+     "cube",
+     "cute"
+    ],
+    [
+     "few"
+    ]
+   ],
+   "file": "u-e",
+   "group": "Vowels"
+  },
+  {
+   "id": 34,
+   "sound": "oo · moon",
+   "emoji": "🥄",
+   "word": "spoon",
+   "tip": "Round your lips and lift the back of your tongue. Hold a smooth vowel.",
+   "positions": [
+    [
+     "ooze",
+     "oodles"
+    ],
+    [
+     "moon",
+     "spoon"
+    ],
+    [
+     "blue",
+     "shoe"
+    ]
+   ],
+   "file": "oo",
+   "group": "Vowels"
+  },
+  {
+   "id": 35,
+   "sound": "oo · book",
+   "emoji": "📚",
+   "word": "book",
+   "tip": "Round your lips loosely. Keep the vowel short and relaxed.",
+   "positions": [
+    [],
+    [
+     "book",
+     "foot"
+    ],
+    []
+   ],
+   "file": "oo-book",
+   "group": "Vowels"
+  },
+  {
+   "id": 36,
+   "sound": "ow",
+   "emoji": "🦉",
+   "word": "owl",
+   "tip": "Open your mouth, then glide into rounded lips.",
+   "positions": [
+    [
+     "owl",
+     "out"
+    ],
+    [
+     "house",
+     "cowboy"
+    ],
+    [
+     "cow",
+     "now"
+    ]
+   ],
+   "file": "ow",
+   "group": "Vowels"
+  },
+  {
+   "id": 37,
+   "sound": "oy",
+   "emoji": "🧸",
+   "word": "toy",
+   "tip": "Begin with rounded lips, then glide toward a smile.",
+   "positions": [
+    [
+     "oil",
+     "oyster"
+    ],
+    [
+     "coin",
+     "boiling"
+    ],
+    [
+     "boy",
+     "toy"
+    ]
+   ],
+   "file": "oi",
+   "group": "Vowels"
+  },
+  {
+   "id": 38,
+   "sound": "ar",
+   "emoji": "⭐",
+   "word": "star",
+   "tip": "Open your mouth, then pull your tongue back for r.",
+   "positions": [
+    [
+     "arm",
+     "art"
+    ],
+    [
+     "farm",
+     "park"
+    ],
+    [
+     "car",
+     "star"
+    ]
+   ],
+   "file": "ar",
+   "group": "Vowels"
+  },
+  {
+   "id": 39,
+   "sound": "or",
+   "emoji": "🌽",
+   "word": "corn",
+   "tip": "Round your lips, then move into the r sound.",
+   "positions": [
+    [
+     "oar",
+     "orbit"
+    ],
+    [
+     "corn",
+     "fork"
+    ],
+    [
+     "door",
+     "four"
+    ]
+   ],
+   "file": "or",
+   "group": "Vowels"
+  },
+  {
+   "id": 40,
+   "sound": "er",
+   "emoji": "🐦",
+   "word": "bird",
+   "tip": "Lift and pull your tongue back. Your lips may round a little.",
+   "positions": [
+    [
+     "earth",
+     "early"
+    ],
+    [
+     "bird",
+     "shirt"
+    ],
+    [
+     "her",
+     "fur"
+    ]
+   ],
+   "file": "ur",
+   "group": "Vowels"
+  },
+  {
+   "id": 41,
+   "sound": "air",
+   "emoji": "🐻",
+   "word": "bear",
+   "tip": "Begin with an open front vowel and glide into r.",
+   "positions": [
+    [
+     "air",
+     "airplane"
+    ],
+    [
+     "fairy",
+     "caring"
+    ],
+    [
+     "bear",
+     "chair"
+    ]
+   ],
+   "file": "air",
+   "group": "Vowels"
+  },
+  {
+   "id": 42,
+   "sound": "ear",
+   "emoji": "👂",
+   "word": "ear",
+   "tip": "Start with an ee-like vowel and glide into r.",
+   "positions": [
+    [
+     "ear",
+     "earring"
+    ],
+    [
+     "hearing",
+     "cheering"
+    ],
+    [
+     "deer",
+     "near"
+    ]
+   ],
+   "file": "ear",
+   "group": "Vowels"
+  },
+  {
+   "id": 43,
+   "sound": "aw",
+   "emoji": "🐾",
+   "word": "paw",
+   "tip": "Open your mouth and relax your jaw. Keep the sound smooth.",
+   "positions": [
+    [],
+    [
+     "paw",
+     "draw"
+    ],
+    [
+     "saw",
+     "claw"
+    ]
+   ],
+   "file": "aw",
+   "group": "Vowels"
+  },
+  {
+   "id": 44,
+   "sound": "kw",
+   "emoji": "👑",
+   "word": "queen",
+   "tip": "Blend k straight into w. Two sounds, smoothly together.",
+   "positions": [
+    [
+     "queen",
+     "quick"
+    ],
+    [
+     "liquid",
+     "sequence"
+    ],
+    []
+   ],
+   "file": "qu",
+   "group": "Two-sound blends",
+   "parts": [
+    "k",
+    "w"
+   ],
+   "family": "More starters",
+   "placement": "Beginning",
+   "slowFile": "blends/special-qu-slow",
+   "spelling": "qu"
+  },
+  {
+   "id": 45,
+   "sound": "ks",
+   "emoji": "📦",
+   "word": "box",
+   "tip": "Blend k straight into s. Two sounds, smoothly together.",
+   "positions": [
+    [],
+    [
+     "taxi",
+     "boxing"
+    ],
+    [
+     "box",
+     "fox"
+    ]
+   ],
+   "file": "x",
+   "group": "Two-sound blends",
+   "parts": [
+    "k",
+    "s"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "slowFile": "blends/special-x-slow",
+   "spelling": "x"
+  },
+  {
+   "spelling": "bl",
+   "emoji": "🧱",
+   "word": "block",
+   "parts": [
+    "b",
+    "l"
+   ],
+   "family": "L blends",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 46,
+   "sound": "bl",
+   "file": "blends/beginning-bl",
+   "slowFile": "blends/beginning-bl-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "block"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "cl",
+   "emoji": "☁️",
+   "word": "cloud",
+   "parts": [
+    "k",
+    "l"
+   ],
+   "family": "L blends",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 47,
+   "sound": "cl",
+   "file": "blends/beginning-cl",
+   "slowFile": "blends/beginning-cl-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "cloud"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "fl",
+   "emoji": "🏳️",
+   "word": "flag",
+   "parts": [
+    "f",
+    "l"
+   ],
+   "family": "L blends",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 48,
+   "sound": "fl",
+   "file": "blends/beginning-fl",
+   "slowFile": "blends/beginning-fl-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "flag"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "gl",
+   "emoji": "🧤",
+   "word": "glove",
+   "parts": [
+    "g",
+    "l"
+   ],
+   "family": "L blends",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 49,
+   "sound": "gl",
+   "file": "blends/beginning-gl",
+   "slowFile": "blends/beginning-gl-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "glove"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "pl",
+   "emoji": "✈️",
+   "word": "plane",
+   "parts": [
+    "p",
+    "l"
+   ],
+   "family": "L blends",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 50,
+   "sound": "pl",
+   "file": "blends/beginning-pl",
+   "slowFile": "blends/beginning-pl-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "plane"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "sl",
+   "emoji": "🛷",
+   "word": "sled",
+   "parts": [
+    "s",
+    "l"
+   ],
+   "family": "L blends",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 51,
+   "sound": "sl",
+   "file": "blends/beginning-sl",
+   "slowFile": "blends/beginning-sl-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "sled"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "br",
+   "emoji": "🧹",
+   "word": "broom",
+   "parts": [
+    "b",
+    "r"
+   ],
+   "family": "R blends",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 52,
+   "sound": "br",
+   "file": "blends/beginning-br",
+   "slowFile": "blends/beginning-br-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "broom"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "cr",
+   "emoji": "🦀",
+   "word": "crab",
+   "parts": [
+    "k",
+    "r"
+   ],
+   "family": "R blends",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 53,
+   "sound": "cr",
+   "file": "blends/beginning-cr",
+   "slowFile": "blends/beginning-cr-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "crab"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "dr",
+   "emoji": "🥁",
+   "word": "drum",
+   "parts": [
+    "d",
+    "r"
+   ],
+   "family": "R blends",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 54,
+   "sound": "dr",
+   "file": "blends/beginning-dr",
+   "slowFile": "blends/beginning-dr-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "drum"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "fr",
+   "emoji": "🐸",
+   "word": "frog",
+   "parts": [
+    "f",
+    "r"
+   ],
+   "family": "R blends",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 55,
+   "sound": "fr",
+   "file": "blends/beginning-fr",
+   "slowFile": "blends/beginning-fr-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "frog"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "gr",
+   "emoji": "🍇",
+   "word": "grapes",
+   "parts": [
+    "g",
+    "r"
+   ],
+   "family": "R blends",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 56,
+   "sound": "gr",
+   "file": "blends/beginning-gr",
+   "slowFile": "blends/beginning-gr-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "grapes"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "pr",
+   "emoji": "🎁",
+   "word": "present",
+   "parts": [
+    "p",
+    "r"
+   ],
+   "family": "R blends",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 57,
+   "sound": "pr",
+   "file": "blends/beginning-pr",
+   "slowFile": "blends/beginning-pr-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "present"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "tr",
+   "emoji": "🚂",
+   "word": "train",
+   "parts": [
+    "t",
+    "r"
+   ],
+   "family": "R blends",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 58,
+   "sound": "tr",
+   "file": "blends/beginning-tr",
+   "slowFile": "blends/beginning-tr-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "train"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "sc",
+   "emoji": "🧣",
+   "word": "scarf",
+   "parts": [
+    "s",
+    "k"
+   ],
+   "family": "S blends",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 59,
+   "sound": "sc",
+   "file": "blends/beginning-sc",
+   "slowFile": "blends/beginning-sc-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "scarf"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "sk",
+   "emoji": "⛸️",
+   "word": "skate",
+   "parts": [
+    "s",
+    "k"
+   ],
+   "family": "S blends",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 60,
+   "sound": "sk",
+   "file": "blends/beginning-sk",
+   "slowFile": "blends/beginning-sk-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "skate"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "sm",
+   "emoji": "😊",
+   "word": "smile",
+   "parts": [
+    "s",
+    "m"
+   ],
+   "family": "S blends",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 61,
+   "sound": "sm",
+   "file": "blends/beginning-sm",
+   "slowFile": "blends/beginning-sm-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "smile"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "sn",
+   "emoji": "🐌",
+   "word": "snail",
+   "parts": [
+    "s",
+    "n"
+   ],
+   "family": "S blends",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 62,
+   "sound": "sn",
+   "file": "blends/beginning-sn",
+   "slowFile": "blends/beginning-sn-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "snail"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "sp",
+   "emoji": "🕷️",
+   "word": "spider",
+   "parts": [
+    "s",
+    "p"
+   ],
+   "family": "S blends",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 63,
+   "sound": "sp",
+   "file": "blends/beginning-sp",
+   "slowFile": "blends/beginning-sp-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "spider"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "st",
+   "emoji": "⭐",
+   "word": "star",
+   "parts": [
+    "s",
+    "t"
+   ],
+   "family": "S blends",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 64,
+   "sound": "st",
+   "file": "blends/beginning-st",
+   "slowFile": "blends/beginning-st-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "star"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "sw",
+   "emoji": "🦢",
+   "word": "swan",
+   "parts": [
+    "s",
+    "w"
+   ],
+   "family": "S blends",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 65,
+   "sound": "sw",
+   "file": "blends/beginning-sw",
+   "slowFile": "blends/beginning-sw-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "swan"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "tw",
+   "emoji": "👯",
+   "word": "twins",
+   "parts": [
+    "t",
+    "w"
+   ],
+   "family": "More starters",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 66,
+   "sound": "tw",
+   "file": "blends/beginning-tw",
+   "slowFile": "blends/beginning-tw-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "twins"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "dw",
+   "emoji": "🏠",
+   "word": "dwelling",
+   "parts": [
+    "d",
+    "w"
+   ],
+   "family": "More starters",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 67,
+   "sound": "dw",
+   "file": "blends/beginning-dw",
+   "slowFile": "blends/beginning-dw-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "dwelling"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "thr",
+   "emoji": "3️⃣",
+   "word": "three",
+   "parts": [
+    "th",
+    "r"
+   ],
+   "family": "More starters",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 68,
+   "sound": "thr",
+   "file": "blends/beginning-thr",
+   "slowFile": "blends/beginning-thr-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "three"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "shr",
+   "emoji": "🦐",
+   "word": "shrimp",
+   "parts": [
+    "sh",
+    "r"
+   ],
+   "family": "More starters",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "id": 69,
+   "sound": "shr",
+   "file": "blends/beginning-shr",
+   "slowFile": "blends/beginning-shr-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "shrimp"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "ct",
+   "emoji": "🔬",
+   "word": "insect",
+   "parts": [
+    "k",
+    "t"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 70,
+   "sound": "ct",
+   "file": "blends/end-ct",
+   "slowFile": "blends/end-ct-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "insect"
+    ]
+   ]
+  },
+  {
+   "spelling": "ft",
+   "emoji": "🎁",
+   "word": "gift",
+   "parts": [
+    "f",
+    "t"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 71,
+   "sound": "ft",
+   "file": "blends/end-ft",
+   "slowFile": "blends/end-ft-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "gift"
+    ]
+   ]
+  },
+  {
+   "spelling": "ld",
+   "emoji": "🪙",
+   "word": "gold",
+   "parts": [
+    "l",
+    "d"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 72,
+   "sound": "ld",
+   "file": "blends/end-ld",
+   "slowFile": "blends/end-ld-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "gold"
+    ]
+   ]
+  },
+  {
+   "spelling": "lf",
+   "emoji": "🐺",
+   "word": "wolf",
+   "parts": [
+    "l",
+    "f"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 73,
+   "sound": "lf",
+   "file": "blends/end-lf",
+   "slowFile": "blends/end-lf-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "wolf"
+    ]
+   ]
+  },
+  {
+   "spelling": "lk",
+   "emoji": "🥛",
+   "word": "milk",
+   "parts": [
+    "l",
+    "k"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 74,
+   "sound": "lk",
+   "file": "blends/end-lk",
+   "slowFile": "blends/end-lk-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "milk"
+    ]
+   ]
+  },
+  {
+   "spelling": "lp",
+   "emoji": "🆘",
+   "word": "help",
+   "parts": [
+    "l",
+    "p"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 75,
+   "sound": "lp",
+   "file": "blends/end-lp",
+   "slowFile": "blends/end-lp-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "help"
+    ]
+   ]
+  },
+  {
+   "spelling": "lt",
+   "emoji": "🧂",
+   "word": "salt",
+   "parts": [
+    "l",
+    "t"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 76,
+   "sound": "lt",
+   "file": "blends/end-lt",
+   "slowFile": "blends/end-lt-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "salt"
+    ]
+   ]
+  },
+  {
+   "spelling": "mp",
+   "emoji": "💡",
+   "word": "lamp",
+   "parts": [
+    "m",
+    "p"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 77,
+   "sound": "mp",
+   "file": "blends/end-mp",
+   "slowFile": "blends/end-mp-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "lamp"
+    ]
+   ]
+  },
+  {
+   "spelling": "nd",
+   "emoji": "✋",
+   "word": "hand",
+   "parts": [
+    "n",
+    "d"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 78,
+   "sound": "nd",
+   "file": "blends/end-nd",
+   "slowFile": "blends/end-nd-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "hand"
+    ]
+   ]
+  },
+  {
+   "spelling": "nt",
+   "emoji": "⛺",
+   "word": "tent",
+   "parts": [
+    "n",
+    "t"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 79,
+   "sound": "nt",
+   "file": "blends/end-nt",
+   "slowFile": "blends/end-nt-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "tent"
+    ]
+   ]
+  },
+  {
+   "spelling": "pt",
+   "emoji": "🛏️",
+   "word": "slept",
+   "parts": [
+    "p",
+    "t"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 80,
+   "sound": "pt",
+   "file": "blends/end-pt",
+   "slowFile": "blends/end-pt-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "slept"
+    ]
+   ]
+  },
+  {
+   "spelling": "sk",
+   "emoji": "🪑",
+   "word": "desk",
+   "parts": [
+    "s",
+    "k"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 81,
+   "sound": "sk",
+   "file": "blends/end-sk",
+   "slowFile": "blends/end-sk-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "desk"
+    ]
+   ]
+  },
+  {
+   "spelling": "sp",
+   "emoji": "🐝",
+   "word": "wasp",
+   "parts": [
+    "s",
+    "p"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 82,
+   "sound": "sp",
+   "file": "blends/end-sp",
+   "slowFile": "blends/end-sp-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "wasp"
+    ]
+   ]
+  },
+  {
+   "spelling": "st",
+   "emoji": "🪺",
+   "word": "nest",
+   "parts": [
+    "s",
+    "t"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 83,
+   "sound": "st",
+   "file": "blends/end-st",
+   "slowFile": "blends/end-st-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "nest"
+    ]
+   ]
+  },
+  {
+   "spelling": "nk",
+   "emoji": "🩷",
+   "word": "pink",
+   "parts": [
+    "ng",
+    "k"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 84,
+   "sound": "nk",
+   "file": "blends/end-nk",
+   "slowFile": "blends/end-nk-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "pink"
+    ]
+   ]
+  },
+  {
+   "spelling": "nch",
+   "emoji": "🪑",
+   "word": "bench",
+   "parts": [
+    "n",
+    "ch"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 85,
+   "sound": "nch",
+   "file": "blends/end-nch",
+   "slowFile": "blends/end-nch-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "bench"
+    ]
+   ]
+  },
+  {
+   "spelling": "rb",
+   "emoji": "🌿",
+   "word": "herb",
+   "parts": [
+    "r",
+    "b"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 86,
+   "sound": "rb",
+   "file": "blends/end-rb",
+   "slowFile": "blends/end-rb-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "herb"
+    ]
+   ]
+  },
+  {
+   "spelling": "rd",
+   "emoji": "🐦",
+   "word": "bird",
+   "parts": [
+    "r",
+    "d"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 87,
+   "sound": "rd",
+   "file": "blends/end-rd",
+   "slowFile": "blends/end-rd-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "bird"
+    ]
+   ]
+  },
+  {
+   "spelling": "rf",
+   "emoji": "🧣",
+   "word": "scarf",
+   "parts": [
+    "r",
+    "f"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 88,
+   "sound": "rf",
+   "file": "blends/end-rf",
+   "slowFile": "blends/end-rf-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "scarf"
+    ]
+   ]
+  },
+  {
+   "spelling": "rk",
+   "emoji": "🦈",
+   "word": "shark",
+   "parts": [
+    "r",
+    "k"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 89,
+   "sound": "rk",
+   "file": "blends/end-rk",
+   "slowFile": "blends/end-rk-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "shark"
+    ]
+   ]
+  },
+  {
+   "spelling": "rl",
+   "emoji": "👧",
+   "word": "girl",
+   "parts": [
+    "r",
+    "l"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 90,
+   "sound": "rl",
+   "file": "blends/end-rl",
+   "slowFile": "blends/end-rl-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "girl"
+    ]
+   ]
+  },
+  {
+   "spelling": "rm",
+   "emoji": "💪",
+   "word": "arm",
+   "parts": [
+    "r",
+    "m"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 91,
+   "sound": "rm",
+   "file": "blends/end-rm",
+   "slowFile": "blends/end-rm-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "arm"
+    ]
+   ]
+  },
+  {
+   "spelling": "rn",
+   "emoji": "🌽",
+   "word": "corn",
+   "parts": [
+    "r",
+    "n"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 92,
+   "sound": "rn",
+   "file": "blends/end-rn",
+   "slowFile": "blends/end-rn-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "corn"
+    ]
+   ]
+  },
+  {
+   "spelling": "rp",
+   "emoji": "🎵",
+   "word": "harp",
+   "parts": [
+    "r",
+    "p"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 93,
+   "sound": "rp",
+   "file": "blends/end-rp",
+   "slowFile": "blends/end-rp-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "harp"
+    ]
+   ]
+  },
+  {
+   "spelling": "rt",
+   "emoji": "🛒",
+   "word": "cart",
+   "parts": [
+    "r",
+    "t"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 94,
+   "sound": "rt",
+   "file": "blends/end-rt",
+   "slowFile": "blends/end-rt-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "cart"
+    ]
+   ]
+  },
+  {
+   "spelling": "rv",
+   "emoji": "🛤️",
+   "word": "curve",
+   "parts": [
+    "r",
+    "v"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 95,
+   "sound": "rv",
+   "file": "blends/end-rv",
+   "slowFile": "blends/end-rv-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "curve"
+    ]
+   ]
+  },
+  {
+   "spelling": "rz",
+   "emoji": "⭐",
+   "word": "stars",
+   "parts": [
+    "r",
+    "z"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "id": 96,
+   "sound": "rz",
+   "file": "blends/end-rz",
+   "slowFile": "blends/end-rz-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "stars"
+    ]
+   ]
+  },
+  {
+   "spelling": "spl",
+   "emoji": "💦",
+   "word": "splash",
+   "parts": [
+    "s",
+    "p",
+    "l"
+   ],
+   "family": "Three sounds",
+   "placement": "Beginning",
+   "group": "Three-plus sounds",
+   "id": 97,
+   "sound": "spl",
+   "file": "blends/beginning-spl",
+   "slowFile": "blends/beginning-spl-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "splash"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "spr",
+   "emoji": "🌱",
+   "word": "sprout",
+   "parts": [
+    "s",
+    "p",
+    "r"
+   ],
+   "family": "Three sounds",
+   "placement": "Beginning",
+   "group": "Three-plus sounds",
+   "id": 98,
+   "sound": "spr",
+   "file": "blends/beginning-spr",
+   "slowFile": "blends/beginning-spr-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "sprout"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "str",
+   "emoji": "🍓",
+   "word": "strawberry",
+   "parts": [
+    "s",
+    "t",
+    "r"
+   ],
+   "family": "Three sounds",
+   "placement": "Beginning",
+   "group": "Three-plus sounds",
+   "id": 99,
+   "sound": "str",
+   "file": "blends/beginning-str",
+   "slowFile": "blends/beginning-str-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "strawberry"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "scr",
+   "emoji": "📜",
+   "word": "scroll",
+   "parts": [
+    "s",
+    "k",
+    "r"
+   ],
+   "family": "Three sounds",
+   "placement": "Beginning",
+   "group": "Three-plus sounds",
+   "id": 100,
+   "sound": "scr",
+   "file": "blends/beginning-scr",
+   "slowFile": "blends/beginning-scr-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "scroll"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "squ",
+   "emoji": "🦑",
+   "word": "squid",
+   "parts": [
+    "s",
+    "k",
+    "w"
+   ],
+   "family": "Three sounds",
+   "placement": "Beginning",
+   "group": "Three-plus sounds",
+   "id": 101,
+   "sound": "squ",
+   "file": "blends/beginning-squ",
+   "slowFile": "blends/beginning-squ-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "squid"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "sph",
+   "emoji": "⚪",
+   "word": "sphere",
+   "parts": [
+    "s",
+    "f"
+   ],
+   "family": "More starters",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "advanced": true,
+   "id": 102,
+   "sound": "sph",
+   "file": "blends/beginning-sph",
+   "slowFile": "blends/beginning-sph-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "sphere"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "thw",
+   "emoji": "💥",
+   "word": "thwack",
+   "parts": [
+    "th",
+    "w"
+   ],
+   "family": "More starters",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "advanced": true,
+   "id": 103,
+   "sound": "thw",
+   "file": "blends/beginning-thw",
+   "slowFile": "blends/beginning-thw-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "thwack"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "vr",
+   "emoji": "🏎️",
+   "word": "vroom",
+   "parts": [
+    "v",
+    "r"
+   ],
+   "family": "More starters",
+   "placement": "Beginning",
+   "group": "Two-sound blends",
+   "advanced": true,
+   "id": 104,
+   "sound": "vr",
+   "file": "blends/beginning-vr",
+   "slowFile": "blends/beginning-vr-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [
+     "vroom"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "spelling": "lth",
+   "emoji": "💚",
+   "word": "health",
+   "parts": [
+    "l",
+    "th"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "advanced": true,
+   "id": 105,
+   "sound": "lth",
+   "file": "blends/end-lth",
+   "slowFile": "blends/end-lth-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "health"
+    ]
+   ]
+  },
+  {
+   "spelling": "lch",
+   "emoji": "🌱",
+   "word": "mulch",
+   "parts": [
+    "l",
+    "ch"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "advanced": true,
+   "id": 106,
+   "sound": "lch",
+   "file": "blends/end-lch",
+   "slowFile": "blends/end-lch-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "mulch"
+    ]
+   ]
+  },
+  {
+   "spelling": "lve",
+   "emoji": "🕛",
+   "word": "twelve",
+   "parts": [
+    "l",
+    "v"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "advanced": true,
+   "id": 107,
+   "sound": "lve",
+   "file": "blends/end-lve",
+   "slowFile": "blends/end-lve-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "twelve"
+    ]
+   ]
+  },
+  {
+   "spelling": "rth",
+   "emoji": "🌎",
+   "word": "earth",
+   "parts": [
+    "r",
+    "th"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "advanced": true,
+   "id": 108,
+   "sound": "rth",
+   "file": "blends/end-rth",
+   "slowFile": "blends/end-rth-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "earth"
+    ]
+   ]
+  },
+  {
+   "spelling": "rsh",
+   "emoji": "🌾",
+   "word": "marsh",
+   "parts": [
+    "r",
+    "sh"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "advanced": true,
+   "id": 109,
+   "sound": "rsh",
+   "file": "blends/end-rsh",
+   "slowFile": "blends/end-rsh-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "marsh"
+    ]
+   ]
+  },
+  {
+   "spelling": "ps",
+   "emoji": "🥤",
+   "word": "cups",
+   "parts": [
+    "p",
+    "s"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "advanced": true,
+   "id": 110,
+   "sound": "ps",
+   "file": "blends/end-ps",
+   "slowFile": "blends/end-ps-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "cups"
+    ]
+   ]
+  },
+  {
+   "spelling": "ts",
+   "emoji": "🐈",
+   "word": "cats",
+   "parts": [
+    "t",
+    "s"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "advanced": true,
+   "id": 111,
+   "sound": "ts",
+   "file": "blends/end-ts",
+   "slowFile": "blends/end-ts-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "cats"
+    ]
+   ]
+  },
+  {
+   "spelling": "ds",
+   "emoji": "🌱",
+   "word": "seeds",
+   "parts": [
+    "d",
+    "z"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "advanced": true,
+   "id": 112,
+   "sound": "ds",
+   "file": "blends/end-ds",
+   "slowFile": "blends/end-ds-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "seeds"
+    ]
+   ]
+  },
+  {
+   "spelling": "bs",
+   "emoji": "🦀",
+   "word": "crabs",
+   "parts": [
+    "b",
+    "z"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "advanced": true,
+   "id": 113,
+   "sound": "bs",
+   "file": "blends/end-bs",
+   "slowFile": "blends/end-bs-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "crabs"
+    ]
+   ]
+  },
+  {
+   "spelling": "gs",
+   "emoji": "🥚",
+   "word": "eggs",
+   "parts": [
+    "g",
+    "z"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "advanced": true,
+   "id": 114,
+   "sound": "gs",
+   "file": "blends/end-gs",
+   "slowFile": "blends/end-gs-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "eggs"
+    ]
+   ]
+  },
+  {
+   "spelling": "fs",
+   "emoji": "🏠",
+   "word": "roofs",
+   "parts": [
+    "f",
+    "s"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "advanced": true,
+   "id": 115,
+   "sound": "fs",
+   "file": "blends/end-fs",
+   "slowFile": "blends/end-fs-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "roofs"
+    ]
+   ]
+  },
+  {
+   "spelling": "ves",
+   "emoji": "🍃",
+   "word": "leaves",
+   "parts": [
+    "v",
+    "z"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "advanced": true,
+   "id": 116,
+   "sound": "ves",
+   "file": "blends/end-ves",
+   "slowFile": "blends/end-ves-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "leaves"
+    ]
+   ]
+  },
+  {
+   "spelling": "ms",
+   "emoji": "🥁",
+   "word": "drums",
+   "parts": [
+    "m",
+    "z"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "advanced": true,
+   "id": 117,
+   "sound": "ms",
+   "file": "blends/end-ms",
+   "slowFile": "blends/end-ms-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "drums"
+    ]
+   ]
+  },
+  {
+   "spelling": "ns",
+   "emoji": "🪭",
+   "word": "fans",
+   "parts": [
+    "n",
+    "z"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "advanced": true,
+   "id": 118,
+   "sound": "ns",
+   "file": "blends/end-ns",
+   "slowFile": "blends/end-ns-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "fans"
+    ]
+   ]
+  },
+  {
+   "spelling": "ls",
+   "emoji": "🔔",
+   "word": "bells",
+   "parts": [
+    "l",
+    "z"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "advanced": true,
+   "id": 119,
+   "sound": "ls",
+   "file": "blends/end-ls",
+   "slowFile": "blends/end-ls-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "bells"
+    ]
+   ]
+  },
+  {
+   "spelling": "ths",
+   "emoji": "🦋",
+   "word": "moths",
+   "parts": [
+    "th",
+    "s"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "advanced": true,
+   "id": 120,
+   "sound": "ths",
+   "file": "blends/end-ths",
+   "slowFile": "blends/end-ths-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "moths"
+    ]
+   ]
+  },
+  {
+   "spelling": "ngs",
+   "emoji": "💍",
+   "word": "rings",
+   "parts": [
+    "ng",
+    "z"
+   ],
+   "family": "Ending blends",
+   "placement": "End",
+   "group": "Two-sound blends",
+   "advanced": true,
+   "id": 121,
+   "sound": "ngs",
+   "file": "blends/end-ngs",
+   "slowFile": "blends/end-ngs-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "rings"
+    ]
+   ]
+  },
+  {
+   "spelling": "mps",
+   "emoji": "💡",
+   "word": "lamps",
+   "parts": [
+    "m",
+    "p",
+    "s"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 122,
+   "sound": "mps",
+   "file": "blends/end-mps",
+   "slowFile": "blends/end-mps-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "lamps"
+    ]
+   ]
+  },
+  {
+   "spelling": "nds",
+   "emoji": "✋",
+   "word": "hands",
+   "parts": [
+    "n",
+    "d",
+    "z"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 123,
+   "sound": "nds",
+   "file": "blends/end-nds",
+   "slowFile": "blends/end-nds-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "hands"
+    ]
+   ]
+  },
+  {
+   "spelling": "nts",
+   "emoji": "⛺",
+   "word": "tents",
+   "parts": [
+    "n",
+    "t",
+    "s"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 124,
+   "sound": "nts",
+   "file": "blends/end-nts",
+   "slowFile": "blends/end-nts-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "tents"
+    ]
+   ]
+  },
+  {
+   "spelling": "nks",
+   "emoji": "🏦",
+   "word": "banks",
+   "parts": [
+    "ng",
+    "k",
+    "s"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 125,
+   "sound": "nks",
+   "file": "blends/end-nks",
+   "slowFile": "blends/end-nks-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "banks"
+    ]
+   ]
+  },
+  {
+   "spelling": "lps",
+   "emoji": "🆘",
+   "word": "helps",
+   "parts": [
+    "l",
+    "p",
+    "s"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 126,
+   "sound": "lps",
+   "file": "blends/end-lps",
+   "slowFile": "blends/end-lps-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "helps"
+    ]
+   ]
+  },
+  {
+   "spelling": "lks",
+   "emoji": "🧵",
+   "word": "silks",
+   "parts": [
+    "l",
+    "k",
+    "s"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 127,
+   "sound": "lks",
+   "file": "blends/end-lks",
+   "slowFile": "blends/end-lks-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "silks"
+    ]
+   ]
+  },
+  {
+   "spelling": "lts",
+   "emoji": "🧂",
+   "word": "salts",
+   "parts": [
+    "l",
+    "t",
+    "s"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 128,
+   "sound": "lts",
+   "file": "blends/end-lts",
+   "slowFile": "blends/end-lts-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "salts"
+    ]
+   ]
+  },
+  {
+   "spelling": "rks",
+   "emoji": "🦈",
+   "word": "sharks",
+   "parts": [
+    "r",
+    "k",
+    "s"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 129,
+   "sound": "rks",
+   "file": "blends/end-rks",
+   "slowFile": "blends/end-rks-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "sharks"
+    ]
+   ]
+  },
+  {
+   "spelling": "rts",
+   "emoji": "🛒",
+   "word": "carts",
+   "parts": [
+    "r",
+    "t",
+    "s"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 130,
+   "sound": "rts",
+   "file": "blends/end-rts",
+   "slowFile": "blends/end-rts-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "carts"
+    ]
+   ]
+  },
+  {
+   "spelling": "rps",
+   "emoji": "🎵",
+   "word": "harps",
+   "parts": [
+    "r",
+    "p",
+    "s"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 131,
+   "sound": "rps",
+   "file": "blends/end-rps",
+   "slowFile": "blends/end-rps-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "harps"
+    ]
+   ]
+  },
+  {
+   "spelling": "rbs",
+   "emoji": "🌿",
+   "word": "herbs",
+   "parts": [
+    "r",
+    "b",
+    "z"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 132,
+   "sound": "rbs",
+   "file": "blends/end-rbs",
+   "slowFile": "blends/end-rbs-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "herbs"
+    ]
+   ]
+  },
+  {
+   "spelling": "rds",
+   "emoji": "🐦",
+   "word": "birds",
+   "parts": [
+    "r",
+    "d",
+    "z"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 133,
+   "sound": "rds",
+   "file": "blends/end-rds",
+   "slowFile": "blends/end-rds-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "birds"
+    ]
+   ]
+  },
+  {
+   "spelling": "rms",
+   "emoji": "💪",
+   "word": "arms",
+   "parts": [
+    "r",
+    "m",
+    "z"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 134,
+   "sound": "rms",
+   "file": "blends/end-rms",
+   "slowFile": "blends/end-rms-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "arms"
+    ]
+   ]
+  },
+  {
+   "spelling": "rns",
+   "emoji": "🌽",
+   "word": "corns",
+   "parts": [
+    "r",
+    "n",
+    "z"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 135,
+   "sound": "rns",
+   "file": "blends/end-rns",
+   "slowFile": "blends/end-rns-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "corns"
+    ]
+   ]
+  },
+  {
+   "spelling": "rves",
+   "emoji": "🛤️",
+   "word": "curves",
+   "parts": [
+    "r",
+    "v",
+    "z"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 136,
+   "sound": "rves",
+   "file": "blends/end-rves",
+   "slowFile": "blends/end-rves-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "curves"
+    ]
+   ]
+  },
+  {
+   "spelling": "rfs",
+   "emoji": "🌱",
+   "word": "turfs",
+   "parts": [
+    "r",
+    "f",
+    "s"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 137,
+   "sound": "rfs",
+   "file": "blends/end-rfs",
+   "slowFile": "blends/end-rfs-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "turfs"
+    ]
+   ]
+  },
+  {
+   "spelling": "rls",
+   "emoji": "👧",
+   "word": "girls",
+   "parts": [
+    "r",
+    "l",
+    "z"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 138,
+   "sound": "rls",
+   "file": "blends/end-rls",
+   "slowFile": "blends/end-rls-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "girls"
+    ]
+   ]
+  },
+  {
+   "spelling": "rld",
+   "emoji": "🌎",
+   "word": "world",
+   "parts": [
+    "r",
+    "l",
+    "d"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 139,
+   "sound": "rld",
+   "file": "blends/end-rld",
+   "slowFile": "blends/end-rld-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "world"
+    ]
+   ]
+  },
+  {
+   "spelling": "rnt",
+   "emoji": "🔥",
+   "word": "burnt",
+   "parts": [
+    "r",
+    "n",
+    "t"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 140,
+   "sound": "rnt",
+   "file": "blends/end-rnt",
+   "slowFile": "blends/end-rnt-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "burnt"
+    ]
+   ]
+  },
+  {
+   "spelling": "rped",
+   "emoji": "🫧",
+   "word": "burped",
+   "parts": [
+    "r",
+    "p",
+    "t"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 141,
+   "sound": "rped",
+   "file": "blends/end-rped",
+   "slowFile": "blends/end-rped-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "burped"
+    ]
+   ]
+  },
+  {
+   "spelling": "rked",
+   "emoji": "🛠️",
+   "word": "worked",
+   "parts": [
+    "r",
+    "k",
+    "t"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 142,
+   "sound": "rked",
+   "file": "blends/end-rked",
+   "slowFile": "blends/end-rked-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "worked"
+    ]
+   ]
+  },
+  {
+   "spelling": "rmed",
+   "emoji": "☀️",
+   "word": "warmed",
+   "parts": [
+    "r",
+    "m",
+    "d"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 143,
+   "sound": "rmed",
+   "file": "blends/end-rmed",
+   "slowFile": "blends/end-rmed-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "warmed"
+    ]
+   ]
+  },
+  {
+   "spelling": "rned",
+   "emoji": "↪️",
+   "word": "turned",
+   "parts": [
+    "r",
+    "n",
+    "d"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 144,
+   "sound": "rned",
+   "file": "blends/end-rned",
+   "slowFile": "blends/end-rned-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "turned"
+    ]
+   ]
+  },
+  {
+   "spelling": "rbed",
+   "emoji": "🛑",
+   "word": "curbed",
+   "parts": [
+    "r",
+    "b",
+    "d"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 145,
+   "sound": "rbed",
+   "file": "blends/end-rbed",
+   "slowFile": "blends/end-rbed-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "curbed"
+    ]
+   ]
+  },
+  {
+   "spelling": "rved",
+   "emoji": "〰️",
+   "word": "curved",
+   "parts": [
+    "r",
+    "v",
+    "d"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 146,
+   "sound": "rved",
+   "file": "blends/end-rved",
+   "slowFile": "blends/end-rved-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "curved"
+    ]
+   ]
+  },
+  {
+   "spelling": "rst",
+   "emoji": "🥇",
+   "word": "first",
+   "parts": [
+    "r",
+    "s",
+    "t"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 147,
+   "sound": "rst",
+   "file": "blends/end-rst",
+   "slowFile": "blends/end-rst-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "first"
+    ]
+   ]
+  },
+  {
+   "spelling": "nths",
+   "emoji": "🗓️",
+   "word": "months",
+   "parts": [
+    "n",
+    "th",
+    "s"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 148,
+   "sound": "nths",
+   "file": "blends/end-nths",
+   "slowFile": "blends/end-nths-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "months"
+    ]
+   ]
+  },
+  {
+   "spelling": "sts",
+   "emoji": "🪺",
+   "word": "nests",
+   "parts": [
+    "s",
+    "t",
+    "s"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 149,
+   "sound": "sts",
+   "file": "blends/end-sts",
+   "slowFile": "blends/end-sts-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "nests"
+    ]
+   ]
+  },
+  {
+   "spelling": "sks",
+   "emoji": "🪑",
+   "word": "desks",
+   "parts": [
+    "s",
+    "k",
+    "s"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 150,
+   "sound": "sks",
+   "file": "blends/end-sks",
+   "slowFile": "blends/end-sks-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "desks"
+    ]
+   ]
+  },
+  {
+   "spelling": "fts",
+   "emoji": "🎁",
+   "word": "gifts",
+   "parts": [
+    "f",
+    "t",
+    "s"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 151,
+   "sound": "fts",
+   "file": "blends/end-fts",
+   "slowFile": "blends/end-fts-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "gifts"
+    ]
+   ]
+  },
+  {
+   "spelling": "lped",
+   "emoji": "🆘",
+   "word": "helped",
+   "parts": [
+    "l",
+    "p",
+    "t"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 152,
+   "sound": "lped",
+   "file": "blends/end-lped",
+   "slowFile": "blends/end-lped-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "helped"
+    ]
+   ]
+  },
+  {
+   "spelling": "rlds",
+   "emoji": "🌎",
+   "word": "worlds",
+   "parts": [
+    "r",
+    "l",
+    "d",
+    "z"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 153,
+   "sound": "rlds",
+   "file": "blends/end-rlds",
+   "slowFile": "blends/end-rlds-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "worlds"
+    ]
+   ]
+  },
+  {
+   "spelling": "lfths",
+   "emoji": "🕛",
+   "word": "twelfths",
+   "parts": [
+    "l",
+    "f",
+    "th",
+    "s"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 154,
+   "sound": "lfths",
+   "file": "blends/end-lfths",
+   "slowFile": "blends/end-lfths-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "twelfths"
+    ]
+   ]
+  },
+  {
+   "spelling": "rsts",
+   "emoji": "💥",
+   "word": "bursts",
+   "parts": [
+    "r",
+    "s",
+    "t",
+    "s"
+   ],
+   "family": "Longer endings",
+   "placement": "End",
+   "group": "Three-plus sounds",
+   "advanced": true,
+   "id": 155,
+   "sound": "rsts",
+   "file": "blends/end-rsts",
+   "slowFile": "blends/end-rsts-slow",
+   "tip": "Hear each sound. Slide them together. Now you try!",
+   "positions": [
+    [],
+    [],
+    [
+     "bursts"
+    ]
+   ]
+  },
+  {
+   "sound": "ph",
+   "emoji": "☎️",
+   "word": "phone",
+   "file": "f",
+   "tip": "Two letters, one sound: /f/.",
+   "positions": [
+    [
+     "phone"
+    ],
+    [
+     "dolphin"
+    ],
+    [
+     "graph"
+    ]
+   ],
+   "id": 156,
+   "group": "Digraphs"
+  },
+  {
+   "sound": "wh",
+   "emoji": "🐳",
+   "word": "whale",
+   "file": "w",
+   "tip": "Two letters, one sound: /w/ in most American accents.",
+   "positions": [
+    [
+     "whale",
+     "wheel"
+    ],
+    [],
+    []
+   ],
+   "id": 157,
+   "group": "Digraphs"
+  },
+  {
+   "sound": "ck",
+   "emoji": "🦆",
+   "word": "duck",
+   "file": "k",
+   "tip": "Two letters, one sound: /k/.",
+   "positions": [
+    [],
+    [
+     "chicken"
+    ],
+    [
+     "duck",
+     "sock"
+    ]
+   ],
+   "id": 158,
+   "group": "Digraphs"
+  }
+ ],
+ "starter": [
+  10,
+  24,
+  3,
+  1,
+  26,
+  5,
+  2,
+  4,
+  7,
+  6,
+  25,
+  28
+ ],
+ "tips": [
+  "Lips together. Pop them open!",
+  "Lips together. Puff!",
+  "Lips closed. Hummm!",
+  "Tongue up. A tiny tap!",
+  "Tongue up. A little tap with your voice!",
+  "Tongue up. Hum through your nose!",
+  "Back of your tongue up. A quick puff!",
+  "Back of your tongue up. Use your voice!",
+  "Teeth on your lip. Blow softly!",
+  "Teeth on your lip. Make it buzz!",
+  "Teeth close. Hiss like a snake!",
+  "Teeth close. Buzz like a bee!",
+  "Open your mouth. Breathe out!",
+  "Round your lips. Then open!",
+  "Tongue up in the middle. Glide!",
+  "Pull your tongue back. Use your voice!",
+  "Tongue behind your top teeth. Use your voice!",
+  "Lips a little round. Shhhh!",
+  "Tongue up. A quick puff!",
+  "Like ch, with a buzz!",
+  "Tongue between your teeth. Blow softly!",
+  "Tongue between your teeth. Add a buzz!",
+  "Back of your tongue up. Hum!",
+  "Like sh, with a buzz!"
+ ],
+ "gameIds": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  24,
+  25,
+  26,
+  27,
+  28
+ ]
+}

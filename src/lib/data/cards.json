@@ -1,0 +1,5402 @@
+{
+	"version": 1,
+	"starter": [
+		"s",
+		"short-a",
+		"t",
+		"p",
+		"short-i",
+		"n",
+		"m",
+		"d",
+		"g",
+		"k",
+		"short-e",
+		"short-u"
+	],
+	"huntSingles": [
+		"b",
+		"p",
+		"m",
+		"t",
+		"d",
+		"n",
+		"k",
+		"g",
+		"f",
+		"v",
+		"s",
+		"z",
+		"h",
+		"w",
+		"y",
+		"r",
+		"l",
+		"sh",
+		"ch",
+		"j",
+		"short-a",
+		"short-e",
+		"short-i",
+		"short-o",
+		"short-u"
+	],
+	"cards": [
+		{
+			"id": "b",
+			"legacyId": 0,
+			"category": "consonant",
+			"spelling": "b",
+			"phonemes": [
+				"b"
+			],
+			"soundLabel": "b",
+			"picture": {
+				"emoji": "🎈",
+				"word": "balloon"
+			},
+			"audio": {
+				"main": "clear/b.mp3"
+			},
+			"kidTip": "Lips together. Pop them open!",
+			"adultTip": "Press your lips together, then open with a tiny voiced puff. Keep it short; avoid adding “uh”.",
+			"examples": {
+				"beginning": [
+					"ball",
+					"bat"
+				],
+				"middle": [
+					"rabbit",
+					"cabin"
+				],
+				"end": [
+					"web",
+					"tub"
+				]
+			}
+		},
+		{
+			"id": "p",
+			"legacyId": 1,
+			"category": "consonant",
+			"spelling": "p",
+			"phonemes": [
+				"p"
+			],
+			"soundLabel": "p",
+			"picture": {
+				"emoji": "🍿",
+				"word": "popcorn"
+			},
+			"audio": {
+				"main": "clear/p.mp3"
+			},
+			"kidTip": "Lips together. Puff!",
+			"adultTip": "Press your lips together, then release a small puff of air. Voice stays off.",
+			"examples": {
+				"beginning": [
+					"pig",
+					"pan"
+				],
+				"middle": [
+					"apple",
+					"puppy"
+				],
+				"end": [
+					"cup",
+					"top"
+				]
+			}
+		},
+		{
+			"id": "m",
+			"legacyId": 2,
+			"category": "consonant",
+			"spelling": "m",
+			"phonemes": [
+				"m"
+			],
+			"soundLabel": "m",
+			"picture": {
+				"emoji": "🌙",
+				"word": "moon"
+			},
+			"audio": {
+				"main": "clear/m.mp3"
+			},
+			"kidTip": "Lips closed. Hummm!",
+			"adultTip": "Close your lips and hum. Feel the buzz with your fingers on your throat.",
+			"examples": {
+				"beginning": [
+					"moon",
+					"map"
+				],
+				"middle": [
+					"lemon",
+					"summer"
+				],
+				"end": [
+					"jam",
+					"home"
+				]
+			}
+		},
+		{
+			"id": "t",
+			"legacyId": 3,
+			"category": "consonant",
+			"spelling": "t",
+			"phonemes": [
+				"t"
+			],
+			"soundLabel": "t",
+			"picture": {
+				"emoji": "🐢",
+				"word": "turtle"
+			},
+			"audio": {
+				"main": "clear/t.mp3"
+			},
+			"kidTip": "Tongue up. A tiny tap!",
+			"adultTip": "Tap your tongue just behind your top teeth, then release. Keep it short.",
+			"examples": {
+				"beginning": [
+					"top",
+					"toy"
+				],
+				"middle": [
+					"cactus",
+					"hotel"
+				],
+				"end": [
+					"cat",
+					"hat"
+				]
+			}
+		},
+		{
+			"id": "d",
+			"legacyId": 4,
+			"category": "consonant",
+			"spelling": "d",
+			"phonemes": [
+				"d"
+			],
+			"soundLabel": "d",
+			"picture": {
+				"emoji": "🐶",
+				"word": "dog"
+			},
+			"audio": {
+				"main": "clear/d.mp3"
+			},
+			"kidTip": "Tongue up. A little tap with your voice!",
+			"adultTip": "Tap your tongue just behind your top teeth. Turn your voice on.",
+			"examples": {
+				"beginning": [
+					"dog",
+					"day"
+				],
+				"middle": [
+					"ladder",
+					"candy"
+				],
+				"end": [
+					"bed",
+					"red"
+				]
+			}
+		},
+		{
+			"id": "n",
+			"legacyId": 5,
+			"category": "consonant",
+			"spelling": "n",
+			"phonemes": [
+				"n"
+			],
+			"soundLabel": "n",
+			"picture": {
+				"emoji": "🪺",
+				"word": "nest"
+			},
+			"audio": {
+				"main": "clear/n.mp3"
+			},
+			"kidTip": "Tongue up. Hum through your nose!",
+			"adultTip": "Put your tongue behind your top teeth and hum through your nose.",
+			"examples": {
+				"beginning": [
+					"nest",
+					"nose"
+				],
+				"middle": [
+					"bunny",
+					"dinner"
+				],
+				"end": [
+					"sun",
+					"ten"
+				]
+			}
+		},
+		{
+			"id": "k",
+			"legacyId": 6,
+			"category": "consonant",
+			"spelling": "k",
+			"phonemes": [
+				"k"
+			],
+			"soundLabel": "k",
+			"picture": {
+				"emoji": "🐱",
+				"word": "cat"
+			},
+			"audio": {
+				"main": "clear/k.mp3"
+			},
+			"kidTip": "Back of your tongue up. A quick puff!",
+			"adultTip": "Lift the back of your tongue, then release a little puff. Voice stays off.",
+			"examples": {
+				"beginning": [
+					"cat",
+					"kite"
+				],
+				"middle": [
+					"bucket",
+					"chicken"
+				],
+				"end": [
+					"duck",
+					"book"
+				]
+			}
+		},
+		{
+			"id": "g",
+			"legacyId": 7,
+			"category": "consonant",
+			"spelling": "g",
+			"phonemes": [
+				"g"
+			],
+			"soundLabel": "g",
+			"picture": {
+				"emoji": "🐐",
+				"word": "goat"
+			},
+			"audio": {
+				"main": "clear/g.mp3"
+			},
+			"kidTip": "Back of your tongue up. Use your voice!",
+			"adultTip": "Lift the back of your tongue, then release. Turn your voice on.",
+			"examples": {
+				"beginning": [
+					"goat",
+					"gate"
+				],
+				"middle": [
+					"wagon",
+					"tiger"
+				],
+				"end": [
+					"bag",
+					"dog"
+				]
+			}
+		},
+		{
+			"id": "f",
+			"legacyId": 8,
+			"category": "consonant",
+			"spelling": "f",
+			"phonemes": [
+				"f"
+			],
+			"soundLabel": "f",
+			"picture": {
+				"emoji": "🐟",
+				"word": "fish"
+			},
+			"audio": {
+				"main": "clear/f.mp3"
+			},
+			"kidTip": "Teeth on your lip. Blow softly!",
+			"adultTip": "Rest your top teeth gently on your bottom lip. Blow softly.",
+			"examples": {
+				"beginning": [
+					"fish",
+					"fan"
+				],
+				"middle": [
+					"muffin",
+					"waffle"
+				],
+				"end": [
+					"leaf",
+					"roof"
+				]
+			}
+		},
+		{
+			"id": "v",
+			"legacyId": 9,
+			"category": "consonant",
+			"spelling": "v",
+			"phonemes": [
+				"v"
+			],
+			"soundLabel": "v",
+			"picture": {
+				"emoji": "🚐",
+				"word": "van"
+			},
+			"audio": {
+				"main": "clear/v.mp3"
+			},
+			"kidTip": "Teeth on your lip. Make it buzz!",
+			"adultTip": "Rest your top teeth on your bottom lip and blow with your voice on.",
+			"examples": {
+				"beginning": [
+					"van",
+					"vest"
+				],
+				"middle": [
+					"seven",
+					"river"
+				],
+				"end": [
+					"five",
+					"save"
+				]
+			}
+		},
+		{
+			"id": "s",
+			"legacyId": 10,
+			"category": "consonant",
+			"spelling": "s",
+			"phonemes": [
+				"s"
+			],
+			"soundLabel": "s",
+			"picture": {
+				"emoji": "☀️",
+				"word": "sun"
+			},
+			"audio": {
+				"main": "clear/s.mp3"
+			},
+			"kidTip": "Teeth close. Hiss like a snake!",
+			"adultTip": "Keep your teeth close and send air out in a smooth hiss.",
+			"examples": {
+				"beginning": [
+					"sun",
+					"sock"
+				],
+				"middle": [
+					"bicycle",
+					"pencil"
+				],
+				"end": [
+					"bus",
+					"ice"
+				]
+			}
+		},
+		{
+			"id": "z",
+			"legacyId": 11,
+			"category": "consonant",
+			"spelling": "z",
+			"phonemes": [
+				"z"
+			],
+			"soundLabel": "z",
+			"picture": {
+				"emoji": "🦓",
+				"word": "zebra"
+			},
+			"audio": {
+				"main": "clear/z.mp3"
+			},
+			"kidTip": "Teeth close. Buzz like a bee!",
+			"adultTip": "Make a smooth buzzing sound with teeth close and voice on.",
+			"examples": {
+				"beginning": [
+					"zebra",
+					"zoo"
+				],
+				"middle": [
+					"lizard",
+					"puzzle"
+				],
+				"end": [
+					"nose",
+					"buzz"
+				]
+			}
+		},
+		{
+			"id": "h",
+			"legacyId": 12,
+			"category": "consonant",
+			"spelling": "h",
+			"phonemes": [
+				"h"
+			],
+			"soundLabel": "h",
+			"picture": {
+				"emoji": "🏠",
+				"word": "house"
+			},
+			"audio": {
+				"main": "clear/h.mp3"
+			},
+			"kidTip": "Open your mouth. Breathe out!",
+			"adultTip": "Open your mouth and gently breathe out.",
+			"examples": {
+				"beginning": [
+					"hat",
+					"house"
+				],
+				"middle": [
+					"behind",
+					"ahead"
+				],
+				"end": []
+			}
+		},
+		{
+			"id": "w",
+			"legacyId": 13,
+			"category": "consonant",
+			"spelling": "w",
+			"phonemes": [
+				"w"
+			],
+			"soundLabel": "w",
+			"picture": {
+				"emoji": "🍉",
+				"word": "watermelon"
+			},
+			"audio": {
+				"main": "clear/w.mp3"
+			},
+			"kidTip": "Round your lips. Then open!",
+			"adultTip": "Round your lips, turn your voice on, then open your lips.",
+			"examples": {
+				"beginning": [
+					"web",
+					"water"
+				],
+				"middle": [
+					"away",
+					"awake"
+				],
+				"end": []
+			}
+		},
+		{
+			"id": "y",
+			"legacyId": 14,
+			"category": "consonant",
+			"spelling": "y",
+			"phonemes": [
+				"y"
+			],
+			"soundLabel": "y",
+			"picture": {
+				"emoji": "🪀",
+				"word": "yo-yo"
+			},
+			"audio": {
+				"main": "clear/y.mp3"
+			},
+			"kidTip": "Tongue up in the middle. Glide!",
+			"adultTip": "Lift the middle of your tongue toward the roof of your mouth, then glide away.",
+			"examples": {
+				"beginning": [
+					"yes",
+					"yellow"
+				],
+				"middle": [
+					"canyon",
+					"onion"
+				],
+				"end": []
+			}
+		},
+		{
+			"id": "r",
+			"legacyId": 15,
+			"category": "consonant",
+			"spelling": "r",
+			"phonemes": [
+				"r"
+			],
+			"soundLabel": "r",
+			"picture": {
+				"emoji": "🌈",
+				"word": "rainbow"
+			},
+			"audio": {
+				"main": "clear/r.mp3"
+			},
+			"kidTip": "Pull your tongue back. Use your voice!",
+			"adultTip": "Lift and pull your tongue back without touching the roof. Keep your voice on.",
+			"examples": {
+				"beginning": [
+					"red",
+					"rain"
+				],
+				"middle": [
+					"carrot",
+					"parrot"
+				],
+				"end": [
+					"car",
+					"star"
+				]
+			}
+		},
+		{
+			"id": "l",
+			"legacyId": 16,
+			"category": "consonant",
+			"spelling": "l",
+			"phonemes": [
+				"l"
+			],
+			"soundLabel": "l",
+			"picture": {
+				"emoji": "🍋",
+				"word": "lemon"
+			},
+			"audio": {
+				"main": "clear/l.mp3"
+			},
+			"kidTip": "Tongue behind your top teeth. Use your voice!",
+			"adultTip": "Touch your tongue just behind your top teeth and use your voice.",
+			"examples": {
+				"beginning": [
+					"leaf",
+					"lemon"
+				],
+				"middle": [
+					"yellow",
+					"pillow"
+				],
+				"end": [
+					"ball",
+					"bell"
+				]
+			}
+		},
+		{
+			"id": "sh",
+			"legacyId": 17,
+			"category": "digraph",
+			"spelling": "sh",
+			"phonemes": [
+				"sh"
+			],
+			"soundLabel": "sh",
+			"picture": {
+				"emoji": "🚢",
+				"word": "ship"
+			},
+			"audio": {
+				"main": "clear/sh.mp3"
+			},
+			"kidTip": "Lips a little round. Shhhh!",
+			"adultTip": "Round your lips a little and blow a quiet “shhh”.",
+			"examples": {
+				"beginning": [
+					"ship",
+					"shell"
+				],
+				"middle": [
+					"fishing",
+					"washing"
+				],
+				"end": [
+					"fish",
+					"brush"
+				]
+			}
+		},
+		{
+			"id": "ch",
+			"legacyId": 18,
+			"category": "digraph",
+			"spelling": "ch",
+			"phonemes": [
+				"ch"
+			],
+			"soundLabel": "ch",
+			"picture": {
+				"emoji": "🧀",
+				"word": "cheese"
+			},
+			"audio": {
+				"main": "clear/ch.mp3"
+			},
+			"kidTip": "Tongue up. A quick puff!",
+			"adultTip": "Start with your tongue up, then release a quick puff with rounded lips.",
+			"examples": {
+				"beginning": [
+					"cheese",
+					"chair"
+				],
+				"middle": [
+					"teacher",
+					"kitchen"
+				],
+				"end": [
+					"peach",
+					"watch"
+				]
+			}
+		},
+		{
+			"id": "j",
+			"legacyId": 19,
+			"category": "consonant",
+			"spelling": "j",
+			"phonemes": [
+				"j"
+			],
+			"soundLabel": "j",
+			"picture": {
+				"emoji": "🧃",
+				"word": "juice"
+			},
+			"audio": {
+				"main": "clear/j.mp3"
+			},
+			"kidTip": "Like ch, with a buzz!",
+			"adultTip": "Make the quick mouth motion for ch, but add your voice.",
+			"examples": {
+				"beginning": [
+					"jam",
+					"juice"
+				],
+				"middle": [
+					"magic",
+					"pigeon"
+				],
+				"end": [
+					"cage",
+					"bridge"
+				]
+			}
+		},
+		{
+			"id": "th-quiet",
+			"legacyId": 20,
+			"category": "digraph",
+			"spelling": "th quiet",
+			"phonemes": [
+				"th quiet"
+			],
+			"soundLabel": "th quiet",
+			"picture": {
+				"emoji": "👍",
+				"word": "thumb"
+			},
+			"audio": {
+				"main": "clear/th.mp3"
+			},
+			"kidTip": "Tongue between your teeth. Blow softly!",
+			"adultTip": "Put the tip of your tongue gently between your teeth and blow. No voice.",
+			"examples": {
+				"beginning": [
+					"thumb",
+					"thin"
+				],
+				"middle": [
+					"bathtub",
+					"toothbrush"
+				],
+				"end": [
+					"bath",
+					"teeth"
+				]
+			}
+		},
+		{
+			"id": "th-voiced",
+			"legacyId": 21,
+			"category": "digraph",
+			"spelling": "th voiced",
+			"phonemes": [
+				"th voiced"
+			],
+			"soundLabel": "th voiced",
+			"picture": {
+				"emoji": "👉",
+				"word": "this"
+			},
+			"audio": {
+				"main": "clear/th-voiced.mp3"
+			},
+			"kidTip": "Tongue between your teeth. Add a buzz!",
+			"adultTip": "Put the tip of your tongue gently between your teeth. Blow with your voice on.",
+			"examples": {
+				"beginning": [
+					"this",
+					"that"
+				],
+				"middle": [
+					"mother",
+					"feather"
+				],
+				"end": [
+					"bathe",
+					"breathe"
+				]
+			}
+		},
+		{
+			"id": "ng",
+			"legacyId": 22,
+			"category": "digraph",
+			"spelling": "ng",
+			"phonemes": [
+				"ng"
+			],
+			"soundLabel": "ng",
+			"picture": {
+				"emoji": "💍",
+				"word": "ring"
+			},
+			"audio": {
+				"main": "clear/ng.mp3"
+			},
+			"kidTip": "Back of your tongue up. Hum!",
+			"adultTip": "Lift the back of your tongue and hum through your nose. No extra g sound.",
+			"examples": {
+				"beginning": [],
+				"middle": [
+					"finger",
+					"hungry"
+				],
+				"end": [
+					"ring",
+					"sing"
+				]
+			}
+		},
+		{
+			"id": "zh",
+			"legacyId": 23,
+			"category": "consonant",
+			"spelling": "zh",
+			"phonemes": [
+				"zh"
+			],
+			"soundLabel": "zh",
+			"picture": {
+				"emoji": "💎",
+				"word": "treasure"
+			},
+			"audio": {
+				"main": "clear/zh.mp3"
+			},
+			"kidTip": "Like sh, with a buzz!",
+			"adultTip": "Make the mouth shape for sh and add a gentle buzz with your voice.",
+			"examples": {
+				"beginning": [],
+				"middle": [
+					"treasure",
+					"measure"
+				],
+				"end": [
+					"beige",
+					"rouge"
+				]
+			}
+		},
+		{
+			"id": "short-a",
+			"legacyId": 24,
+			"category": "vowel",
+			"spelling": "ă",
+			"phonemes": [
+				"ă"
+			],
+			"soundLabel": "ă",
+			"picture": {
+				"emoji": "🍎",
+				"word": "apple"
+			},
+			"audio": {
+				"main": "clear/a.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Open your mouth wide, with your tongue low toward the front.",
+			"examples": {
+				"beginning": [
+					"apple",
+					"ant"
+				],
+				"middle": [
+					"cat",
+					"bag"
+				],
+				"end": []
+			}
+		},
+		{
+			"id": "short-e",
+			"legacyId": 25,
+			"category": "vowel",
+			"spelling": "ĕ",
+			"phonemes": [
+				"ĕ"
+			],
+			"soundLabel": "ĕ",
+			"picture": {
+				"emoji": "🥚",
+				"word": "egg"
+			},
+			"audio": {
+				"main": "clear/e.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Open your mouth a little with your tongue relaxed toward the front.",
+			"examples": {
+				"beginning": [
+					"egg",
+					"elephant"
+				],
+				"middle": [
+					"bed",
+					"hen"
+				],
+				"end": []
+			}
+		},
+		{
+			"id": "short-i",
+			"legacyId": 26,
+			"category": "vowel",
+			"spelling": "ĭ",
+			"phonemes": [
+				"ĭ"
+			],
+			"soundLabel": "ĭ",
+			"picture": {
+				"emoji": "🪲",
+				"word": "insect"
+			},
+			"audio": {
+				"main": "clear/i.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Keep your mouth relaxed and slightly open. Keep the vowel short.",
+			"examples": {
+				"beginning": [
+					"insect",
+					"itch"
+				],
+				"middle": [
+					"pig",
+					"sit"
+				],
+				"end": []
+			}
+		},
+		{
+			"id": "short-o",
+			"legacyId": 27,
+			"category": "vowel",
+			"spelling": "ŏ",
+			"phonemes": [
+				"ŏ"
+			],
+			"soundLabel": "ŏ",
+			"picture": {
+				"emoji": "🐙",
+				"word": "octopus"
+			},
+			"audio": {
+				"main": "clear/o.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Open your mouth with your jaw down and your tongue low. Accent may change this vowel.",
+			"examples": {
+				"beginning": [
+					"octopus",
+					"otter"
+				],
+				"middle": [
+					"hot",
+					"sock"
+				],
+				"end": []
+			}
+		},
+		{
+			"id": "short-u",
+			"legacyId": 28,
+			"category": "vowel",
+			"spelling": "ŭ",
+			"phonemes": [
+				"ŭ"
+			],
+			"soundLabel": "ŭ",
+			"picture": {
+				"emoji": "☂️",
+				"word": "umbrella"
+			},
+			"audio": {
+				"main": "clear/u.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Relax your lips and open your mouth a little. Make a short central vowel.",
+			"examples": {
+				"beginning": [
+					"up",
+					"umbrella"
+				],
+				"middle": [
+					"sun",
+					"cup"
+				],
+				"end": []
+			}
+		},
+		{
+			"id": "long-a",
+			"legacyId": 29,
+			"category": "vowel",
+			"spelling": "ā",
+			"phonemes": [
+				"ā"
+			],
+			"soundLabel": "ā",
+			"picture": {
+				"emoji": "🎂",
+				"word": "cake"
+			},
+			"audio": {
+				"main": "clear/ai.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Start with your mouth partly open, then glide toward a smile.",
+			"examples": {
+				"beginning": [
+					"ape",
+					"acorn"
+				],
+				"middle": [
+					"cake",
+					"rain"
+				],
+				"end": [
+					"day",
+					"play"
+				]
+			}
+		},
+		{
+			"id": "long-e",
+			"legacyId": 30,
+			"category": "vowel",
+			"spelling": "ē",
+			"phonemes": [
+				"ē"
+			],
+			"soundLabel": "ē",
+			"picture": {
+				"emoji": "🐝",
+				"word": "bee"
+			},
+			"audio": {
+				"main": "clear/ee.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Smile gently and lift your tongue toward the front of your mouth.",
+			"examples": {
+				"beginning": [
+					"eat",
+					"eagle"
+				],
+				"middle": [
+					"feet",
+					"seed"
+				],
+				"end": [
+					"bee",
+					"tree"
+				]
+			}
+		},
+		{
+			"id": "long-i",
+			"legacyId": 31,
+			"category": "vowel",
+			"spelling": "ī",
+			"phonemes": [
+				"ī"
+			],
+			"soundLabel": "ī",
+			"picture": {
+				"emoji": "🧊",
+				"word": "ice"
+			},
+			"audio": {
+				"main": "clear/igh.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Open your mouth, then glide toward a smile.",
+			"examples": {
+				"beginning": [
+					"ice",
+					"eye"
+				],
+				"middle": [
+					"kite",
+					"bike"
+				],
+				"end": [
+					"my",
+					"sky"
+				]
+			}
+		},
+		{
+			"id": "long-o",
+			"legacyId": 32,
+			"category": "vowel",
+			"spelling": "ō",
+			"phonemes": [
+				"ō"
+			],
+			"soundLabel": "ō",
+			"picture": {
+				"emoji": "⛵",
+				"word": "boat"
+			},
+			"audio": {
+				"main": "clear/oa.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Start with your mouth open, then round your lips as you glide.",
+			"examples": {
+				"beginning": [
+					"oat",
+					"open"
+				],
+				"middle": [
+					"boat",
+					"soap"
+				],
+				"end": [
+					"go",
+					"snow"
+				]
+			}
+		},
+		{
+			"id": "long-u",
+			"legacyId": 33,
+			"category": "vowel",
+			"spelling": "ū",
+			"phonemes": [
+				"ū"
+			],
+			"soundLabel": "ū",
+			"picture": {
+				"emoji": "🦄",
+				"word": "unicorn"
+			},
+			"audio": {
+				"main": "clear/u-e.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Start with a y glide, then round your lips for oo. Often taught as long u; it combines sounds.",
+			"examples": {
+				"beginning": [
+					"unicorn",
+					"use"
+				],
+				"middle": [
+					"cube",
+					"cute"
+				],
+				"end": [
+					"few"
+				]
+			}
+		},
+		{
+			"id": "oo-moon",
+			"legacyId": 34,
+			"category": "vowel",
+			"spelling": "oo moon",
+			"phonemes": [
+				"oo moon"
+			],
+			"soundLabel": "oo moon",
+			"picture": {
+				"emoji": "🥄",
+				"word": "spoon"
+			},
+			"audio": {
+				"main": "clear/oo.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Round your lips and lift the back of your tongue. Hold a smooth vowel.",
+			"examples": {
+				"beginning": [
+					"ooze",
+					"oodles"
+				],
+				"middle": [
+					"moon",
+					"spoon"
+				],
+				"end": [
+					"blue",
+					"shoe"
+				]
+			}
+		},
+		{
+			"id": "oo-book",
+			"legacyId": 35,
+			"category": "vowel",
+			"spelling": "oo book",
+			"phonemes": [
+				"oo book"
+			],
+			"soundLabel": "oo book",
+			"picture": {
+				"emoji": "📚",
+				"word": "book"
+			},
+			"audio": {
+				"main": "clear/oo-book.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Round your lips loosely. Keep the vowel short and relaxed.",
+			"examples": {
+				"beginning": [],
+				"middle": [
+					"book",
+					"foot"
+				],
+				"end": []
+			}
+		},
+		{
+			"id": "ow",
+			"legacyId": 36,
+			"category": "vowel",
+			"spelling": "ow",
+			"phonemes": [
+				"ow"
+			],
+			"soundLabel": "ow",
+			"picture": {
+				"emoji": "🦉",
+				"word": "owl"
+			},
+			"audio": {
+				"main": "clear/ow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Open your mouth, then glide into rounded lips.",
+			"examples": {
+				"beginning": [
+					"owl",
+					"out"
+				],
+				"middle": [
+					"house",
+					"cowboy"
+				],
+				"end": [
+					"cow",
+					"now"
+				]
+			}
+		},
+		{
+			"id": "oy",
+			"legacyId": 37,
+			"category": "vowel",
+			"spelling": "oy",
+			"phonemes": [
+				"oy"
+			],
+			"soundLabel": "oy",
+			"picture": {
+				"emoji": "🧸",
+				"word": "toy"
+			},
+			"audio": {
+				"main": "clear/oi.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Begin with rounded lips, then glide toward a smile.",
+			"examples": {
+				"beginning": [
+					"oil",
+					"oyster"
+				],
+				"middle": [
+					"coin",
+					"boiling"
+				],
+				"end": [
+					"boy",
+					"toy"
+				]
+			}
+		},
+		{
+			"id": "ar",
+			"legacyId": 38,
+			"category": "vowel",
+			"spelling": "ar",
+			"phonemes": [
+				"ar"
+			],
+			"soundLabel": "ar",
+			"picture": {
+				"emoji": "⭐",
+				"word": "star"
+			},
+			"audio": {
+				"main": "clear/ar.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Open your mouth, then pull your tongue back for r.",
+			"examples": {
+				"beginning": [
+					"arm",
+					"art"
+				],
+				"middle": [
+					"farm",
+					"park"
+				],
+				"end": [
+					"car",
+					"star"
+				]
+			}
+		},
+		{
+			"id": "or",
+			"legacyId": 39,
+			"category": "vowel",
+			"spelling": "or",
+			"phonemes": [
+				"or"
+			],
+			"soundLabel": "or",
+			"picture": {
+				"emoji": "🌽",
+				"word": "corn"
+			},
+			"audio": {
+				"main": "clear/or.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Round your lips, then move into the r sound.",
+			"examples": {
+				"beginning": [
+					"oar",
+					"orbit"
+				],
+				"middle": [
+					"corn",
+					"fork"
+				],
+				"end": [
+					"door",
+					"four"
+				]
+			}
+		},
+		{
+			"id": "er",
+			"legacyId": 40,
+			"category": "vowel",
+			"spelling": "er",
+			"phonemes": [
+				"er"
+			],
+			"soundLabel": "er",
+			"picture": {
+				"emoji": "🐦",
+				"word": "bird"
+			},
+			"audio": {
+				"main": "clear/ur.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Lift and pull your tongue back. Your lips may round a little.",
+			"examples": {
+				"beginning": [
+					"earth",
+					"early"
+				],
+				"middle": [
+					"bird",
+					"shirt"
+				],
+				"end": [
+					"her",
+					"fur"
+				]
+			}
+		},
+		{
+			"id": "air",
+			"legacyId": 41,
+			"category": "vowel",
+			"spelling": "air",
+			"phonemes": [
+				"air"
+			],
+			"soundLabel": "air",
+			"picture": {
+				"emoji": "🐻",
+				"word": "bear"
+			},
+			"audio": {
+				"main": "clear/air.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Begin with an open front vowel and glide into r.",
+			"examples": {
+				"beginning": [
+					"air",
+					"airplane"
+				],
+				"middle": [
+					"fairy",
+					"caring"
+				],
+				"end": [
+					"bear",
+					"chair"
+				]
+			}
+		},
+		{
+			"id": "ear",
+			"legacyId": 42,
+			"category": "vowel",
+			"spelling": "ear",
+			"phonemes": [
+				"ear"
+			],
+			"soundLabel": "ear",
+			"picture": {
+				"emoji": "👂",
+				"word": "ear"
+			},
+			"audio": {
+				"main": "clear/ear.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Start with an ee-like vowel and glide into r.",
+			"examples": {
+				"beginning": [
+					"ear",
+					"earring"
+				],
+				"middle": [
+					"hearing",
+					"cheering"
+				],
+				"end": [
+					"deer",
+					"near"
+				]
+			}
+		},
+		{
+			"id": "aw",
+			"legacyId": 43,
+			"category": "vowel",
+			"spelling": "aw",
+			"phonemes": [
+				"aw"
+			],
+			"soundLabel": "aw",
+			"picture": {
+				"emoji": "🐾",
+				"word": "paw"
+			},
+			"audio": {
+				"main": "clear/aw.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Open your mouth and relax your jaw. Keep the sound smooth.",
+			"examples": {
+				"beginning": [],
+				"middle": [
+					"paw",
+					"draw"
+				],
+				"end": [
+					"saw",
+					"claw"
+				]
+			}
+		},
+		{
+			"id": "qu",
+			"legacyId": 44,
+			"category": "blend",
+			"spelling": "qu",
+			"phonemes": [
+				"k",
+				"w"
+			],
+			"soundLabel": "kw",
+			"picture": {
+				"emoji": "👑",
+				"word": "queen"
+			},
+			"audio": {
+				"main": "clear/qu.mp3",
+				"slow": "blends/special-qu-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Blend k straight into w. Two sounds, smoothly together.",
+			"examples": {
+				"beginning": [
+					"queen",
+					"quick"
+				],
+				"middle": [
+					"liquid",
+					"sequence"
+				],
+				"end": []
+			},
+			"blend": {
+				"family": "more-starters",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-x",
+			"legacyId": 45,
+			"category": "blend",
+			"spelling": "x",
+			"phonemes": [
+				"k",
+				"s"
+			],
+			"soundLabel": "ks",
+			"picture": {
+				"emoji": "📦",
+				"word": "box"
+			},
+			"audio": {
+				"main": "clear/x.mp3",
+				"slow": "blends/special-x-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Blend k straight into s. Two sounds, smoothly together.",
+			"examples": {
+				"beginning": [],
+				"middle": [
+					"taxi",
+					"boxing"
+				],
+				"end": [
+					"box",
+					"fox"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "bl",
+			"legacyId": 46,
+			"category": "blend",
+			"spelling": "bl",
+			"phonemes": [
+				"b",
+				"l"
+			],
+			"soundLabel": "bl",
+			"picture": {
+				"emoji": "🧱",
+				"word": "block"
+			},
+			"audio": {
+				"main": "blends/beginning-bl.mp3",
+				"slow": "blends/beginning-bl-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"block"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "l-blends",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "cl",
+			"legacyId": 47,
+			"category": "blend",
+			"spelling": "cl",
+			"phonemes": [
+				"k",
+				"l"
+			],
+			"soundLabel": "cl",
+			"picture": {
+				"emoji": "☁️",
+				"word": "cloud"
+			},
+			"audio": {
+				"main": "blends/beginning-cl.mp3",
+				"slow": "blends/beginning-cl-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"cloud"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "l-blends",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "fl",
+			"legacyId": 48,
+			"category": "blend",
+			"spelling": "fl",
+			"phonemes": [
+				"f",
+				"l"
+			],
+			"soundLabel": "fl",
+			"picture": {
+				"emoji": "🏳️",
+				"word": "flag"
+			},
+			"audio": {
+				"main": "blends/beginning-fl.mp3",
+				"slow": "blends/beginning-fl-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"flag"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "l-blends",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "gl",
+			"legacyId": 49,
+			"category": "blend",
+			"spelling": "gl",
+			"phonemes": [
+				"g",
+				"l"
+			],
+			"soundLabel": "gl",
+			"picture": {
+				"emoji": "🧤",
+				"word": "glove"
+			},
+			"audio": {
+				"main": "blends/beginning-gl.mp3",
+				"slow": "blends/beginning-gl-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"glove"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "l-blends",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "pl",
+			"legacyId": 50,
+			"category": "blend",
+			"spelling": "pl",
+			"phonemes": [
+				"p",
+				"l"
+			],
+			"soundLabel": "pl",
+			"picture": {
+				"emoji": "✈️",
+				"word": "plane"
+			},
+			"audio": {
+				"main": "blends/beginning-pl.mp3",
+				"slow": "blends/beginning-pl-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"plane"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "l-blends",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "sl",
+			"legacyId": 51,
+			"category": "blend",
+			"spelling": "sl",
+			"phonemes": [
+				"s",
+				"l"
+			],
+			"soundLabel": "sl",
+			"picture": {
+				"emoji": "🛷",
+				"word": "sled"
+			},
+			"audio": {
+				"main": "blends/beginning-sl.mp3",
+				"slow": "blends/beginning-sl-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"sled"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "l-blends",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "br",
+			"legacyId": 52,
+			"category": "blend",
+			"spelling": "br",
+			"phonemes": [
+				"b",
+				"r"
+			],
+			"soundLabel": "br",
+			"picture": {
+				"emoji": "🧹",
+				"word": "broom"
+			},
+			"audio": {
+				"main": "blends/beginning-br.mp3",
+				"slow": "blends/beginning-br-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"broom"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "r-blends",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "cr",
+			"legacyId": 53,
+			"category": "blend",
+			"spelling": "cr",
+			"phonemes": [
+				"k",
+				"r"
+			],
+			"soundLabel": "cr",
+			"picture": {
+				"emoji": "🦀",
+				"word": "crab"
+			},
+			"audio": {
+				"main": "blends/beginning-cr.mp3",
+				"slow": "blends/beginning-cr-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"crab"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "r-blends",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "dr",
+			"legacyId": 54,
+			"category": "blend",
+			"spelling": "dr",
+			"phonemes": [
+				"d",
+				"r"
+			],
+			"soundLabel": "dr",
+			"picture": {
+				"emoji": "🥁",
+				"word": "drum"
+			},
+			"audio": {
+				"main": "blends/beginning-dr.mp3",
+				"slow": "blends/beginning-dr-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"drum"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "r-blends",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "fr",
+			"legacyId": 55,
+			"category": "blend",
+			"spelling": "fr",
+			"phonemes": [
+				"f",
+				"r"
+			],
+			"soundLabel": "fr",
+			"picture": {
+				"emoji": "🐸",
+				"word": "frog"
+			},
+			"audio": {
+				"main": "blends/beginning-fr.mp3",
+				"slow": "blends/beginning-fr-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"frog"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "r-blends",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "gr",
+			"legacyId": 56,
+			"category": "blend",
+			"spelling": "gr",
+			"phonemes": [
+				"g",
+				"r"
+			],
+			"soundLabel": "gr",
+			"picture": {
+				"emoji": "🍇",
+				"word": "grapes"
+			},
+			"audio": {
+				"main": "blends/beginning-gr.mp3",
+				"slow": "blends/beginning-gr-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"grapes"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "r-blends",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "pr",
+			"legacyId": 57,
+			"category": "blend",
+			"spelling": "pr",
+			"phonemes": [
+				"p",
+				"r"
+			],
+			"soundLabel": "pr",
+			"picture": {
+				"emoji": "🎁",
+				"word": "present"
+			},
+			"audio": {
+				"main": "blends/beginning-pr.mp3",
+				"slow": "blends/beginning-pr-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"present"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "r-blends",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "tr",
+			"legacyId": 58,
+			"category": "blend",
+			"spelling": "tr",
+			"phonemes": [
+				"t",
+				"r"
+			],
+			"soundLabel": "tr",
+			"picture": {
+				"emoji": "🚂",
+				"word": "train"
+			},
+			"audio": {
+				"main": "blends/beginning-tr.mp3",
+				"slow": "blends/beginning-tr-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"train"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "r-blends",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "sc",
+			"legacyId": 59,
+			"category": "blend",
+			"spelling": "sc",
+			"phonemes": [
+				"s",
+				"k"
+			],
+			"soundLabel": "sc",
+			"picture": {
+				"emoji": "🧣",
+				"word": "scarf"
+			},
+			"audio": {
+				"main": "blends/beginning-sc.mp3",
+				"slow": "blends/beginning-sc-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"scarf"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "s-blends",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "sk",
+			"legacyId": 60,
+			"category": "blend",
+			"spelling": "sk",
+			"phonemes": [
+				"s",
+				"k"
+			],
+			"soundLabel": "sk",
+			"picture": {
+				"emoji": "⛸️",
+				"word": "skate"
+			},
+			"audio": {
+				"main": "blends/beginning-sk.mp3",
+				"slow": "blends/beginning-sk-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"skate"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "s-blends",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "sm",
+			"legacyId": 61,
+			"category": "blend",
+			"spelling": "sm",
+			"phonemes": [
+				"s",
+				"m"
+			],
+			"soundLabel": "sm",
+			"picture": {
+				"emoji": "😊",
+				"word": "smile"
+			},
+			"audio": {
+				"main": "blends/beginning-sm.mp3",
+				"slow": "blends/beginning-sm-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"smile"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "s-blends",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "sn",
+			"legacyId": 62,
+			"category": "blend",
+			"spelling": "sn",
+			"phonemes": [
+				"s",
+				"n"
+			],
+			"soundLabel": "sn",
+			"picture": {
+				"emoji": "🐌",
+				"word": "snail"
+			},
+			"audio": {
+				"main": "blends/beginning-sn.mp3",
+				"slow": "blends/beginning-sn-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"snail"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "s-blends",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "sp",
+			"legacyId": 63,
+			"category": "blend",
+			"spelling": "sp",
+			"phonemes": [
+				"s",
+				"p"
+			],
+			"soundLabel": "sp",
+			"picture": {
+				"emoji": "🕷️",
+				"word": "spider"
+			},
+			"audio": {
+				"main": "blends/beginning-sp.mp3",
+				"slow": "blends/beginning-sp-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"spider"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "s-blends",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "st",
+			"legacyId": 64,
+			"category": "blend",
+			"spelling": "st",
+			"phonemes": [
+				"s",
+				"t"
+			],
+			"soundLabel": "st",
+			"picture": {
+				"emoji": "⭐",
+				"word": "star"
+			},
+			"audio": {
+				"main": "blends/beginning-st.mp3",
+				"slow": "blends/beginning-st-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"star"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "s-blends",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "sw",
+			"legacyId": 65,
+			"category": "blend",
+			"spelling": "sw",
+			"phonemes": [
+				"s",
+				"w"
+			],
+			"soundLabel": "sw",
+			"picture": {
+				"emoji": "🦢",
+				"word": "swan"
+			},
+			"audio": {
+				"main": "blends/beginning-sw.mp3",
+				"slow": "blends/beginning-sw-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"swan"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "s-blends",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "tw",
+			"legacyId": 66,
+			"category": "blend",
+			"spelling": "tw",
+			"phonemes": [
+				"t",
+				"w"
+			],
+			"soundLabel": "tw",
+			"picture": {
+				"emoji": "👯",
+				"word": "twins"
+			},
+			"audio": {
+				"main": "blends/beginning-tw.mp3",
+				"slow": "blends/beginning-tw-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"twins"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "more-starters",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "dw",
+			"legacyId": 67,
+			"category": "blend",
+			"spelling": "dw",
+			"phonemes": [
+				"d",
+				"w"
+			],
+			"soundLabel": "dw",
+			"picture": {
+				"emoji": "🏠",
+				"word": "dwelling"
+			},
+			"audio": {
+				"main": "blends/beginning-dw.mp3",
+				"slow": "blends/beginning-dw-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"dwelling"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "more-starters",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "thr",
+			"legacyId": 68,
+			"category": "blend",
+			"spelling": "thr",
+			"phonemes": [
+				"th",
+				"r"
+			],
+			"soundLabel": "thr",
+			"picture": {
+				"emoji": "3️⃣",
+				"word": "three"
+			},
+			"audio": {
+				"main": "blends/beginning-thr.mp3",
+				"slow": "blends/beginning-thr-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"three"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "more-starters",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "shr",
+			"legacyId": 69,
+			"category": "blend",
+			"spelling": "shr",
+			"phonemes": [
+				"sh",
+				"r"
+			],
+			"soundLabel": "shr",
+			"picture": {
+				"emoji": "🦐",
+				"word": "shrimp"
+			},
+			"audio": {
+				"main": "blends/beginning-shr.mp3",
+				"slow": "blends/beginning-shr-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"shrimp"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "more-starters",
+				"position": "beginning",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-ct",
+			"legacyId": 70,
+			"category": "blend",
+			"spelling": "ct",
+			"phonemes": [
+				"k",
+				"t"
+			],
+			"soundLabel": "ct",
+			"picture": {
+				"emoji": "🔬",
+				"word": "insect"
+			},
+			"audio": {
+				"main": "blends/end-ct.mp3",
+				"slow": "blends/end-ct-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"insect"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-ft",
+			"legacyId": 71,
+			"category": "blend",
+			"spelling": "ft",
+			"phonemes": [
+				"f",
+				"t"
+			],
+			"soundLabel": "ft",
+			"picture": {
+				"emoji": "🎁",
+				"word": "gift"
+			},
+			"audio": {
+				"main": "blends/end-ft.mp3",
+				"slow": "blends/end-ft-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"gift"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-ld",
+			"legacyId": 72,
+			"category": "blend",
+			"spelling": "ld",
+			"phonemes": [
+				"l",
+				"d"
+			],
+			"soundLabel": "ld",
+			"picture": {
+				"emoji": "🪙",
+				"word": "gold"
+			},
+			"audio": {
+				"main": "blends/end-ld.mp3",
+				"slow": "blends/end-ld-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"gold"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-lf",
+			"legacyId": 73,
+			"category": "blend",
+			"spelling": "lf",
+			"phonemes": [
+				"l",
+				"f"
+			],
+			"soundLabel": "lf",
+			"picture": {
+				"emoji": "🐺",
+				"word": "wolf"
+			},
+			"audio": {
+				"main": "blends/end-lf.mp3",
+				"slow": "blends/end-lf-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"wolf"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-lk",
+			"legacyId": 74,
+			"category": "blend",
+			"spelling": "lk",
+			"phonemes": [
+				"l",
+				"k"
+			],
+			"soundLabel": "lk",
+			"picture": {
+				"emoji": "🥛",
+				"word": "milk"
+			},
+			"audio": {
+				"main": "blends/end-lk.mp3",
+				"slow": "blends/end-lk-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"milk"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-lp",
+			"legacyId": 75,
+			"category": "blend",
+			"spelling": "lp",
+			"phonemes": [
+				"l",
+				"p"
+			],
+			"soundLabel": "lp",
+			"picture": {
+				"emoji": "🆘",
+				"word": "help"
+			},
+			"audio": {
+				"main": "blends/end-lp.mp3",
+				"slow": "blends/end-lp-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"help"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-lt",
+			"legacyId": 76,
+			"category": "blend",
+			"spelling": "lt",
+			"phonemes": [
+				"l",
+				"t"
+			],
+			"soundLabel": "lt",
+			"picture": {
+				"emoji": "🧂",
+				"word": "salt"
+			},
+			"audio": {
+				"main": "blends/end-lt.mp3",
+				"slow": "blends/end-lt-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"salt"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-mp",
+			"legacyId": 77,
+			"category": "blend",
+			"spelling": "mp",
+			"phonemes": [
+				"m",
+				"p"
+			],
+			"soundLabel": "mp",
+			"picture": {
+				"emoji": "💡",
+				"word": "lamp"
+			},
+			"audio": {
+				"main": "blends/end-mp.mp3",
+				"slow": "blends/end-mp-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"lamp"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-nd",
+			"legacyId": 78,
+			"category": "blend",
+			"spelling": "nd",
+			"phonemes": [
+				"n",
+				"d"
+			],
+			"soundLabel": "nd",
+			"picture": {
+				"emoji": "✋",
+				"word": "hand"
+			},
+			"audio": {
+				"main": "blends/end-nd.mp3",
+				"slow": "blends/end-nd-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"hand"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-nt",
+			"legacyId": 79,
+			"category": "blend",
+			"spelling": "nt",
+			"phonemes": [
+				"n",
+				"t"
+			],
+			"soundLabel": "nt",
+			"picture": {
+				"emoji": "⛺",
+				"word": "tent"
+			},
+			"audio": {
+				"main": "blends/end-nt.mp3",
+				"slow": "blends/end-nt-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"tent"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-pt",
+			"legacyId": 80,
+			"category": "blend",
+			"spelling": "pt",
+			"phonemes": [
+				"p",
+				"t"
+			],
+			"soundLabel": "pt",
+			"picture": {
+				"emoji": "🛏️",
+				"word": "slept"
+			},
+			"audio": {
+				"main": "blends/end-pt.mp3",
+				"slow": "blends/end-pt-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"slept"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-sk",
+			"legacyId": 81,
+			"category": "blend",
+			"spelling": "sk",
+			"phonemes": [
+				"s",
+				"k"
+			],
+			"soundLabel": "sk",
+			"picture": {
+				"emoji": "🪑",
+				"word": "desk"
+			},
+			"audio": {
+				"main": "blends/end-sk.mp3",
+				"slow": "blends/end-sk-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"desk"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-sp",
+			"legacyId": 82,
+			"category": "blend",
+			"spelling": "sp",
+			"phonemes": [
+				"s",
+				"p"
+			],
+			"soundLabel": "sp",
+			"picture": {
+				"emoji": "🐝",
+				"word": "wasp"
+			},
+			"audio": {
+				"main": "blends/end-sp.mp3",
+				"slow": "blends/end-sp-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"wasp"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-st",
+			"legacyId": 83,
+			"category": "blend",
+			"spelling": "st",
+			"phonemes": [
+				"s",
+				"t"
+			],
+			"soundLabel": "st",
+			"picture": {
+				"emoji": "🪺",
+				"word": "nest"
+			},
+			"audio": {
+				"main": "blends/end-st.mp3",
+				"slow": "blends/end-st-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"nest"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-nk",
+			"legacyId": 84,
+			"category": "blend",
+			"spelling": "nk",
+			"phonemes": [
+				"ng",
+				"k"
+			],
+			"soundLabel": "nk",
+			"picture": {
+				"emoji": "🩷",
+				"word": "pink"
+			},
+			"audio": {
+				"main": "blends/end-nk.mp3",
+				"slow": "blends/end-nk-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"pink"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-nch",
+			"legacyId": 85,
+			"category": "blend",
+			"spelling": "nch",
+			"phonemes": [
+				"n",
+				"ch"
+			],
+			"soundLabel": "nch",
+			"picture": {
+				"emoji": "🪑",
+				"word": "bench"
+			},
+			"audio": {
+				"main": "blends/end-nch.mp3",
+				"slow": "blends/end-nch-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"bench"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-rb",
+			"legacyId": 86,
+			"category": "blend",
+			"spelling": "rb",
+			"phonemes": [
+				"r",
+				"b"
+			],
+			"soundLabel": "rb",
+			"picture": {
+				"emoji": "🌿",
+				"word": "herb"
+			},
+			"audio": {
+				"main": "blends/end-rb.mp3",
+				"slow": "blends/end-rb-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"herb"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-rd",
+			"legacyId": 87,
+			"category": "blend",
+			"spelling": "rd",
+			"phonemes": [
+				"r",
+				"d"
+			],
+			"soundLabel": "rd",
+			"picture": {
+				"emoji": "🐦",
+				"word": "bird"
+			},
+			"audio": {
+				"main": "blends/end-rd.mp3",
+				"slow": "blends/end-rd-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"bird"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-rf",
+			"legacyId": 88,
+			"category": "blend",
+			"spelling": "rf",
+			"phonemes": [
+				"r",
+				"f"
+			],
+			"soundLabel": "rf",
+			"picture": {
+				"emoji": "🧣",
+				"word": "scarf"
+			},
+			"audio": {
+				"main": "blends/end-rf.mp3",
+				"slow": "blends/end-rf-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"scarf"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-rk",
+			"legacyId": 89,
+			"category": "blend",
+			"spelling": "rk",
+			"phonemes": [
+				"r",
+				"k"
+			],
+			"soundLabel": "rk",
+			"picture": {
+				"emoji": "🦈",
+				"word": "shark"
+			},
+			"audio": {
+				"main": "blends/end-rk.mp3",
+				"slow": "blends/end-rk-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"shark"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-rl",
+			"legacyId": 90,
+			"category": "blend",
+			"spelling": "rl",
+			"phonemes": [
+				"r",
+				"l"
+			],
+			"soundLabel": "rl",
+			"picture": {
+				"emoji": "👧",
+				"word": "girl"
+			},
+			"audio": {
+				"main": "blends/end-rl.mp3",
+				"slow": "blends/end-rl-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"girl"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-rm",
+			"legacyId": 91,
+			"category": "blend",
+			"spelling": "rm",
+			"phonemes": [
+				"r",
+				"m"
+			],
+			"soundLabel": "rm",
+			"picture": {
+				"emoji": "💪",
+				"word": "arm"
+			},
+			"audio": {
+				"main": "blends/end-rm.mp3",
+				"slow": "blends/end-rm-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"arm"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-rn",
+			"legacyId": 92,
+			"category": "blend",
+			"spelling": "rn",
+			"phonemes": [
+				"r",
+				"n"
+			],
+			"soundLabel": "rn",
+			"picture": {
+				"emoji": "🌽",
+				"word": "corn"
+			},
+			"audio": {
+				"main": "blends/end-rn.mp3",
+				"slow": "blends/end-rn-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"corn"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-rp",
+			"legacyId": 93,
+			"category": "blend",
+			"spelling": "rp",
+			"phonemes": [
+				"r",
+				"p"
+			],
+			"soundLabel": "rp",
+			"picture": {
+				"emoji": "🎵",
+				"word": "harp"
+			},
+			"audio": {
+				"main": "blends/end-rp.mp3",
+				"slow": "blends/end-rp-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"harp"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-rt",
+			"legacyId": 94,
+			"category": "blend",
+			"spelling": "rt",
+			"phonemes": [
+				"r",
+				"t"
+			],
+			"soundLabel": "rt",
+			"picture": {
+				"emoji": "🛒",
+				"word": "cart"
+			},
+			"audio": {
+				"main": "blends/end-rt.mp3",
+				"slow": "blends/end-rt-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"cart"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-rv",
+			"legacyId": 95,
+			"category": "blend",
+			"spelling": "rv",
+			"phonemes": [
+				"r",
+				"v"
+			],
+			"soundLabel": "rv",
+			"picture": {
+				"emoji": "🛤️",
+				"word": "curve"
+			},
+			"audio": {
+				"main": "blends/end-rv.mp3",
+				"slow": "blends/end-rv-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"curve"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "end-rz",
+			"legacyId": 96,
+			"category": "blend",
+			"spelling": "rz",
+			"phonemes": [
+				"r",
+				"z"
+			],
+			"soundLabel": "rz",
+			"picture": {
+				"emoji": "⭐",
+				"word": "stars"
+			},
+			"audio": {
+				"main": "blends/end-rz.mp3",
+				"slow": "blends/end-rz-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"stars"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": false
+			}
+		},
+		{
+			"id": "spl",
+			"legacyId": 97,
+			"category": "blend",
+			"spelling": "spl",
+			"phonemes": [
+				"s",
+				"p",
+				"l"
+			],
+			"soundLabel": "spl",
+			"picture": {
+				"emoji": "💦",
+				"word": "splash"
+			},
+			"audio": {
+				"main": "blends/beginning-spl.mp3",
+				"slow": "blends/beginning-spl-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"splash"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "three-sounds",
+				"position": "beginning",
+				"size": "three-plus",
+				"advanced": false
+			}
+		},
+		{
+			"id": "spr",
+			"legacyId": 98,
+			"category": "blend",
+			"spelling": "spr",
+			"phonemes": [
+				"s",
+				"p",
+				"r"
+			],
+			"soundLabel": "spr",
+			"picture": {
+				"emoji": "🌱",
+				"word": "sprout"
+			},
+			"audio": {
+				"main": "blends/beginning-spr.mp3",
+				"slow": "blends/beginning-spr-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"sprout"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "three-sounds",
+				"position": "beginning",
+				"size": "three-plus",
+				"advanced": false
+			}
+		},
+		{
+			"id": "str",
+			"legacyId": 99,
+			"category": "blend",
+			"spelling": "str",
+			"phonemes": [
+				"s",
+				"t",
+				"r"
+			],
+			"soundLabel": "str",
+			"picture": {
+				"emoji": "🍓",
+				"word": "strawberry"
+			},
+			"audio": {
+				"main": "blends/beginning-str.mp3",
+				"slow": "blends/beginning-str-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"strawberry"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "three-sounds",
+				"position": "beginning",
+				"size": "three-plus",
+				"advanced": false
+			}
+		},
+		{
+			"id": "scr",
+			"legacyId": 100,
+			"category": "blend",
+			"spelling": "scr",
+			"phonemes": [
+				"s",
+				"k",
+				"r"
+			],
+			"soundLabel": "scr",
+			"picture": {
+				"emoji": "📜",
+				"word": "scroll"
+			},
+			"audio": {
+				"main": "blends/beginning-scr.mp3",
+				"slow": "blends/beginning-scr-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"scroll"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "three-sounds",
+				"position": "beginning",
+				"size": "three-plus",
+				"advanced": false
+			}
+		},
+		{
+			"id": "squ",
+			"legacyId": 101,
+			"category": "blend",
+			"spelling": "squ",
+			"phonemes": [
+				"s",
+				"k",
+				"w"
+			],
+			"soundLabel": "squ",
+			"picture": {
+				"emoji": "🦑",
+				"word": "squid"
+			},
+			"audio": {
+				"main": "blends/beginning-squ.mp3",
+				"slow": "blends/beginning-squ-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"squid"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "three-sounds",
+				"position": "beginning",
+				"size": "three-plus",
+				"advanced": false
+			}
+		},
+		{
+			"id": "sph",
+			"legacyId": 102,
+			"category": "blend",
+			"spelling": "sph",
+			"phonemes": [
+				"s",
+				"f"
+			],
+			"soundLabel": "sph",
+			"picture": {
+				"emoji": "⚪",
+				"word": "sphere"
+			},
+			"audio": {
+				"main": "blends/beginning-sph.mp3",
+				"slow": "blends/beginning-sph-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"sphere"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "more-starters",
+				"position": "beginning",
+				"size": "two",
+				"advanced": true
+			}
+		},
+		{
+			"id": "thw",
+			"legacyId": 103,
+			"category": "blend",
+			"spelling": "thw",
+			"phonemes": [
+				"th",
+				"w"
+			],
+			"soundLabel": "thw",
+			"picture": {
+				"emoji": "💥",
+				"word": "thwack"
+			},
+			"audio": {
+				"main": "blends/beginning-thw.mp3",
+				"slow": "blends/beginning-thw-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"thwack"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "more-starters",
+				"position": "beginning",
+				"size": "two",
+				"advanced": true
+			}
+		},
+		{
+			"id": "vr",
+			"legacyId": 104,
+			"category": "blend",
+			"spelling": "vr",
+			"phonemes": [
+				"v",
+				"r"
+			],
+			"soundLabel": "vr",
+			"picture": {
+				"emoji": "🏎️",
+				"word": "vroom"
+			},
+			"audio": {
+				"main": "blends/beginning-vr.mp3",
+				"slow": "blends/beginning-vr-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [
+					"vroom"
+				],
+				"middle": [],
+				"end": []
+			},
+			"blend": {
+				"family": "more-starters",
+				"position": "beginning",
+				"size": "two",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-lth",
+			"legacyId": 105,
+			"category": "blend",
+			"spelling": "lth",
+			"phonemes": [
+				"l",
+				"th"
+			],
+			"soundLabel": "lth",
+			"picture": {
+				"emoji": "💚",
+				"word": "health"
+			},
+			"audio": {
+				"main": "blends/end-lth.mp3",
+				"slow": "blends/end-lth-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"health"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-lch",
+			"legacyId": 106,
+			"category": "blend",
+			"spelling": "lch",
+			"phonemes": [
+				"l",
+				"ch"
+			],
+			"soundLabel": "lch",
+			"picture": {
+				"emoji": "🌱",
+				"word": "mulch"
+			},
+			"audio": {
+				"main": "blends/end-lch.mp3",
+				"slow": "blends/end-lch-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"mulch"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-lve",
+			"legacyId": 107,
+			"category": "blend",
+			"spelling": "lve",
+			"phonemes": [
+				"l",
+				"v"
+			],
+			"soundLabel": "lve",
+			"picture": {
+				"emoji": "🕛",
+				"word": "twelve"
+			},
+			"audio": {
+				"main": "blends/end-lve.mp3",
+				"slow": "blends/end-lve-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"twelve"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rth",
+			"legacyId": 108,
+			"category": "blend",
+			"spelling": "rth",
+			"phonemes": [
+				"r",
+				"th"
+			],
+			"soundLabel": "rth",
+			"picture": {
+				"emoji": "🌎",
+				"word": "earth"
+			},
+			"audio": {
+				"main": "blends/end-rth.mp3",
+				"slow": "blends/end-rth-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"earth"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rsh",
+			"legacyId": 109,
+			"category": "blend",
+			"spelling": "rsh",
+			"phonemes": [
+				"r",
+				"sh"
+			],
+			"soundLabel": "rsh",
+			"picture": {
+				"emoji": "🌾",
+				"word": "marsh"
+			},
+			"audio": {
+				"main": "blends/end-rsh.mp3",
+				"slow": "blends/end-rsh-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"marsh"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-ps",
+			"legacyId": 110,
+			"category": "blend",
+			"spelling": "ps",
+			"phonemes": [
+				"p",
+				"s"
+			],
+			"soundLabel": "ps",
+			"picture": {
+				"emoji": "🥤",
+				"word": "cups"
+			},
+			"audio": {
+				"main": "blends/end-ps.mp3",
+				"slow": "blends/end-ps-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"cups"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-ts",
+			"legacyId": 111,
+			"category": "blend",
+			"spelling": "ts",
+			"phonemes": [
+				"t",
+				"s"
+			],
+			"soundLabel": "ts",
+			"picture": {
+				"emoji": "🐈",
+				"word": "cats"
+			},
+			"audio": {
+				"main": "blends/end-ts.mp3",
+				"slow": "blends/end-ts-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"cats"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-ds",
+			"legacyId": 112,
+			"category": "blend",
+			"spelling": "ds",
+			"phonemes": [
+				"d",
+				"z"
+			],
+			"soundLabel": "ds",
+			"picture": {
+				"emoji": "🌱",
+				"word": "seeds"
+			},
+			"audio": {
+				"main": "blends/end-ds.mp3",
+				"slow": "blends/end-ds-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"seeds"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-bs",
+			"legacyId": 113,
+			"category": "blend",
+			"spelling": "bs",
+			"phonemes": [
+				"b",
+				"z"
+			],
+			"soundLabel": "bs",
+			"picture": {
+				"emoji": "🦀",
+				"word": "crabs"
+			},
+			"audio": {
+				"main": "blends/end-bs.mp3",
+				"slow": "blends/end-bs-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"crabs"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-gs",
+			"legacyId": 114,
+			"category": "blend",
+			"spelling": "gs",
+			"phonemes": [
+				"g",
+				"z"
+			],
+			"soundLabel": "gs",
+			"picture": {
+				"emoji": "🥚",
+				"word": "eggs"
+			},
+			"audio": {
+				"main": "blends/end-gs.mp3",
+				"slow": "blends/end-gs-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"eggs"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-fs",
+			"legacyId": 115,
+			"category": "blend",
+			"spelling": "fs",
+			"phonemes": [
+				"f",
+				"s"
+			],
+			"soundLabel": "fs",
+			"picture": {
+				"emoji": "🏠",
+				"word": "roofs"
+			},
+			"audio": {
+				"main": "blends/end-fs.mp3",
+				"slow": "blends/end-fs-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"roofs"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-ves",
+			"legacyId": 116,
+			"category": "blend",
+			"spelling": "ves",
+			"phonemes": [
+				"v",
+				"z"
+			],
+			"soundLabel": "ves",
+			"picture": {
+				"emoji": "🍃",
+				"word": "leaves"
+			},
+			"audio": {
+				"main": "blends/end-ves.mp3",
+				"slow": "blends/end-ves-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"leaves"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-ms",
+			"legacyId": 117,
+			"category": "blend",
+			"spelling": "ms",
+			"phonemes": [
+				"m",
+				"z"
+			],
+			"soundLabel": "ms",
+			"picture": {
+				"emoji": "🥁",
+				"word": "drums"
+			},
+			"audio": {
+				"main": "blends/end-ms.mp3",
+				"slow": "blends/end-ms-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"drums"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-ns",
+			"legacyId": 118,
+			"category": "blend",
+			"spelling": "ns",
+			"phonemes": [
+				"n",
+				"z"
+			],
+			"soundLabel": "ns",
+			"picture": {
+				"emoji": "🪭",
+				"word": "fans"
+			},
+			"audio": {
+				"main": "blends/end-ns.mp3",
+				"slow": "blends/end-ns-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"fans"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-ls",
+			"legacyId": 119,
+			"category": "blend",
+			"spelling": "ls",
+			"phonemes": [
+				"l",
+				"z"
+			],
+			"soundLabel": "ls",
+			"picture": {
+				"emoji": "🔔",
+				"word": "bells"
+			},
+			"audio": {
+				"main": "blends/end-ls.mp3",
+				"slow": "blends/end-ls-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"bells"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-ths",
+			"legacyId": 120,
+			"category": "blend",
+			"spelling": "ths",
+			"phonemes": [
+				"th",
+				"s"
+			],
+			"soundLabel": "ths",
+			"picture": {
+				"emoji": "🦋",
+				"word": "moths"
+			},
+			"audio": {
+				"main": "blends/end-ths.mp3",
+				"slow": "blends/end-ths-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"moths"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-ngs",
+			"legacyId": 121,
+			"category": "blend",
+			"spelling": "ngs",
+			"phonemes": [
+				"ng",
+				"z"
+			],
+			"soundLabel": "ngs",
+			"picture": {
+				"emoji": "💍",
+				"word": "rings"
+			},
+			"audio": {
+				"main": "blends/end-ngs.mp3",
+				"slow": "blends/end-ngs-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"rings"
+				]
+			},
+			"blend": {
+				"family": "ending",
+				"position": "end",
+				"size": "two",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-mps",
+			"legacyId": 122,
+			"category": "blend",
+			"spelling": "mps",
+			"phonemes": [
+				"m",
+				"p",
+				"s"
+			],
+			"soundLabel": "mps",
+			"picture": {
+				"emoji": "💡",
+				"word": "lamps"
+			},
+			"audio": {
+				"main": "blends/end-mps.mp3",
+				"slow": "blends/end-mps-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"lamps"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-nds",
+			"legacyId": 123,
+			"category": "blend",
+			"spelling": "nds",
+			"phonemes": [
+				"n",
+				"d",
+				"z"
+			],
+			"soundLabel": "nds",
+			"picture": {
+				"emoji": "✋",
+				"word": "hands"
+			},
+			"audio": {
+				"main": "blends/end-nds.mp3",
+				"slow": "blends/end-nds-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"hands"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-nts",
+			"legacyId": 124,
+			"category": "blend",
+			"spelling": "nts",
+			"phonemes": [
+				"n",
+				"t",
+				"s"
+			],
+			"soundLabel": "nts",
+			"picture": {
+				"emoji": "⛺",
+				"word": "tents"
+			},
+			"audio": {
+				"main": "blends/end-nts.mp3",
+				"slow": "blends/end-nts-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"tents"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-nks",
+			"legacyId": 125,
+			"category": "blend",
+			"spelling": "nks",
+			"phonemes": [
+				"ng",
+				"k",
+				"s"
+			],
+			"soundLabel": "nks",
+			"picture": {
+				"emoji": "🏦",
+				"word": "banks"
+			},
+			"audio": {
+				"main": "blends/end-nks.mp3",
+				"slow": "blends/end-nks-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"banks"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-lps",
+			"legacyId": 126,
+			"category": "blend",
+			"spelling": "lps",
+			"phonemes": [
+				"l",
+				"p",
+				"s"
+			],
+			"soundLabel": "lps",
+			"picture": {
+				"emoji": "🆘",
+				"word": "helps"
+			},
+			"audio": {
+				"main": "blends/end-lps.mp3",
+				"slow": "blends/end-lps-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"helps"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-lks",
+			"legacyId": 127,
+			"category": "blend",
+			"spelling": "lks",
+			"phonemes": [
+				"l",
+				"k",
+				"s"
+			],
+			"soundLabel": "lks",
+			"picture": {
+				"emoji": "🧵",
+				"word": "silks"
+			},
+			"audio": {
+				"main": "blends/end-lks.mp3",
+				"slow": "blends/end-lks-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"silks"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-lts",
+			"legacyId": 128,
+			"category": "blend",
+			"spelling": "lts",
+			"phonemes": [
+				"l",
+				"t",
+				"s"
+			],
+			"soundLabel": "lts",
+			"picture": {
+				"emoji": "🧂",
+				"word": "salts"
+			},
+			"audio": {
+				"main": "blends/end-lts.mp3",
+				"slow": "blends/end-lts-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"salts"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rks",
+			"legacyId": 129,
+			"category": "blend",
+			"spelling": "rks",
+			"phonemes": [
+				"r",
+				"k",
+				"s"
+			],
+			"soundLabel": "rks",
+			"picture": {
+				"emoji": "🦈",
+				"word": "sharks"
+			},
+			"audio": {
+				"main": "blends/end-rks.mp3",
+				"slow": "blends/end-rks-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"sharks"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rts",
+			"legacyId": 130,
+			"category": "blend",
+			"spelling": "rts",
+			"phonemes": [
+				"r",
+				"t",
+				"s"
+			],
+			"soundLabel": "rts",
+			"picture": {
+				"emoji": "🛒",
+				"word": "carts"
+			},
+			"audio": {
+				"main": "blends/end-rts.mp3",
+				"slow": "blends/end-rts-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"carts"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rps",
+			"legacyId": 131,
+			"category": "blend",
+			"spelling": "rps",
+			"phonemes": [
+				"r",
+				"p",
+				"s"
+			],
+			"soundLabel": "rps",
+			"picture": {
+				"emoji": "🎵",
+				"word": "harps"
+			},
+			"audio": {
+				"main": "blends/end-rps.mp3",
+				"slow": "blends/end-rps-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"harps"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rbs",
+			"legacyId": 132,
+			"category": "blend",
+			"spelling": "rbs",
+			"phonemes": [
+				"r",
+				"b",
+				"z"
+			],
+			"soundLabel": "rbs",
+			"picture": {
+				"emoji": "🌿",
+				"word": "herbs"
+			},
+			"audio": {
+				"main": "blends/end-rbs.mp3",
+				"slow": "blends/end-rbs-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"herbs"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rds",
+			"legacyId": 133,
+			"category": "blend",
+			"spelling": "rds",
+			"phonemes": [
+				"r",
+				"d",
+				"z"
+			],
+			"soundLabel": "rds",
+			"picture": {
+				"emoji": "🐦",
+				"word": "birds"
+			},
+			"audio": {
+				"main": "blends/end-rds.mp3",
+				"slow": "blends/end-rds-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"birds"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rms",
+			"legacyId": 134,
+			"category": "blend",
+			"spelling": "rms",
+			"phonemes": [
+				"r",
+				"m",
+				"z"
+			],
+			"soundLabel": "rms",
+			"picture": {
+				"emoji": "💪",
+				"word": "arms"
+			},
+			"audio": {
+				"main": "blends/end-rms.mp3",
+				"slow": "blends/end-rms-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"arms"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rns",
+			"legacyId": 135,
+			"category": "blend",
+			"spelling": "rns",
+			"phonemes": [
+				"r",
+				"n",
+				"z"
+			],
+			"soundLabel": "rns",
+			"picture": {
+				"emoji": "🌽",
+				"word": "corns"
+			},
+			"audio": {
+				"main": "blends/end-rns.mp3",
+				"slow": "blends/end-rns-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"corns"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rves",
+			"legacyId": 136,
+			"category": "blend",
+			"spelling": "rves",
+			"phonemes": [
+				"r",
+				"v",
+				"z"
+			],
+			"soundLabel": "rves",
+			"picture": {
+				"emoji": "🛤️",
+				"word": "curves"
+			},
+			"audio": {
+				"main": "blends/end-rves.mp3",
+				"slow": "blends/end-rves-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"curves"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rfs",
+			"legacyId": 137,
+			"category": "blend",
+			"spelling": "rfs",
+			"phonemes": [
+				"r",
+				"f",
+				"s"
+			],
+			"soundLabel": "rfs",
+			"picture": {
+				"emoji": "🌱",
+				"word": "turfs"
+			},
+			"audio": {
+				"main": "blends/end-rfs.mp3",
+				"slow": "blends/end-rfs-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"turfs"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rls",
+			"legacyId": 138,
+			"category": "blend",
+			"spelling": "rls",
+			"phonemes": [
+				"r",
+				"l",
+				"z"
+			],
+			"soundLabel": "rls",
+			"picture": {
+				"emoji": "👧",
+				"word": "girls"
+			},
+			"audio": {
+				"main": "blends/end-rls.mp3",
+				"slow": "blends/end-rls-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"girls"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rld",
+			"legacyId": 139,
+			"category": "blend",
+			"spelling": "rld",
+			"phonemes": [
+				"r",
+				"l",
+				"d"
+			],
+			"soundLabel": "rld",
+			"picture": {
+				"emoji": "🌎",
+				"word": "world"
+			},
+			"audio": {
+				"main": "blends/end-rld.mp3",
+				"slow": "blends/end-rld-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"world"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rnt",
+			"legacyId": 140,
+			"category": "blend",
+			"spelling": "rnt",
+			"phonemes": [
+				"r",
+				"n",
+				"t"
+			],
+			"soundLabel": "rnt",
+			"picture": {
+				"emoji": "🔥",
+				"word": "burnt"
+			},
+			"audio": {
+				"main": "blends/end-rnt.mp3",
+				"slow": "blends/end-rnt-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"burnt"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rped",
+			"legacyId": 141,
+			"category": "blend",
+			"spelling": "rped",
+			"phonemes": [
+				"r",
+				"p",
+				"t"
+			],
+			"soundLabel": "rped",
+			"picture": {
+				"emoji": "🫧",
+				"word": "burped"
+			},
+			"audio": {
+				"main": "blends/end-rped.mp3",
+				"slow": "blends/end-rped-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"burped"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rked",
+			"legacyId": 142,
+			"category": "blend",
+			"spelling": "rked",
+			"phonemes": [
+				"r",
+				"k",
+				"t"
+			],
+			"soundLabel": "rked",
+			"picture": {
+				"emoji": "🛠️",
+				"word": "worked"
+			},
+			"audio": {
+				"main": "blends/end-rked.mp3",
+				"slow": "blends/end-rked-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"worked"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rmed",
+			"legacyId": 143,
+			"category": "blend",
+			"spelling": "rmed",
+			"phonemes": [
+				"r",
+				"m",
+				"d"
+			],
+			"soundLabel": "rmed",
+			"picture": {
+				"emoji": "☀️",
+				"word": "warmed"
+			},
+			"audio": {
+				"main": "blends/end-rmed.mp3",
+				"slow": "blends/end-rmed-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"warmed"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rned",
+			"legacyId": 144,
+			"category": "blend",
+			"spelling": "rned",
+			"phonemes": [
+				"r",
+				"n",
+				"d"
+			],
+			"soundLabel": "rned",
+			"picture": {
+				"emoji": "↪️",
+				"word": "turned"
+			},
+			"audio": {
+				"main": "blends/end-rned.mp3",
+				"slow": "blends/end-rned-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"turned"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rbed",
+			"legacyId": 145,
+			"category": "blend",
+			"spelling": "rbed",
+			"phonemes": [
+				"r",
+				"b",
+				"d"
+			],
+			"soundLabel": "rbed",
+			"picture": {
+				"emoji": "🛑",
+				"word": "curbed"
+			},
+			"audio": {
+				"main": "blends/end-rbed.mp3",
+				"slow": "blends/end-rbed-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"curbed"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rved",
+			"legacyId": 146,
+			"category": "blend",
+			"spelling": "rved",
+			"phonemes": [
+				"r",
+				"v",
+				"d"
+			],
+			"soundLabel": "rved",
+			"picture": {
+				"emoji": "〰️",
+				"word": "curved"
+			},
+			"audio": {
+				"main": "blends/end-rved.mp3",
+				"slow": "blends/end-rved-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"curved"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rst",
+			"legacyId": 147,
+			"category": "blend",
+			"spelling": "rst",
+			"phonemes": [
+				"r",
+				"s",
+				"t"
+			],
+			"soundLabel": "rst",
+			"picture": {
+				"emoji": "🥇",
+				"word": "first"
+			},
+			"audio": {
+				"main": "blends/end-rst.mp3",
+				"slow": "blends/end-rst-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"first"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-nths",
+			"legacyId": 148,
+			"category": "blend",
+			"spelling": "nths",
+			"phonemes": [
+				"n",
+				"th",
+				"s"
+			],
+			"soundLabel": "nths",
+			"picture": {
+				"emoji": "🗓️",
+				"word": "months"
+			},
+			"audio": {
+				"main": "blends/end-nths.mp3",
+				"slow": "blends/end-nths-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"months"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-sts",
+			"legacyId": 149,
+			"category": "blend",
+			"spelling": "sts",
+			"phonemes": [
+				"s",
+				"t",
+				"s"
+			],
+			"soundLabel": "sts",
+			"picture": {
+				"emoji": "🪺",
+				"word": "nests"
+			},
+			"audio": {
+				"main": "blends/end-sts.mp3",
+				"slow": "blends/end-sts-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"nests"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-sks",
+			"legacyId": 150,
+			"category": "blend",
+			"spelling": "sks",
+			"phonemes": [
+				"s",
+				"k",
+				"s"
+			],
+			"soundLabel": "sks",
+			"picture": {
+				"emoji": "🪑",
+				"word": "desks"
+			},
+			"audio": {
+				"main": "blends/end-sks.mp3",
+				"slow": "blends/end-sks-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"desks"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-fts",
+			"legacyId": 151,
+			"category": "blend",
+			"spelling": "fts",
+			"phonemes": [
+				"f",
+				"t",
+				"s"
+			],
+			"soundLabel": "fts",
+			"picture": {
+				"emoji": "🎁",
+				"word": "gifts"
+			},
+			"audio": {
+				"main": "blends/end-fts.mp3",
+				"slow": "blends/end-fts-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"gifts"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-lped",
+			"legacyId": 152,
+			"category": "blend",
+			"spelling": "lped",
+			"phonemes": [
+				"l",
+				"p",
+				"t"
+			],
+			"soundLabel": "lped",
+			"picture": {
+				"emoji": "🆘",
+				"word": "helped"
+			},
+			"audio": {
+				"main": "blends/end-lped.mp3",
+				"slow": "blends/end-lped-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"helped"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rlds",
+			"legacyId": 153,
+			"category": "blend",
+			"spelling": "rlds",
+			"phonemes": [
+				"r",
+				"l",
+				"d",
+				"z"
+			],
+			"soundLabel": "rlds",
+			"picture": {
+				"emoji": "🌎",
+				"word": "worlds"
+			},
+			"audio": {
+				"main": "blends/end-rlds.mp3",
+				"slow": "blends/end-rlds-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"worlds"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-lfths",
+			"legacyId": 154,
+			"category": "blend",
+			"spelling": "lfths",
+			"phonemes": [
+				"l",
+				"f",
+				"th",
+				"s"
+			],
+			"soundLabel": "lfths",
+			"picture": {
+				"emoji": "🕛",
+				"word": "twelfths"
+			},
+			"audio": {
+				"main": "blends/end-lfths.mp3",
+				"slow": "blends/end-lfths-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"twelfths"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "end-rsts",
+			"legacyId": 155,
+			"category": "blend",
+			"spelling": "rsts",
+			"phonemes": [
+				"r",
+				"s",
+				"t",
+				"s"
+			],
+			"soundLabel": "rsts",
+			"picture": {
+				"emoji": "💥",
+				"word": "bursts"
+			},
+			"audio": {
+				"main": "blends/end-rsts.mp3",
+				"slow": "blends/end-rsts-slow.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Hear each sound. Slide them together. Now you try!",
+			"examples": {
+				"beginning": [],
+				"middle": [],
+				"end": [
+					"bursts"
+				]
+			},
+			"blend": {
+				"family": "longer-endings",
+				"position": "end",
+				"size": "three-plus",
+				"advanced": true
+			}
+		},
+		{
+			"id": "ph",
+			"legacyId": 156,
+			"category": "digraph",
+			"spelling": "ph",
+			"phonemes": [
+				"ph"
+			],
+			"soundLabel": "ph",
+			"picture": {
+				"emoji": "☎️",
+				"word": "phone"
+			},
+			"audio": {
+				"main": "clear/f.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Two letters, one sound: /f/.",
+			"examples": {
+				"beginning": [
+					"phone"
+				],
+				"middle": [
+					"dolphin"
+				],
+				"end": [
+					"graph"
+				]
+			}
+		},
+		{
+			"id": "wh",
+			"legacyId": 157,
+			"category": "digraph",
+			"spelling": "wh",
+			"phonemes": [
+				"wh"
+			],
+			"soundLabel": "wh",
+			"picture": {
+				"emoji": "🐳",
+				"word": "whale"
+			},
+			"audio": {
+				"main": "clear/w.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Two letters, one sound: /w/ in most American accents.",
+			"examples": {
+				"beginning": [
+					"whale",
+					"wheel"
+				],
+				"middle": [],
+				"end": []
+			}
+		},
+		{
+			"id": "ck",
+			"legacyId": 158,
+			"category": "digraph",
+			"spelling": "ck",
+			"phonemes": [
+				"ck"
+			],
+			"soundLabel": "ck",
+			"picture": {
+				"emoji": "🦆",
+				"word": "duck"
+			},
+			"audio": {
+				"main": "clear/k.mp3"
+			},
+			"kidTip": null,
+			"adultTip": "Two letters, one sound: /k/.",
+			"examples": {
+				"beginning": [],
+				"middle": [
+					"chicken"
+				],
+				"end": [
+					"duck",
+					"sock"
+				]
+			}
+		}
+	]
+}
