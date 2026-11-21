@@ -216,10 +216,30 @@
 		align-items: center;
 		text-align: center;
 	}
+	/* The picture floats on a glowing glass orb. */
 	.pic {
-		font-size: clamp(5rem, 18vw, 7.5rem);
-		line-height: 1.1;
-		margin: 10px 0 4px;
+		display: grid;
+		place-items: center;
+		width: clamp(150px, 40vw, 200px);
+		aspect-ratio: 1;
+		margin: 14px 0 6px;
+		border-radius: 50%;
+		font-size: clamp(4.6rem, 16vw, 6.6rem);
+		line-height: 1;
+		background:
+			radial-gradient(circle at 30% 25%, var(--glass-hi), transparent 45%),
+			radial-gradient(circle, color-mix(in srgb, var(--honey) 35%, transparent), transparent 70%),
+			var(--surface-2);
+		border: 1px solid var(--glass-border);
+		box-shadow:
+			var(--shadow),
+			0 0 60px -10px color-mix(in srgb, var(--honey) 60%, transparent);
+		animation: float 6s ease-in-out infinite;
+	}
+	@keyframes float {
+		50% {
+			transform: translateY(-6px);
+		}
 	}
 	h1 {
 		display: flex;
@@ -252,7 +272,7 @@
 		min-height: var(--tap-kid);
 		min-width: 92px;
 		font-size: 1.35rem;
-		background: var(--sun-soft);
+		background: color-mix(in srgb, var(--sun-soft) 80%, transparent);
 		border-radius: 18px;
 	}
 	.plus {
@@ -280,7 +300,8 @@
 		margin-top: 20px;
 		padding: 18px;
 		border-radius: var(--radius);
-		background: var(--leaf-soft);
+		background: color-mix(in srgb, var(--leaf-soft) 80%, transparent);
+		border: 1px solid var(--glass-border);
 		text-align: center;
 	}
 	.turn h2 {

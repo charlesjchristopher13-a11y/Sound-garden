@@ -23,6 +23,7 @@ describe('progress records', () => {
 		const back = parseState(JSON.parse(JSON.stringify(s)));
 		expect(back.learners[0].cards).toEqual({ b: { triedOn: ['2026-11-20'], rating: 'secure', ratedOn: undefined } });
 		expect(back.activeId).toBe(s.activeId);
+		expect(back.savedAt).toBe(0);
 	});
 
 	it('rejects files that are not backups', () => {

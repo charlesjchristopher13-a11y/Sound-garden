@@ -34,11 +34,15 @@ export interface SavedState {
 	schema: 1;
 	activeId: string;
 	learners: Learner[];
+	/** When this copy was written (ms). The newer of the two saved copies wins. */
+	savedAt?: number;
 }
 
 export type Persistence = 'indexeddb' | 'localstorage' | 'memory';
 
 const KEY = 'sound-garden:v4';
+/** Synchronous copy in localStorage, so a tap right before closing is never lost. */
+const MIRROR = 'sound-garden:v4:mirror';
 const LEGACY_KEY = 'sound-garden-practiced';
 const MAX_DAYS = 60;
 
@@ -102,7 +106,7 @@ export function parseState(input: unknown): SavedState {
 		return { id: l.id, name: l.name.slice(0, 40) || 'Learner', createdOn: l.createdOn ?? today(), cards: out };
 	});
 	const activeId = learners.some((l) => l.id === s.activeId) ? s.activeId! : learners[0].id;
-	return { schema: 1, activeId, learners };
+	return { schema: 1, activeId, learners, savedAt: Number(s.savedAt) || 0 };
 }
 
 class Progress {
@@ -144,6 +148,16 @@ class Progress {
 			}
 		}
 
+		// Prefer the localStorage mirror when it is newer than the main copy.
+		try {
+			const raw = localStorage.getItem(MIRROR);
+			const mirror = raw ? JSON.parse(raw) : null;
+			if (mirror && (Number(mirror.savedAt) || 0) > (Number((saved as SavedState | undefined)?.savedAt) || 0))
+				saved = mirror;
+		} catch {
+			/* no mirror */
+		}
+
 		let migrated = false;
 		try {
 			this.state = saved ? parseState(saved) : freshState();
@@ -180,7 +194,13 @@ class Progress {
 	}
 
 	async #saveNow() {
+		this.state.savedAt = Date.now();
 		const snapshot = $state.snapshot(this.state);
+		try {
+			localStorage.setItem(MIRROR, JSON.stringify(snapshot));
+		} catch {
+			/* storage full or blocked; the main copy below still runs */
+		}
 		try {
 			if (this.persistence === 'indexeddb' && this.#store) await set(KEY, snapshot, this.#store);
 			else if (this.persistence === 'localstorage') localStorage.setItem(KEY, JSON.stringify(snapshot));

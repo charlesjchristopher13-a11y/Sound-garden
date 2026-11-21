@@ -192,8 +192,8 @@
 		min-height: 56px;
 		padding: 8px 14px;
 		border-radius: 16px;
-		border: 2px solid var(--line);
-		background: var(--surface);
+		border: 2px solid var(--glass-border);
+		background: var(--surface-2);
 		font-weight: 700;
 		cursor: pointer;
 		text-align: left;
@@ -254,8 +254,8 @@
 		min-height: 200px;
 		padding: 16px;
 		border-radius: var(--radius-lg);
-		border: 3px solid var(--line);
-		background: var(--surface);
+		border: 3px solid var(--glass-border);
+		background: linear-gradient(150deg, var(--glass-hi), transparent 50%), var(--surface-2);
 		box-shadow: var(--shadow);
 		transition:
 			transform 0.15s var(--ease),
@@ -268,6 +268,7 @@
 	.choice .pic {
 		font-size: clamp(4rem, 14vw, 5.5rem);
 		line-height: 1.1;
+		filter: drop-shadow(0 8px 12px rgb(0 0 0 / 0.18));
 	}
 	.choice .word {
 		font-size: 1.25rem;

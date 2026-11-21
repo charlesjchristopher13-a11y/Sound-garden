@@ -46,7 +46,16 @@
 </button>
 
 <style>
+	/* Rings ripple out from the button while its sound plays. */
 	.playing {
-		box-shadow: 0 0 0 4px color-mix(in srgb, var(--honey) 55%, transparent);
+		animation: ripple 1.1s ease-out infinite;
+	}
+	@keyframes ripple {
+		0% {
+			box-shadow: 0 0 0 0 color-mix(in srgb, var(--honey) 70%, transparent);
+		}
+		100% {
+			box-shadow: 0 0 0 18px transparent;
+		}
 	}
 </style>

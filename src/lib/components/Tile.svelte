@@ -43,17 +43,25 @@
 		min-height: 168px;
 		padding: 16px;
 		border-radius: var(--radius);
-		background: var(--surface);
-		border: 1px solid var(--line);
+		background:
+			linear-gradient(140deg, var(--glass-hi), transparent 45%),
+			var(--surface);
+		border: 1px solid var(--glass-border);
 		box-shadow: var(--shadow);
+		-webkit-backdrop-filter: var(--blur);
+		backdrop-filter: var(--blur);
 		color: var(--ink);
 		text-decoration: none;
 		transition:
-			transform 0.15s var(--ease),
-			box-shadow 0.15s;
+			transform 0.25s var(--ease),
+			box-shadow 0.25s;
 	}
 	.tile:hover {
-		transform: translateY(-3px);
+		transform: translateY(-4px);
+		box-shadow: var(--shadow), 0 22px 40px -22px rgb(74 42 23 / 0.45);
+	}
+	.tile:hover .pic {
+		transform: scale(1.08) rotate(-3deg);
 	}
 	.tile:active {
 		transform: scale(0.97);
@@ -62,6 +70,8 @@
 		font-size: 2.9rem;
 		line-height: 1.1;
 		margin-bottom: 6px;
+		filter: drop-shadow(0 6px 10px rgb(0 0 0 / 0.15));
+		transition: transform 0.3s var(--ease);
 	}
 	.spell {
 		font-size: 1.7rem;

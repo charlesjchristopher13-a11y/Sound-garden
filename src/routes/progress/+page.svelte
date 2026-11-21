@@ -367,12 +367,14 @@
 		border: 0;
 		border-radius: var(--radius-lg);
 		padding: 24px;
-		background: var(--surface);
+		background: var(--surface-opaque);
 		color: var(--ink);
 		box-shadow: 0 20px 60px #0006;
 	}
 	dialog::backdrop {
-		background: #1c161299;
+		background: rgb(28 22 18 / 0.45);
+		-webkit-backdrop-filter: blur(6px);
+		backdrop-filter: blur(6px);
 	}
 	@media (max-width: 600px) {
 		.lists {

@@ -64,6 +64,8 @@
 	const path = $derived(page.route.id ?? '');
 </script>
 
+<div class="garden" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span><span class="b4"></span></div>
+
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="top">
@@ -139,21 +141,26 @@
 	.skip:focus {
 		top: 12px;
 	}
+	/* A floating glass bar. */
 	.top {
 		position: sticky;
 		top: 0;
 		z-index: 20;
-		background: color-mix(in srgb, var(--bg) 88%, transparent);
-		backdrop-filter: blur(12px);
-		-webkit-backdrop-filter: blur(12px);
-		border-bottom: 1px solid var(--line);
-		padding-top: env(safe-area-inset-top);
+		padding-top: calc(10px + env(safe-area-inset-top));
 	}
 	.bar {
 		display: flex;
 		align-items: center;
 		gap: 16px;
-		min-height: 68px;
+		min-height: 64px;
+		width: min(1160px, calc(100% - 32px));
+		padding-inline: 12px 8px;
+		border-radius: 24px;
+		background: var(--surface);
+		border: 1px solid var(--glass-border);
+		box-shadow: var(--shadow);
+		-webkit-backdrop-filter: var(--blur);
+		backdrop-filter: var(--blur);
 	}
 	.brand {
 		display: flex;
@@ -184,9 +191,16 @@
 		text-decoration: none;
 		font-weight: 700;
 	}
+	.desk a {
+		transition: background-color 0.2s;
+	}
+	.desk a:hover {
+		background: var(--surface-2);
+	}
 	.desk a[aria-current='page'] {
-		background: var(--leaf);
+		background: var(--leaf-grad);
 		color: var(--on-leaf);
+		box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.25);
 	}
 	.learner {
 		display: inline-flex;
@@ -195,8 +209,8 @@
 		min-height: var(--tap);
 		padding: 0 6px 0 16px;
 		border-radius: 999px;
-		background: var(--surface);
-		border: 1.5px solid var(--line);
+		background: var(--surface-2);
+		border: 1.5px solid var(--glass-border);
 		color: var(--ink);
 		text-decoration: none;
 		font-weight: 700;
@@ -225,7 +239,6 @@
 		min-height: 60vh;
 	}
 	.foot {
-		border-top: 1px solid var(--line);
 		padding-block: 24px;
 		font-size: 1rem;
 	}
@@ -255,24 +268,31 @@
 			overflow: hidden;
 			clip: rect(0 0 0 0);
 		}
+		/* A floating glass dock. */
 		.tabs {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
+			gap: 4px;
 			position: fixed;
-			inset: auto 0 0 0;
+			left: 12px;
+			right: 12px;
+			bottom: calc(10px + env(safe-area-inset-bottom));
 			z-index: 30;
-			background: color-mix(in srgb, var(--surface) 94%, transparent);
-			backdrop-filter: blur(12px);
-			-webkit-backdrop-filter: blur(12px);
-			border-top: 1px solid var(--line);
-			padding-bottom: env(safe-area-inset-bottom);
+			padding: 6px;
+			border-radius: 26px;
+			background: var(--surface);
+			border: 1px solid var(--glass-border);
+			box-shadow: var(--shadow), 0 20px 40px -20px rgb(0 0 0 / 0.35);
+			-webkit-backdrop-filter: var(--blur);
+			backdrop-filter: var(--blur);
 		}
 		.tabs a {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			min-height: 64px;
+			min-height: 58px;
+			border-radius: 20px;
 			color: var(--ink-soft);
 			text-decoration: none;
 			font-weight: 700;
@@ -285,9 +305,10 @@
 		.tabs a[aria-current='page'] {
 			color: var(--ink);
 			background: var(--leaf-soft);
+			box-shadow: inset 0 1px 0 var(--glass-hi);
 		}
 		.foot {
-			padding-bottom: calc(96px + env(safe-area-inset-bottom));
+			padding-bottom: calc(110px + env(safe-area-inset-bottom));
 		}
 	}
 </style>

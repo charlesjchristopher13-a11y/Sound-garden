@@ -66,15 +66,17 @@
 		height: 100%;
 		padding: 18px;
 		border-radius: var(--radius);
-		background: var(--surface);
-		border: 1px solid var(--line);
+		background: linear-gradient(140deg, var(--glass-hi), transparent 45%), var(--surface);
+		border: 1px solid var(--glass-border);
 		box-shadow: var(--shadow);
+		-webkit-backdrop-filter: var(--blur);
+		backdrop-filter: var(--blur);
 		color: var(--ink);
 		text-decoration: none;
-		transition: transform 0.15s var(--ease);
+		transition: transform 0.25s var(--ease);
 	}
 	.set:hover {
-		transform: translateY(-3px);
+		transform: translateY(-4px);
 	}
 	.se {
 		font-size: 2.2rem;

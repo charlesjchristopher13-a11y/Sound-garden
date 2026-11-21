@@ -90,9 +90,10 @@
 		gap: clamp(16px, 4vw, 40px);
 		align-items: center;
 		background:
-			radial-gradient(circle at 0% 0%, var(--sun-soft), transparent 55%),
-			radial-gradient(circle at 100% 100%, var(--leaf-soft), transparent 55%),
+			radial-gradient(circle at 0% 0%, color-mix(in srgb, var(--sun-soft) 70%, transparent), transparent 55%),
+			radial-gradient(circle at 100% 100%, color-mix(in srgb, var(--leaf-soft) 70%, transparent), transparent 55%),
 			var(--surface);
+		padding-block: clamp(24px, 4vw, 44px);
 	}
 	.hi {
 		font-weight: 700;
@@ -119,14 +120,17 @@
 		padding: 14px 6px 12px;
 		min-height: 150px;
 		border-radius: var(--radius);
-		background: var(--surface);
-		border: 1.5px solid var(--line);
+		background: linear-gradient(160deg, var(--glass-hi), transparent 50%), var(--surface);
+		border: 1px solid var(--glass-border);
+		box-shadow: var(--shadow);
+		-webkit-backdrop-filter: var(--blur);
+		backdrop-filter: var(--blur);
 		color: var(--ink);
 		text-decoration: none;
-		transition: transform 0.15s var(--ease);
+		transition: transform 0.25s var(--ease);
 	}
 	.mini:hover {
-		transform: translateY(-3px);
+		transform: translateY(-4px);
 	}
 	.num {
 		position: absolute;
@@ -139,6 +143,7 @@
 	.mini .pic {
 		font-size: 2.6rem;
 		line-height: 1.15;
+		filter: drop-shadow(0 6px 10px rgb(0 0 0 / 0.15));
 	}
 	.mini .spell {
 		font-size: 1.5rem;
@@ -177,8 +182,13 @@
 		padding: 8px 14px;
 		border-radius: 16px;
 		background: var(--surface-2);
+		border: 1px solid var(--glass-border);
 		color: var(--ink);
 		text-decoration: none;
+		transition: transform 0.2s var(--ease);
+	}
+	.explore a:hover {
+		transform: translateX(4px);
 	}
 	.explore strong {
 		display: block;
@@ -190,7 +200,7 @@
 		font-size: 1.7rem;
 	}
 	.play {
-		background: linear-gradient(160deg, var(--sun-soft), var(--surface) 70%);
+		background: linear-gradient(160deg, color-mix(in srgb, var(--sun-soft) 75%, transparent), var(--surface) 70%);
 	}
 	.stats {
 		display: flex;
