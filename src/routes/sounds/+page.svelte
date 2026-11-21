@@ -10,6 +10,14 @@
 		{ title: 'Everything', sets: ['all', 'practiced'] }
 	];
 	const ctx = $derived({ today: progress.today, practiced: progress.practiced });
+	const catOf: Record<string, string> = {
+		consonants: 'cat-consonant',
+		digraphs: 'cat-digraph',
+		vowels: 'cat-vowel',
+		'two-sound': 'cat-blend',
+		'three-plus': 'cat-blend',
+		blends: 'cat-blend'
+	};
 	const levelText: Record<string, string> = { beginner: 'Beginner', core: 'Core', challenge: 'Extra challenge', mixed: 'Mixed levels' };
 </script>
 
@@ -27,7 +35,7 @@
 				{#each g.sets as id (id)}
 					{@const s = setById.get(id)!}
 					<li>
-						<a href={to(`/sounds/${id}`)} class="set">
+						<a href={to(`/sounds/${id}`)} class="set {catOf[id] ?? ''}">
 							<span class="se" aria-hidden="true">{s.emoji}</span>
 							<span class="body">
 								<strong>{s.label}</strong>
@@ -65,7 +73,7 @@
 		gap: 14px;
 		height: 100%;
 		padding: 18px;
-		border-radius: var(--radius);
+		border-radius: var(--leaf-sm);
 		background: linear-gradient(140deg, var(--glass-hi), transparent 45%), var(--surface);
 		border: 1px solid var(--glass-border);
 		box-shadow: var(--shadow);
@@ -79,8 +87,15 @@
 		transform: translateY(-4px);
 	}
 	.se {
-		font-size: 2.2rem;
+		flex: none;
+		display: grid;
+		place-items: center;
+		width: 56px;
+		height: 56px;
+		border-radius: 50% 50% 50% 14%;
+		font-size: 1.9rem;
 		line-height: 1;
+		background: color-mix(in srgb, var(--cat, var(--honey)) 32%, transparent);
 	}
 	.body {
 		display: flex;

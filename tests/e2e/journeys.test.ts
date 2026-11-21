@@ -102,3 +102,38 @@ test('shared card links and unknown pages work', async ({ page }) => {
 	await page.goto('./sounds/nope');
 	await expect(page.getByRole('heading', { level: 1 })).toContainText('could not find');
 });
+
+test('swiping a card moves to the next and previous sound', async ({ page }) => {
+	await page.goto('./sounds/start/s');
+	const card = page.locator('article.card');
+	await expect(card).toBeVisible();
+	const box = (await card.boundingBox())!;
+	const y = box.y + 40; // the top of the card, away from the buttons
+	const drag = async (from: number, to: number) => {
+		await page.mouse.move(from, y);
+		await page.mouse.down();
+		for (let i = 1; i <= 8; i++) await page.mouse.move(from + ((to - from) * i) / 8, y);
+		await page.mouse.up();
+	};
+
+	await drag(box.x + box.width * 0.8, box.x + box.width * 0.1); // swipe left
+	await expect(page).toHaveURL(/\/sounds\/start\/short-a\/$/);
+
+	const box2 = (await page.locator('article.card').boundingBox())!;
+	await drag(box2.x + box2.width * 0.1, box2.x + box2.width * 0.8); // swipe right
+	await expect(page).toHaveURL(/\/sounds\/start\/s\/$/);
+
+	// A short drag springs back and stays on the same card.
+	const box3 = (await page.locator('article.card').boundingBox())!;
+	await drag(box3.x + box3.width * 0.5, box3.x + box3.width * 0.45);
+	await page.waitForTimeout(400);
+	await expect(page).toHaveURL(/\/sounds\/start\/s\/$/);
+});
+
+test('keyboard Next keeps focus on Next', async ({ page }) => {
+	await page.goto('./sounds/start/s');
+	await page.getByRole('link', { name: /^Next/ }).focus();
+	await page.keyboard.press('Enter');
+	await expect(page).toHaveURL(/\/sounds\/start\/short-a\/$/);
+	await expect(page.getByRole('link', { name: /^Next/ })).toBeFocused();
+});

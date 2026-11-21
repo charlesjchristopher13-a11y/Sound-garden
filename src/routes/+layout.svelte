@@ -30,7 +30,8 @@
 	onNavigate((nav) => {
 		if (!document.startViewTransition) return;
 		if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-		if (nav.from?.url.pathname === nav.to?.url.pathname) return; // search typing
+		// Same view (search typing, card to card): the page animates itself.
+		if (nav.from?.route.id === nav.to?.route.id) return;
 		return new Promise((resolve) => {
 			document.startViewTransition(async () => {
 				resolve();

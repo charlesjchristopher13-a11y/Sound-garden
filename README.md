@@ -18,6 +18,8 @@ Version 4 rebuilds the v3 app (one `index.html` + `app.js`) as an installable, o
 | Labels | Sound and spelling mixed | `spelling` and `phonemes` stored separately |
 | Sound Hunt | Blends or singles, random | Grown-up picks the pool, balanced rounds, no same-sound distractors, pictures-only option, results saved |
 | Offline | No | Installable app; everything, including all audio (~3 MB), is cached |
+| Navigation on a card | Back/Next buttons | Swipe the card left/right (it follows the finger and springs back), plus buttons and arrow keys |
+| Look | Flat cards | Glass surfaces over a drifting garden backdrop, Fraunces headings, leaf-shaped corners, a colour per kind of sound, logo sound-waves on the card, Today's flower |
 | Accessibility | Partial | WCAG 2.2 AA checked with axe in light and dark mode, focus management, 48–64px targets, reduced motion, Andika font |
 
 ## Stack

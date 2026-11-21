@@ -14,6 +14,7 @@
 		partAudio
 	} from '#lib/catalog.ts';
 	import { progress, type Rating } from '#lib/progress.svelte.ts';
+	import { lastMove, swipe, type Direction } from '#lib/swipe.ts';
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
@@ -56,6 +57,30 @@
 		});
 	});
 
+	// Move through the set, remembering the direction so the next card can
+	// slide in from the matching side.
+	function go(dir: Direction) {
+		const c = dir === 'next' ? next : prev;
+		if (!c) return;
+		lastMove.dir = dir;
+		goto(hrefFor(c.id));
+	}
+	let enterDir = $state<Direction | null>(null);
+	$effect.pre(() => {
+		void card;
+		untrack(() => {
+			enterDir = lastMove.dir;
+			lastMove.dir = null;
+		});
+	});
+	// The card is re-created on each change; keep keyboard focus on Back/Next.
+	$effect(() => {
+		void card;
+		const rel = lastMove.refocus;
+		lastMove.refocus = null;
+		if (rel) document.querySelector<HTMLElement>(`.pager a[rel='${rel}']`)?.focus();
+	});
+
 	const tried = $derived(progress.triedToday(card.id));
 	const rating = $derived(progress.learner.cards[card.id]?.rating ?? null);
 	function rate(r: Rating) {
@@ -66,8 +91,8 @@
 		if (e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey) return;
 		const t = e.target as HTMLElement;
 		if (t.closest('input, textarea, select, [contenteditable]')) return;
-		if (e.key === 'ArrowRight' && next) goto(hrefFor(next.id));
-		else if (e.key === 'ArrowLeft' && prev) goto(hrefFor(prev.id));
+		if (e.key === 'ArrowRight') go('next');
+		else if (e.key === 'ArrowLeft') go('prev');
 	}
 
 	const kidPrompt = $derived(
@@ -91,12 +116,27 @@
 		</span>
 	</div>
 
-	<article class="card panel" aria-labelledby="card-h">
+	{#key card.id}
+	<article
+		class="card panel cat-{card.category}"
+		class:enter-next={enterDir === 'next'}
+		class:enter-prev={enterDir === 'prev'}
+		aria-labelledby="card-h"
+		use:swipe={{ onnext: next ? () => go('next') : undefined, onprev: prev ? () => go('prev') : undefined }}
+	>
 		<div class="feature">
 			<span class="pill" class:challenge={card.blend?.advanced}>
 				{describeCard(card)}{card.blend?.advanced ? ' · Extra challenge' : ''}
 			</span>
-			<span class="pic" role="img" aria-label={card.picture.word}>{card.picture.emoji}</span>
+			<div class="orb-wrap">
+				<span class="pic" role="img" aria-label={card.picture.word}>{card.picture.emoji}</span>
+				<!-- The logo's sound waves; they ripple while a sound plays. -->
+				<svg class="waves" class:on={player.status.playing} viewBox="0 0 60 60" aria-hidden="true">
+					<path d="M8 22a14 14 0 0 1 14 14" />
+					<path d="M8 10a26 26 0 0 1 26 26" />
+					<path d="M8 -2a38 38 0 0 1 38 38" />
+				</svg>
+			</div>
 			<h1 id="card-h" tabindex="-1">
 				<span class="letters">{bigLabel(card)}</span>
 				<span class="sr-only">, as in</span>
@@ -149,10 +189,12 @@
 		</div>
 
 		<nav class="pager" aria-label="Cards">
-			{#if prev}<a class="btn" href={hrefFor(prev.id)} rel="prev"><span aria-hidden="true">←</span> Back<span class="sr-only">: {prev.picture.word}</span></a>{/if}
+			{#if prev}<a class="btn" href={hrefFor(prev.id)} rel="prev" onclick={() => ((lastMove.dir = 'prev'), (lastMove.refocus = 'prev'))}><span aria-hidden="true">←</span> Back<span class="sr-only">: {prev.picture.word}</span></a>{/if}
 			<a class="btn ghost" href={backHref}>Pick a picture</a>
-			{#if next}<a class="btn primary" href={hrefFor(next.id)} rel="next">Next<span class="sr-only">: {next.picture.word}</span> <span aria-hidden="true">→</span></a>{/if}
+			{#if next}<a class="btn primary" href={hrefFor(next.id)} rel="next" onclick={() => ((lastMove.dir = 'next'), (lastMove.refocus = 'next'))}>Next<span class="sr-only">: {next.picture.word}</span> <span aria-hidden="true">→</span></a>{/if}
 		</nav>
+
+		{#if next || prev}<p class="swipe-hint" aria-hidden="true">← Swipe the card to change sounds →</p>{/if}
 
 		<details class="grownup">
 			<summary>For grown-ups: how is it going, word examples &amp; tips</summary>
@@ -195,6 +237,7 @@
 			</div>
 		</details>
 	</article>
+	{/key}
 </div>
 
 <style>
@@ -209,6 +252,79 @@
 		max-width: 780px;
 		margin-inline: auto;
 		padding-top: 24px;
+		user-select: none;
+		-webkit-user-select: none;
+		will-change: transform;
+	}
+	/* The next card slides in from the side the child swiped towards. */
+	.enter-next {
+		animation: in-right 0.38s cubic-bezier(0.2, 0.8, 0.2, 1);
+	}
+	.enter-prev {
+		animation: in-left 0.38s cubic-bezier(0.2, 0.8, 0.2, 1);
+	}
+	@keyframes in-right {
+		from {
+			transform: translate3d(40%, 0, 0) rotate(4deg);
+			opacity: 0;
+		}
+	}
+	@keyframes in-left {
+		from {
+			transform: translate3d(-40%, 0, 0) rotate(-4deg);
+			opacity: 0;
+		}
+	}
+	.swipe-hint {
+		display: none;
+		margin: 10px 0 0;
+		text-align: center;
+		font-size: 0.95rem;
+		color: var(--muted);
+	}
+	@media (pointer: coarse) {
+		.swipe-hint {
+			display: block;
+		}
+	}
+	.orb-wrap {
+		position: relative;
+	}
+	.waves {
+		position: absolute;
+		top: 4px;
+		right: -38px;
+		width: 58px;
+		height: 58px;
+		fill: none;
+		stroke: var(--ink-soft);
+		stroke-width: 5;
+		stroke-linecap: round;
+		opacity: 0.55;
+	}
+	.waves path {
+		transition: opacity 0.3s;
+	}
+	.waves.on path {
+		animation: wave 1.1s ease-in-out infinite;
+	}
+	.waves.on path:nth-child(2) {
+		animation-delay: 0.15s;
+	}
+	.waves.on path:nth-child(3) {
+		animation-delay: 0.3s;
+	}
+	@keyframes wave {
+		0%,
+		100% {
+			opacity: 0.25;
+		}
+		40% {
+			opacity: 1;
+		}
+	}
+	.waves.on {
+		opacity: 1;
 	}
 	.feature {
 		display: flex;
@@ -228,12 +344,12 @@
 		line-height: 1;
 		background:
 			radial-gradient(circle at 30% 25%, var(--glass-hi), transparent 45%),
-			radial-gradient(circle, color-mix(in srgb, var(--honey) 35%, transparent), transparent 70%),
+			radial-gradient(circle, color-mix(in srgb, var(--cat) 45%, transparent), transparent 70%),
 			var(--surface-2);
 		border: 1px solid var(--glass-border);
 		box-shadow:
 			var(--shadow),
-			0 0 60px -10px color-mix(in srgb, var(--honey) 60%, transparent);
+			0 0 60px -10px color-mix(in srgb, var(--cat) 70%, transparent);
 		animation: float 6s ease-in-out infinite;
 	}
 	@keyframes float {
@@ -248,6 +364,7 @@
 		margin: 0;
 	}
 	.letters {
+		font-family: var(--font);
 		font-size: clamp(3rem, 12vw, 4.6rem);
 		line-height: 1;
 	}

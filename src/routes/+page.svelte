@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Flower from '#lib/components/Flower.svelte';
 	import { to } from '#lib/paths.ts';
 	import { cardById, cards, setById, type SetId } from '#lib/catalog.ts';
 	import { progress } from '#lib/progress.svelte.ts';
@@ -29,7 +30,7 @@
 		<ol class="today" aria-label="Today's cards">
 			{#each todays as c, i (c.id)}
 				<li>
-					<a href={to(`/sounds/today/${c.id}`)} class="mini" data-status={progress.status(c.id)}>
+					<a href={to(`/sounds/today/${c.id}`)} class="mini cat-{c.category}" data-status={progress.status(c.id)}>
 						<span class="num" aria-hidden="true">{i + 1}</span>
 						<span class="pic" aria-hidden="true">{c.picture.emoji}</span>
 						<span class="spell">{c.spelling}</span>
@@ -65,19 +66,15 @@
 		</div>
 
 		<div class="panel">
-			<h2>Growing so far</h2>
+			<h2>Today's flower</h2>
+			<Flower cards={todays} done={(id) => progress.triedToday(id)} />
+			<p class="muted small center">Each card tried today grows a petal.</p>
 			<dl class="stats">
 				<div><dt>Tried</dt><dd>{progress.practiced.size}</dd></div>
 				<div><dt>Needs practice</dt><dd>{progress.counts.practice}</dd></div>
 				<div><dt>Secure</dt><dd>{progress.counts.secure}</dd></div>
 			</dl>
-			<meter
-				min="0"
-				max={cards.length}
-				value={progress.practiced.size}
-				aria-label="Cards tried, out of {cards.length}"
-			></meter>
-			<p class="muted small">{progress.practiced.size} of {cards.length} cards tried.</p>
+			<p class="muted small">{progress.practiced.size} of {cards.length} cards tried so far.</p>
 			<a href={to(`/progress`)}>Progress, learners &amp; backup</a>
 		</div>
 	</section>
@@ -119,7 +116,7 @@
 		text-align: center;
 		padding: 14px 6px 12px;
 		min-height: 150px;
-		border-radius: var(--radius);
+		border-radius: var(--leaf-sm);
 		background: linear-gradient(160deg, var(--glass-hi), transparent 50%), var(--surface);
 		border: 1px solid var(--glass-border);
 		box-shadow: var(--shadow);
@@ -141,9 +138,15 @@
 		color: var(--muted);
 	}
 	.mini .pic {
-		font-size: 2.6rem;
-		line-height: 1.15;
-		filter: drop-shadow(0 6px 10px rgb(0 0 0 / 0.15));
+		display: grid;
+		place-items: center;
+		width: 60px;
+		height: 60px;
+		margin-bottom: 4px;
+		border-radius: 50% 50% 50% 14%;
+		font-size: 2.2rem;
+		line-height: 1;
+		background: color-mix(in srgb, var(--cat) 32%, transparent);
 	}
 	.mini .spell {
 		font-size: 1.5rem;
@@ -216,9 +219,8 @@
 		font-size: 1.8rem;
 		font-weight: 700;
 	}
-	meter {
-		width: 100%;
-		height: 14px;
+	.center {
+		text-align: center;
 	}
 	.small {
 		font-size: 0.95rem;

@@ -17,7 +17,7 @@
 	};
 </script>
 
-<a class="tile" {href} id="tile-{card.id}" data-status={status}>
+<a class="tile cat-{card.category}" {href} id="tile-{card.id}" data-status={status}>
 	{#if status !== 'new'}
 		<span class="badge" aria-hidden="true">{status === 'secure' ? '🌻' : status === 'practice' ? '🌱' : '★'}</span>
 	{/if}
@@ -42,7 +42,7 @@
 		gap: 2px;
 		min-height: 168px;
 		padding: 16px;
-		border-radius: var(--radius);
+		border-radius: var(--leaf-sm);
 		background:
 			linear-gradient(140deg, var(--glass-hi), transparent 45%),
 			var(--surface);
@@ -66,11 +66,18 @@
 	.tile:active {
 		transform: scale(0.97);
 	}
+	/* The picture sits on a petal in its sound's colour. */
 	.pic {
-		font-size: 2.9rem;
-		line-height: 1.1;
-		margin-bottom: 6px;
-		filter: drop-shadow(0 6px 10px rgb(0 0 0 / 0.15));
+		display: grid;
+		place-items: center;
+		width: 68px;
+		height: 68px;
+		margin-bottom: 8px;
+		border-radius: 50% 50% 50% 14%;
+		font-size: 2.5rem;
+		line-height: 1;
+		background: color-mix(in srgb, var(--cat) 32%, transparent);
+		box-shadow: inset 0 1px 0 var(--glass-hi);
 		transition: transform 0.3s var(--ease);
 	}
 	.spell {

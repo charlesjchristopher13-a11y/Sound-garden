@@ -2,6 +2,7 @@
 @import '@fontsource/andika/latin-700.css';
 @import '@fontsource/andika/latin-ext-400.css';
 @import '@fontsource/andika/latin-ext-700.css';
+@import '@fontsource-variable/fraunces/soft.css';
 
 /*
  * Colors come from the Sound Garden logo. Text pairs were checked against
@@ -42,9 +43,21 @@
 
 	--radius: 20px;
 	--radius-lg: 28px;
+	/* Leaf shape from the logo: round on three corners, tight on one. */
+	--leaf-sm: 22px 22px 22px 7px;
+	--leaf-lg: 32px 32px 32px 10px;
 	--tap: 48px;
 	--tap-kid: 64px;
+	/* Andika: designed for early readers, used for everything a child reads. */
 	--font: 'Andika', 'Andika New Basic', ui-rounded, 'Avenir Next', system-ui, sans-serif;
+	/* Fraunces (soft): headings with a warm, hand-made feel. */
+	--font-display: 'Fraunces Variable', 'Fraunces', Georgia, serif;
+
+	/* One colour per kind of sound, used on tiles and the card orb. */
+	--cat-consonant: #d4973b;
+	--cat-vowel: #e0783a;
+	--cat-digraph: #d9877a;
+	--cat-blend: #7d9a5a;
 	--ease: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
@@ -79,6 +92,10 @@
 		--blob-3: #3f5a2c;
 		--blob-4: #5e3420;
 		--blob-alpha: 0.55;
+		--cat-consonant: #e0b062;
+		--cat-vowel: #ef9058;
+		--cat-digraph: #e3a093;
+		--cat-blend: #a9c48a;
 	}
 }
 
@@ -191,13 +208,47 @@ body {
 h1,
 h2,
 h3 {
-	line-height: 1.15;
+	font-family: var(--font-display);
+	font-variation-settings: 'SOFT' 100;
+	font-weight: 640;
+	line-height: 1.12;
 	margin: 0 0 0.4em;
 	text-wrap: balance;
 }
+
+.cat-consonant {
+	--cat: var(--cat-consonant);
+}
+.cat-vowel {
+	--cat: var(--cat-vowel);
+}
+.cat-digraph {
+	--cat: var(--cat-digraph);
+}
+.cat-blend {
+	--cat: var(--cat-blend);
+}
+
+/* A faint paper grain so glass and colour feel tactile rather than flat. */
+body::after {
+	content: '';
+	position: fixed;
+	inset: 0;
+	z-index: 100;
+	pointer-events: none;
+	opacity: 0.07;
+	mix-blend-mode: multiply;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.29 0 0 0 0 0.16 0 0 0 0 0.09 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+@media (prefers-color-scheme: dark) {
+	body::after {
+		mix-blend-mode: overlay;
+		opacity: 0.1;
+	}
+}
 h1 {
-	font-size: clamp(1.9rem, 4.5vw + 0.6rem, 2.9rem);
-	letter-spacing: -0.01em;
+	font-size: clamp(2rem, 4.8vw + 0.6rem, 3.2rem);
+	letter-spacing: -0.02em;
 }
 h2 {
 	font-size: clamp(1.35rem, 2vw + 0.8rem, 1.75rem);
@@ -344,7 +395,7 @@ h1:focus,
 .panel {
 	background: var(--surface);
 	border: 1px solid var(--glass-border);
-	border-radius: var(--radius-lg);
+	border-radius: var(--leaf-lg);
 	box-shadow: var(--shadow);
 	padding: clamp(18px, 3vw, 32px);
 }
