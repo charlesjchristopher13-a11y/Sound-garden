@@ -91,7 +91,7 @@ From the project guide's priority list, still to do:
 
 ## Deploying
 
-`npm run build` writes a static site to `build/`. Any static host works (Vercel, Netlify, Cloudflare Pages, GitHub
+`npm run build` writes a static site to `build/`. `vercel.json` configures Vercel (clean URLs, caching). Any static host works (Vercel, Netlify, Cloudflare Pages, GitHub
 Pages). `404.html` is the fallback for any URL that was not prerendered. The app assumes it is served from the domain
 root.
 
