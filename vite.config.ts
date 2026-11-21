@@ -11,7 +11,9 @@ export default defineConfig({
 			},
 			// Every page is prerendered as a static file. 404.html is the
 			// single-page-app fallback for any URL that was not prerendered.
-			adapter: adapter({ fallback: '404.html' })
+			adapter: adapter({ fallback: '404.html' }),
+			// Set BASE_PATH to serve from a sub-path, e.g. /Sound-garden on GitHub Pages.
+			paths: { base: (process.env.BASE_PATH ?? '') as '' | `/${string}` }
 		})
 	],
 	test: { include: ['tests/unit/**/*.test.ts'] }

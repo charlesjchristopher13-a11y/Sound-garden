@@ -61,7 +61,7 @@ src/
     progress/              learners, summary, backup
     guide/                 grown-up guide
   service-worker.ts
-static/sounds/             audio: clear/ single sounds, blends/ joined and slow blends
+static/audio/              sound files: clear/ single sounds, blends/ joined and slow blends
 content/legacy/            the v3 app and its extracted catalog, kept for reference
 scripts/build-catalog.mjs  the one-time v3 → v4 catalog migration
 tests/unit, tests/e2e
@@ -74,15 +74,15 @@ Edit `src/lib/data/cards.json`. Rules:
 - **Never change or reuse a card `id`.** Saved progress is keyed by it. To retire a card, delete it; progress for
   unknown ids is dropped on load.
 - `spelling` is what's written on the card. `phonemes` is what the child hears, one entry per sound. Blend part
-  buttons play `static/sounds/clear/<phoneme>.mp3`.
-- Audio paths are relative to `static/sounds/`. `npm run test:unit` fails if any file is missing.
+  buttons play `static/audio/clear/<phoneme>.mp3`.
+- Audio paths are relative to `static/audio/`. `npm run test:unit` fails if any file is missing.
 - `blend.advanced: true` labels a card "Extra challenge" and keeps it out of the beginner path and Sound Hunt.
 
 ### Known content follow-ups
 
 From the project guide's priority list, still to do:
 
-1. **One recorded voice** for core sounds and connected blends. Drop new files into `static/sounds/` and update the
+1. **One recorded voice** for core sounds and connected blends. Drop new files into `static/audio/` and update the
    paths; no code changes needed.
 2. **Content review.** Single-sound cards still use their v3 sound label (e.g. `ā`) as `spelling`. A phonics specialist
    should set real spellings and a consistent phoneme notation, and check that `ct`, `rked` and similar cards are
@@ -91,9 +91,25 @@ From the project guide's priority list, still to do:
 
 ## Deploying
 
-`npm run build` writes a static site to `build/`. `vercel.json` configures Vercel (clean URLs, caching). Any static host works (Vercel, Netlify, Cloudflare Pages, GitHub
-Pages). `404.html` is the fallback for any URL that was not prerendered. The app assumes it is served from the domain
-root.
+### GitHub Pages (current)
+
+`.github/workflows/pages.yml` builds and publishes the site on every push to `main` (and the
+`claude/lucid-cori-l2v8w8` branch). It is served at `https://<owner>.github.io/Sound-garden/`.
+
+One-time setup: in the repository, go to **Settings → Pages** and set **Source** to **GitHub Actions**.
+
+To check a build the way Pages serves it:
+
+```sh
+BASE_PATH=/Sound-garden npm run test:e2e
+```
+
+The browser tests use `tests/static-server.mjs`, a strict server that behaves like GitHub Pages.
+
+### Other hosts
+
+`npm run build` writes a static site to `build/` that works on any static host. Set `BASE_PATH` when the site is not
+at a domain root. `vercel.json` configures Vercel. Every page is `<path>/index.html`, and `404.html` is the fallback.
 
 Progress is stored per browser and per site address, so learners who used v3 on the old address will see their
 stars only if v4 is served from that same address. Otherwise, start fresh or enter them again.

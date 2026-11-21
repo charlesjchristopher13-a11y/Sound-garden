@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { to } from '#lib/paths.ts';
 	import { untrack } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
@@ -31,8 +32,8 @@
 	const pos = $derived(list.findIndex((c) => c.id === card.id));
 	const prev = $derived(list.length > 1 ? list[(Math.max(pos, 0) - 1 + list.length) % list.length] : null);
 	const next = $derived(list.length > 1 ? list[(pos + 1) % list.length] : null);
-	const hrefFor = (id: string) => `/sounds/${set.id}/${id}${search}`;
-	const backHref = $derived(`/sounds/${set.id}${search}`);
+	const hrefFor = (id: string) => to(`/sounds/${set.id}/${id}${search}`);
+	const backHref = $derived(to(`/sounds/${set.id}${search}`));
 
 	const label = $derived(`/${card.soundLabel}/`);
 	const listen = () => player.play(card.audio.main, label);

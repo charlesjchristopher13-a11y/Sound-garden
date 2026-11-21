@@ -19,7 +19,7 @@ type Status = {
 
 const PAUSE_MS = 450;
 
-const url = (path: string) => asset(`sounds/${path}` as Parameters<typeof asset>[0]);
+const url = (path: string) => asset(`audio/${path}` as Parameters<typeof asset>[0]);
 
 class SoundPlayer {
 	status = $state<Status>({ playing: false, message: '' });

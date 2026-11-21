@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { to } from '#lib/paths.ts';
 	import { tick } from 'svelte';
 	import SoundButton from '#lib/components/SoundButton.svelte';
 	import { player } from '#lib/audio.svelte.ts';
@@ -158,7 +159,7 @@
 			<div class="row">
 				<button type="button" class="btn accent big" onclick={start}>Play again</button>
 				<button type="button" class="btn big" onclick={() => (phase = 'setup')}>Change sounds</button>
-				<a class="btn ghost big" href="/sounds">Back to cards</a>
+				<a class="btn ghost big" href={to(`/sounds`)}>Back to cards</a>
 			</div>
 		</div>
 	{/if}

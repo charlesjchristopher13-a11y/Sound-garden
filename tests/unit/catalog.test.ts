@@ -39,7 +39,7 @@ describe('catalog', () => {
 
 	it('has an audio file for every card, slow version and blend part', () => {
 		const missing: string[] = [];
-		const check = (p?: string) => p && !existsSync(`static/sounds/${p}`) && missing.push(p);
+		const check = (p?: string) => p && !existsSync(`static/audio/${p}`) && missing.push(p);
 		for (const c of cards) {
 			check(c.audio.main);
 			check(c.audio.slow);

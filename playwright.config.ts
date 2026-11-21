@@ -1,17 +1,20 @@
 import { defineConfig, devices } from '@playwright/test';
 
+// BASE_PATH=/Sound-garden npm run test:e2e checks the GitHub Pages layout.
+const base = process.env.BASE_PATH ?? '';
+
 export default defineConfig({
 	testDir: 'tests/e2e',
 	fullyParallel: true,
 	reporter: process.env.CI ? 'github' : 'list',
 	use: {
-		baseURL: 'http://localhost:4173',
+		baseURL: `http://localhost:4173${base}/`,
 		launchOptions: { args: ['--autoplay-policy=no-user-gesture-required'] }
 	},
 	webServer: {
-		command: 'npm run build && npm run preview -- --port 4173 --strictPort',
+		command: `npm run build && node tests/static-server.mjs build '${base}' 4173`,
 		port: 4173,
-		reuseExistingServer: !process.env.CI,
+		reuseExistingServer: false,
 		timeout: 180_000
 	},
 	projects: [

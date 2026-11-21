@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { to } from '#lib/paths.ts';
+</script>
+
 <svelte:head><title>Grown-up guide · Sound Garden</title></svelte:head>
 
 <div class="wrap prose">
@@ -10,11 +14,11 @@
 	<section class="panel">
 		<h2>A five-minute session</h2>
 		<ol>
-			<li>Open <a href="/">Today's practice</a>. It picks the next five sounds on the beginner path.</li>
+			<li>Open <a href={to(`/`)}>Today's practice</a>. It picks the next five sounds on the beginner path.</li>
 			<li>On each card, tap <strong>Listen</strong>. For blends, tap each part, then <strong>One at a time</strong>.</li>
 			<li>Your child says it out loud. Use the mirror tip under <strong>Your turn!</strong></li>
 			<li>Tap <strong>I tried it!</strong> to add a star. Then <strong>Next</strong>.</li>
-			<li>Finish with a round of <a href="/play">Sound Hunt</a>.</li>
+			<li>Finish with a round of <a href={to(`/play`)}>Sound Hunt</a>.</li>
 		</ol>
 	</section>
 
@@ -33,7 +37,7 @@
 	<section class="panel">
 		<h2>Choosing content</h2>
 		<p>
-			Start with <a href="/sounds/start">Start here</a> (s, a, t, p, i, n, m, d, g, k, e, u). Ending blends, longer
+			Start with <a href={to(`/sounds/start`)}>Start here</a> (s, a, t, p, i, n, m, d, g, k, e, u). Ending blends, longer
 			clusters and inflected endings such as <em>-rked</em> are marked <strong>Extra challenge</strong>. Save them
 			until single sounds are secure.
 		</p>
@@ -56,7 +60,7 @@
 		<h2>Privacy</h2>
 		<p>
 			There are no accounts, ads or tracking. Learner names and progress stay in this browser on this device. Use
-			<a href="/progress#backup">Download backup</a> to keep a copy or move to another device.
+			<a href={to(`/progress#backup`)}>Download backup</a> to keep a copy or move to another device.
 		</p>
 	</section>
 

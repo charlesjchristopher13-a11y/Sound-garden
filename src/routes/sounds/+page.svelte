@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { to } from '#lib/paths.ts';
 	import { cardsInSet, setById, type SetId } from '#lib/catalog.ts';
 	import { progress } from '#lib/progress.svelte.ts';
 
@@ -16,7 +17,7 @@
 
 <div class="wrap">
 	<h1 tabindex="-1">Pick your sounds</h1>
-	<p class="muted lead">Choose a set. New learners do best with <a href="/sounds/start">Start here</a>.</p>
+	<p class="muted lead">Choose a set. New learners do best with <a href={to(`/sounds/start`)}>Start here</a>.</p>
 
 	{#each groups as g (g.title)}
 		<section aria-labelledby="g-{g.title}">
@@ -26,7 +27,7 @@
 				{#each g.sets as id (id)}
 					{@const s = setById.get(id)!}
 					<li>
-						<a href="/sounds/{id}" class="set">
+						<a href={to(`/sounds/${id}`)} class="set">
 							<span class="se" aria-hidden="true">{s.emoji}</span>
 							<span class="body">
 								<strong>{s.label}</strong>

@@ -8,10 +8,13 @@ import { version } from '$app/env';
 /**
  * Offline support. The app code, fonts, icons and every sound clip are
  * cached on install (about 3 MB), so practice works with no connection.
- * Every route is the same app shell, so any page loads offline from "/".
+ * Every route is the same app shell, so any page loads offline from the root.
  */
 const CACHE = `sound-garden-${version}`;
-const PRECACHE = ['/', ...immutable.map((f) => f.path), ...assets.map((f) => f.path)];
+// The worker lives at the app's base path, so its scope is the app root.
+const ROOT = new URL(self.registration.scope).pathname;
+const url = (p: string) => (p.startsWith('/') ? p : ROOT + p);
+const PRECACHE = [ROOT, ...immutable.map((f) => url(f.path)), ...assets.map((f) => url(f.path))];
 
 self.addEventListener('install', (event) => {
 	event.waitUntil(
@@ -40,7 +43,7 @@ self.addEventListener('fetch', (event) => {
 	// Pages: network first so updates arrive, then the cached shell.
 	if (req.mode === 'navigate') {
 		event.respondWith(
-			fetch(req).catch(async () => (await caches.match(req)) ?? (await caches.match('/'))!)
+			fetch(req).catch(async () => (await caches.match(req)) ?? (await caches.match(ROOT))!)
 		);
 		return;
 	}

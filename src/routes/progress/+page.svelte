@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { to } from '#lib/paths.ts';
 	import { cards, type Category } from '#lib/catalog.ts';
 	import { progress, today } from '#lib/progress.svelte.ts';
 
@@ -174,7 +175,7 @@
 				<h3>🌱 Needs practice ({needs.length})</h3>
 				{#if needs.length}
 					<ul class="links">
-						{#each needs as c (c.id)}<li><a href="/sounds/all/{c.id}">{c.spelling} · {c.picture.word}</a></li>{/each}
+						{#each needs as c (c.id)}<li><a href={to(`/sounds/all/${c.id}`)}>{c.spelling} · {c.picture.word}</a></li>{/each}
 					</ul>
 				{:else}<p class="muted">None marked. Rate cards in the “For grown-ups” panel on each card.</p>{/if}
 			</div>
@@ -182,7 +183,7 @@
 				<h3>🌻 Secure ({secure.length})</h3>
 				{#if secure.length}
 					<ul class="links">
-						{#each secure as c (c.id)}<li><a href="/sounds/all/{c.id}">{c.spelling} · {c.picture.word}</a></li>{/each}
+						{#each secure as c (c.id)}<li><a href={to(`/sounds/all/${c.id}`)}>{c.spelling} · {c.picture.word}</a></li>{/each}
 					</ul>
 				{:else}<p class="muted">None yet.</p>{/if}
 			</div>

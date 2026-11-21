@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { to } from '#lib/paths.ts';
 	import { cardById, cards, setById, type SetId } from '#lib/catalog.ts';
 	import { progress } from '#lib/progress.svelte.ts';
 
@@ -22,13 +23,13 @@
 			<h1 id="today-h" tabindex="-1">Today's practice</h1>
 			<p class="muted">Five sounds to listen to, say out loud and try. Tap a picture to start.</p>
 			{#if first}
-				<a class="btn primary big" href="/sounds/today/{first.id}">▶ Start practice</a>
+				<a class="btn primary big" href={to(`/sounds/today/${first.id}`)}>▶ Start practice</a>
 			{/if}
 		</div>
 		<ol class="today" aria-label="Today's cards">
 			{#each todays as c, i (c.id)}
 				<li>
-					<a href="/sounds/today/{c.id}" class="mini" data-status={progress.status(c.id)}>
+					<a href={to(`/sounds/today/${c.id}`)} class="mini" data-status={progress.status(c.id)}>
 						<span class="num" aria-hidden="true">{i + 1}</span>
 						<span class="pic" aria-hidden="true">{c.picture.emoji}</span>
 						<span class="spell">{c.spelling}</span>
@@ -47,20 +48,20 @@
 				{#each explore as e (e.id)}
 					{@const s = setById.get(e.id)!}
 					<li>
-						<a href="/sounds/{s.id}">
+						<a href={to(`/sounds/${s.id}`)}>
 							<span class="ei" aria-hidden="true">{s.emoji}</span>
 							<span><strong>{s.label}</strong><span class="muted">{e.note}</span></span>
 						</a>
 					</li>
 				{/each}
 			</ul>
-			<a class="btn ghost" href="/sounds">See every set, including extra challenges <span aria-hidden="true">→</span></a>
+			<a class="btn ghost" href={to(`/sounds`)}>See every set, including extra challenges <span aria-hidden="true">→</span></a>
 		</div>
 
 		<div class="panel play">
 			<h2>Sound Hunt</h2>
 			<p>Hear a sound, then find the picture. Five quick rounds.</p>
-			<a class="btn accent big" href="/play">🎯 Let's play</a>
+			<a class="btn accent big" href={to(`/play`)}>🎯 Let's play</a>
 		</div>
 
 		<div class="panel">
@@ -77,7 +78,7 @@
 				aria-label="Cards tried, out of {cards.length}"
 			></meter>
 			<p class="muted small">{progress.practiced.size} of {cards.length} cards tried.</p>
-			<a href="/progress">Progress, learners &amp; backup</a>
+			<a href={to(`/progress`)}>Progress, learners &amp; backup</a>
 		</div>
 	</section>
 </div>

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { to } from '#lib/paths.ts';
 	import { untrack } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
@@ -49,12 +50,12 @@
 	function onInput() {
 		clearTimeout(timer);
 		timer = setTimeout(() => {
-			goto(`/sounds/${set.id}${query(activeFamily, input)}`, { replace: true, reset: false });
+			goto(to(`/sounds/${set.id}${query(activeFamily, input)}`), { replace: true, reset: false });
 		}, 180);
 	}
 	function clearSearch(el: HTMLInputElement | null) {
 		input = '';
-		goto(`/sounds/${set.id}${query(activeFamily, '')}`, { replace: true, reset: false });
+		goto(to(`/sounds/${set.id}${query(activeFamily, '')}`), { replace: true, reset: false });
 		el?.focus();
 	}
 	let searchEl: HTMLInputElement | null = $state(null);
@@ -67,7 +68,7 @@
 <div class="wrap">
 	<div class="head">
 		<div>
-			<p class="crumb"><a href="/sounds">All sets</a></p>
+			<p class="crumb"><a href={to(`/sounds`)}>All sets</a></p>
 			<h1 tabindex="-1"><span aria-hidden="true">{set.emoji}</span> {set.label}</h1>
 			<p class="muted">{set.blurb}</p>
 		</div>
@@ -76,7 +77,7 @@
 	<nav aria-label="Sets">
 		<div class="chips">
 			{#each SETS as s (s.id)}
-				<a class="chip" href="/sounds/{s.id}" aria-current={s.id === set.id ? 'page' : undefined}>
+				<a class="chip" href={to(`/sounds/${s.id}`)} aria-current={s.id === set.id ? 'page' : undefined}>
 					<span aria-hidden="true">{s.emoji}</span>{s.label}
 				</a>
 			{/each}
@@ -86,11 +87,11 @@
 	{#if families.length > 1}
 		<nav aria-label="Blend families">
 			<div class="chips">
-				<a class="chip" href="/sounds/{set.id}{query(null, q)}" aria-current={!activeFamily ? 'true' : undefined}
+				<a class="chip" href={to(`/sounds/${set.id}${query(null, q)}`)} aria-current={!activeFamily ? 'true' : undefined}
 					>All families</a
 				>
 				{#each families as f (f)}
-					<a class="chip" href="/sounds/{set.id}{query(f, q)}" aria-current={activeFamily === f ? 'true' : undefined}>
+					<a class="chip" href={to(`/sounds/${set.id}${query(f, q)}`)} aria-current={activeFamily === f ? 'true' : undefined}>
 						{familyLabel(f)}
 						<span class="n">{inSet.filter((c) => c.blend?.family === f).length}</span>
 					</a>
@@ -128,7 +129,7 @@
 		<ul class="grid" aria-label="{scope} cards">
 			{#each shown as c (c.id)}
 				<li>
-					<Tile card={c} status={progress.status(c.id)} href="/sounds/{set.id}/{c.id}{query(activeFamily, q)}" />
+					<Tile card={c} status={progress.status(c.id)} href={to(`/sounds/${set.id}/${c.id}${query(activeFamily, q)}`)} />
 				</li>
 			{/each}
 		</ul>
@@ -136,11 +137,11 @@
 		<div class="empty panel">
 			{#if set.id === 'practiced' && !q}
 				<p>No practiced cards yet. Press <strong>I tried it!</strong> on a card to add a star.</p>
-				<a class="btn primary" href="/sounds/today">Go to today's practice</a>
+				<a class="btn primary" href={to(`/sounds/today`)}>Go to today's practice</a>
 			{:else if q}
 				<p>No cards match “{q}” in {scope}.</p>
 				{#if elsewhere}
-					<a class="btn primary" href="/sounds/all?q={encodeURIComponent(q)}">
+					<a class="btn primary" href={to(`/sounds/all?q=${encodeURIComponent(q)}`)}>
 						Show {elsewhere} {elsewhere === 1 ? 'match' : 'matches'} in All sounds
 					</a>
 				{/if}

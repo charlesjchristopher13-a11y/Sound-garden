@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { to } from '#lib/paths.ts';
 	import '../app.css';
 	import { onMount, tick } from 'svelte';
 	import { afterNavigate, beforeNavigate, onNavigate } from '$app/navigation';
@@ -55,29 +56,30 @@
 	});
 
 	const nav = [
-		{ href: '/', label: 'Today', icon: '🌤️', match: (p: string) => p === '/' },
-		{ href: '/sounds', label: 'Sounds', icon: '🌿', match: (p: string) => p.startsWith('/sounds') },
-		{ href: '/play', label: 'Play', icon: '🎯', match: (p: string) => p.startsWith('/play') }
+		{ href: '/', label: 'Today', icon: '🌤️', match: (r: string) => r === '/' },
+		{ href: '/sounds', label: 'Sounds', icon: '🌿', match: (r: string) => r.startsWith('/sounds') },
+		{ href: '/play', label: 'Play', icon: '🎯', match: (r: string) => r.startsWith('/play') }
 	];
-	const path = $derived(page.url.pathname);
+	// Match on the route id, which does not include the base path.
+	const path = $derived(page.route.id ?? '');
 </script>
 
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="top">
 	<div class="wrap bar">
-		<a class="brand" href="/" aria-label="Sound Garden home">
+		<a class="brand" href={to(`/`)} aria-label="Sound Garden home">
 			<img src={asset('icons/mark.png')} alt="" width="44" height="44" />
 			<span>Sound Garden</span>
 		</a>
 		<nav class="desk" aria-label="Main">
 			{#each nav as item (item.href)}
-				<a href={item.href} aria-current={item.match(path) ? 'page' : undefined}>
+				<a href={to(item.href)} aria-current={item.match(path) ? 'page' : undefined}>
 					<span aria-hidden="true">{item.icon}</span>{item.label}
 				</a>
 			{/each}
 		</nav>
-		<a class="learner" href="/progress" aria-current={path.startsWith('/progress') ? 'page' : undefined}>
+		<a class="learner" href={to(`/progress`)} aria-current={path.startsWith('/progress') ? 'page' : undefined}>
 			<span class="sr-only">Progress for</span>
 			<span class="name">{progress.learner.name}</span>
 			<span class="stars" aria-label="{progress.practiced.size} cards practiced">★ {progress.practiced.size}</span>
@@ -88,7 +90,7 @@
 {#if progress.saveError}
 	<div class="wrap">
 		<p class="save-error" role="alert">
-			{progress.saveError} <a href="/progress#backup">Back up progress</a>
+			{progress.saveError} <a href={to(`/progress#backup`)}>Back up progress</a>
 		</p>
 	</div>
 {/if}
@@ -100,7 +102,7 @@
 <footer class="foot">
 	<div class="wrap">
 		<p>
-			<a href="/guide">Grown-up guide</a> · <a href="/progress">Progress &amp; backup</a>
+			<a href={to(`/guide`)}>Grown-up guide</a> · <a href={to(`/progress`)}>Progress &amp; backup</a>
 		</p>
 		<p class="muted small">
 			Sound recordings from <a href="https://phonicademy.com">Phonicademy</a>
@@ -112,7 +114,7 @@
 
 <nav class="tabs" aria-label="Main">
 	{#each nav as item (item.href)}
-		<a href={item.href} aria-current={item.match(path) ? 'page' : undefined}>
+		<a href={to(item.href)} aria-current={item.match(path) ? 'page' : undefined}>
 			<span class="ti" aria-hidden="true">{item.icon}</span>
 			<span>{item.label}</span>
 		</a>

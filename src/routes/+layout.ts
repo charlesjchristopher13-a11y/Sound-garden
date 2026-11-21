@@ -2,4 +2,5 @@
 // route is prerendered to a static shell so any URL works on any static host.
 export const ssr = false;
 export const prerender = true;
-export const trailingSlash = 'never';
+// Every page is written as <path>/index.html, which every static host serves.
+export const trailingSlash = 'always';

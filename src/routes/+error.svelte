@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { to } from '#lib/paths.ts';
 	import { page } from '$app/state';
 </script>
 
@@ -9,6 +10,6 @@
 		<p style="font-size:3rem;margin:0" aria-hidden="true">🌾</p>
 		<h1 tabindex="-1">{page.status === 404 ? 'We could not find that page' : 'Something went wrong'}</h1>
 		<p class="muted">{page.error?.message}</p>
-		<a class="btn primary big" href="/">Go to today's practice</a>
+		<a class="btn primary big" href={to(`/`)}>Go to today's practice</a>
 	</div>
 </div>

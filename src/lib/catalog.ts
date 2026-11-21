@@ -23,7 +23,7 @@ export interface Card {
 	/** The v3 sound label, e.g. "ă", "th quiet", "kw". */
 	soundLabel: string;
 	picture: { emoji: string; word: string };
-	/** Paths relative to /sounds/. `slow` plays the parts with pauses. */
+	/** Paths relative to /audio/. `slow` plays the parts with pauses. */
 	audio: { main: string; slow?: string };
 	/** Short mouth tip for the child. */
 	kidTip: string | null;
@@ -193,8 +193,6 @@ export function todayIds(isSecure: (id: string) => boolean, n = 5): string[] {
 	const open = beginnerPath.filter((id) => !isSecure(id));
 	return (open.length ? open : beginnerPath).slice(0, n);
 }
-
-export const soundUrl = (path: string) => `sounds/${path}`;
 
 /** Single-sound clip used for each part button on a blend card. */
 export const partAudio = (phoneme: string) => `clear/${phoneme}.mp3`;
